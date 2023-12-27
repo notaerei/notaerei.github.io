@@ -23,16 +23,16 @@ img {
 }
 @font-face {
     font-family: "yoster";
-    src: url('yoster.ttf') format('truetype') 
+    src: url('fonts\yoster.ttf') format('truetype') 
 }
 @font-face {
     font-family: "romancea";
-    src: url('romancea.ttf') format('truetype') 
+    src: url('fonts\romancea.ttf') format('truetype') 
 }
 
 @font-face {
    font-family: "sweetheart";
-   src: url('sweetheart.ttf') format('truetype')
+   src: url('fonts\sweetheart.ttf') format('truetype')
 }
 ::selection {
    background: #FF6BFF;
