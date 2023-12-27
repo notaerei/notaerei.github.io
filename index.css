@@ -23,16 +23,16 @@ img {
 }
 @font-face {
     font-family: "yoster";
-    src: url('E:\aerei site\notaerei.github.io\fonts\yoster.ttf') format('truetype') 
+    src: url('https://notaerei.github.io/fonts/yoster.ttf') format('truetype') 
 }
 @font-face {
     font-family: "romancea";
-    src: url('E:\aerei site\notaerei.github.io\fonts\romancea.ttf') format('truetype') 
+    src: url('https://notaerei.github.io/fonts/romancea.ttf') format('truetype') 
 }
 
 @font-face {
    font-family: "sweetheart";
-   src: url('E:\aerei site\notaerei.github.io\fonts\sweetheart.ttf') format('truetype')
+   src: url('https://notaerei.github.io/fonts/sweetheart.ttf') format('truetype')
 }
 ::selection {
    background: #FF6BFF;
