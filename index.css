@@ -77,7 +77,7 @@ img {
     padding: 10px;
     display: flex;
     justify-content: center;
-    background-image: radial-gradient(circle, rgba(255,0,0,0) 60%, rgba(2,0,36,1) 100%), url("https://cdn.discordapp.com/attachments/926974717263487046/1124232548155920436/spiderweb_header.png");
+    background-image: radial-gradient(circle, rgba(255,0,0,0) 60%, rgba(2,0,36,1) 100%), url("https://cdn.discordapp.com/attachments/926974717263487046/1124232548155920436/spiderweb_header.png?ex=660666a6&is=65f3f1a6&hm=3c5ed80e4ed9b164ab4730f0b30a2e3d2cf020a2856219a08222800d4212624d&");
     background-size: 1200px 600px;
 }
 .container{
