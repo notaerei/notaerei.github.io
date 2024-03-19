@@ -31,8 +31,8 @@ img {
 }
 
 @font-face {
-   font-family: "zpix";
-   src: url('https://notaerei.github.io/fonts/zpix.ttf') format('truetype')
+   font-family: "sweetheart";
+   src: url('https://notaerei.github.io/fonts/sweetheart.ttf') format('truetype')
 }
 
 @font-face {
@@ -83,8 +83,10 @@ img {
     padding: 10px;
     display: flex;
     justify-content: center;
-    background-image: radial-gradient(circle, rgba(255,0,0,0) 60%, rgba(2,0,36,1) 100%), url("https://cdn.discordapp.com/attachments/926974717263487046/1124232548155920436/spiderweb_header.png?ex=660666a6&is=65f3f1a6&hm=3c5ed80e4ed9b164ab4730f0b30a2e3d2cf020a2856219a08222800d4212624d&");
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0) 5%, rgb(0, 0, 0) 95%), url("https://cdn.discordapp.com/attachments/926974717263487046/1124232548155920436/spiderweb_header.png?ex=660666a6&is=65f3f1a6&hm=3c5ed80e4ed9b164ab4730f0b30a2e3d2cf020a2856219a08222800d4212624d&");
+    border-radius: 25px;
     background-size: 1200px 600px;
+    border: 1px solid rgba(255, 0, 197, 0.60) 
 }
 .container{
     position: absolute;
@@ -94,6 +96,9 @@ img {
     padding: 10px;
     display: flex;
     background-color: black;
+    border-radius: 25px;
+    box-shadow: 0px 0px 20px 10px black;
+    border: 1px solid rgba(255, 0, 197, 0.60) 
 }
 .columns{
     background-image: linear-gradient(180deg, hsl(303deg 32% 14%) 0%, hsl(304deg 21% 10%) 70%, hsl(0deg 0% 6%) 100%);
@@ -104,12 +109,19 @@ img {
     padding: 0px 20px 20px 20px;
     overflow: scroll;
     overflow-x: hidden;
+    box-shadow: inset 0px 0px 30px 15px black;
+    background-size: 1200px 600px;
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0.70) 5%, rgb(0, 0, 0) 100%), url("https://cdn.discordapp.com/attachments/1217560354322780311/1219489735039258666/test_header.png?ex=660b7d51&is=65f90851&hm=a1af68818d1e02d73b1dcf0305bf01b3e0abd75348c2f6dcdf94845c6c0b1ac3&");
+    border-right: 1px solid rgba(255, 0, 197, 0.60) 
 }
 #right{
     flex-basis: 30%;
     padding: 0px 20px 20px 20px;
     overflow: scroll;
     overflow-x: hidden;
+    box-shadow: inset 0px 0px 30px 15px black;
+    background-size: 1200px 600px;
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0.70) 5%, rgb(0, 0, 0) 100%), url("https://cdn.discordapp.com/attachments/1217560354322780311/1219489735039258666/test_header.png?ex=660b7d51&is=65f90851&hm=a1af68818d1e02d73b1dcf0305bf01b3e0abd75348c2f6dcdf94845c6c0b1ac3&")
 }
 
 .containercolumn {
@@ -124,7 +136,9 @@ img {
 
 .weboverlaybase {
     position: fixed;
-    margin: 760px 939px;
+    margin-left: -50px;
+    margin-top: -20px;
+    filter: brightness(0)
 }
 
 /*
@@ -163,7 +177,8 @@ img {
    position: absolute;
    display: inline-block;
    justify-content: center;
-   margin-left: 725px;
+   margin-left: -50px;
+   letter-spacing: 5px;
    padding: 45px;
    min-width: 1000px 
 }
@@ -178,22 +193,22 @@ img {
 
 .pagedoll {
     position: absolute;
-    margin-top: 490px;
+    margin-top: 520px;
     margin-left: -400px;
 }
 .chat-container {
     display: flex;
     position: absolute;
     flex-direction: column;
-    width: 200px;
-    margin-top: 120px;
-    margin-left: -250px;
+    width: 250px;
+    margin-top: 155px;
+    margin-left: -325px;
     background-color: rgba(0, 0, 0, 0.69);
     border: 1px solid #FA1DD9;
     padding: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     font-size: 13px;
-    font-family: 'zpix' 
+    font-family: 'zpix'
 }
 .chat-log {
     height: 300px;
@@ -207,9 +222,8 @@ input[type="text"] {
     margin-top: 10px;
     border: 1px solid #FA1DD9;
     font-family: 'zpix';
-    font-size: 15px;
+    font-size: 13px;
     padding: 5px;
-    letter-spacing: 3px;
     background-color: rgba(0, 0, 0, 0.69);
     color: rgba(155, 125, 149, 1) 
 }
@@ -218,7 +232,6 @@ input[type="text"] {
     color: #ff74ea;
     margin-bottom: 5px;
     padding: 5px;
-    letter-spacing: 3px;
     text-align: left 
 }
 .user-message {
@@ -226,7 +239,6 @@ input[type="text"] {
     color: rgba(155, 125, 149, 1);
     margin-bottom: 5px;
     padding: 5px;
-    letter-spacing: 3px;
     text-align: right 
 }
 
@@ -267,8 +279,7 @@ button {
     margin-top: 10px;
     border: 1px solid #FA1DD9;
     font-family: 'zpix';
-    font-size: 15px;
-    letter-spacing: 3px;
+    font-size: 13px;
     background-color: rgba(0, 0, 0, 0.69);
     color: rgba(155, 125, 149, 1);
     padding: 10px;
@@ -285,11 +296,11 @@ input::file-selector-button {
     margin-top: 10px;
     border: 1px solid #FA1DD9;
     font-family: 'zpix';
-    font-size: 15px;
+    font-size: 13px;
     padding: 5px;
-    letter-spacing: 3px;
     background-color: rgba(0, 0, 0, 0.69);
-    color: rgba(155, 125, 149, 1);padding: 10px;
+    color: rgba(155, 125, 149, 1);
+    padding: 10px;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -314,8 +325,7 @@ input[type="radio"] {
     border: 2px solid #FA1DD9;
     border-radius: 50%;
     background: white;
-    margin-top: 20px;
-    margin-bottom: px;
+    margin-top: 10px;
 }
 input[type="radio"]:checked {
     border: 5px solid #FA1DD9;
@@ -344,8 +354,7 @@ textarea {
     margin-top: 10px;
     border: 1px solid #FA1DD9;
     font-family: 'zpix';
-    font-size: 15px;
-    letter-spacing: 3px;
+    font-size: 13px;
     background-color: rgba(0, 0, 0, 0.69);
     color: rgba(155, 125, 149, 1);
     resize: vertical;
@@ -357,8 +366,7 @@ input[type="date"] {
     margin-top: 10px;
     border: 1px solid #FA1DD9;
     font-family: 'zpix';
-    font-size: 15px;
-    letter-spacing: 3px;
+    font-size: 13px;
     background-color: rgba(0, 0, 0, 0.69);
     color: rgba(155, 125, 149, 1);
 }
@@ -376,8 +384,7 @@ input[type="number"] {
     margin-top: 10px;
     border: 1px solid #FA1DD9;
     font-family: 'zpix';
-    font-size: 15px;
-    letter-spacing: 3px;
+    font-size: 13px;
     background-color: rgba(0, 0, 0, 0.69);
     color: rgba(155, 125, 149, 1);
 }
@@ -389,7 +396,6 @@ input[type="submit"] {
     border: 1px solid #FA1DD9;
     font-family: 'zpix';
     font-size: 18px;
-    letter-spacing: 3px;
     background-color: #FA1DD9;
     color: black;
 }
@@ -404,8 +410,7 @@ select {
     margin-top: 10px;
     border: 1px solid #FA1DD9;
     font-family: 'zpix';
-    font-size: 18px;
-    letter-spacing: 3px;
+    font-size: 13px;
     background-color: rgba(0, 0, 0, 0.69);
     color: rgba(155, 125, 149, 1);
 }
@@ -427,53 +432,51 @@ select {
     font-weight: 1;
 }
 .h2 {
-    font-family: 'romancea';
+    font-family: 'sweetheart';
     font-size: 27px;
     color: #FA1DD9;
     border-bottom: 1px solid;
-    padding: 5px;
+    padding: 10px 10px 5px 10px;
     background-color: #100F10; 
-    margin-bottom: 15px;
+    margin-bottom: 13px;
     font-weight: 1;
 }
 .h3 {
-    font-family: 'romancea';
+    font-family: 'sweetheart';
     font-size: 24px;
     color: #FA1DD9;
-    border-bottom: 1px dotted;
-    padding: 5px;
-    background-color: #100F10;
-    margin-bottom: 15px;
+    border-bottom: 2px dotted;
+    padding: 10px 10px 5px 10px;
+    background-color: #100f10c2;
+    margin-bottom: 13px;
     font-weight: 1;
 }
 .h4 {
-    font-family: 'romancea';
+    font-family: 'sweetheart';
     font-size: 21px;
     color: #FA1DD9;
-    padding: 5px;
-    background-color: #100F10;
-    margin-bottom: 15px;
+    border-bottom: 1px dotted;
+    padding: 10px 10px 5px 10px;
+    background-color: #100f108f;
+    margin-bottom: 13px;
     font-weight: 1;
 }
 .p {
     font-family: 'zpix';
-    font-size: 18px;
+    font-size: 13px;
     color: #e879e6;
     padding: 5px;
-    letter-spacing: 3px;
 }
 b, strong {
-    color: #D8B6D4
+    color: #FA1DD9
 }
 i, em {
     color: #E21CC4
 }
 a {
     font-family: 'zpix';
-    font-size: 18px;
+    font-size: 13px;
     color: #F4D2F0;
-    padding: 5px;
-    letter-spacing: 3px;
     text-decoration: underline dotted;
 }
 table, th, td {
@@ -497,12 +500,11 @@ tr:hover {
 }
 .list {
     font-family: 'zpix';
-    font-size: 18px;
+    font-size: 13px;
     color: #e879e6;
     padding: 5px;
-    letter-spacing: 3px;
     list-style: none;
-    margin-left: 20px;
+    margin-left: 10px;
     margin-top: 5px;
 }
 li::before {
@@ -517,10 +519,9 @@ li::before {
 }
 .quote {
     font-family: 'zpix';
-    font-size: 18px;
+    font-size: 13px;
     color: #e879e6;
     padding: 5px;
-    letter-spacing: 3px;
     list-style: none;
     margin-left: -30px;
     margin-top: 10px;
