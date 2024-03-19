@@ -31,8 +31,8 @@ img {
 }
 
 @font-face {
-   font-family: "sweetheart";
-   src: url('https://notaerei.github.io/fonts/sweetheart.ttf') format('truetype')
+   font-family: "zpix";
+   src: url('https://notaerei.github.io/fonts/zpix.ttf') format('truetype')
 }
 
 @font-face {
@@ -193,7 +193,7 @@ img {
     padding: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     font-size: 13px;
-    font-family: 'sweetheart' 
+    font-family: 'zpix' 
 }
 .chat-log {
     height: 300px;
@@ -206,7 +206,7 @@ input[type="text"] {
     padding: 5px;
     margin-top: 10px;
     border: 1px solid #FA1DD9;
-    font-family: 'sweetheart';
+    font-family: 'zpix';
     font-size: 15px;
     padding: 5px;
     letter-spacing: 3px;
@@ -266,7 +266,7 @@ button {
     padding: 5px;
     margin-top: 10px;
     border: 1px solid #FA1DD9;
-    font-family: 'sweetheart';
+    font-family: 'zpix';
     font-size: 15px;
     letter-spacing: 3px;
     background-color: rgba(0, 0, 0, 0.69);
@@ -284,7 +284,7 @@ input::file-selector-button {
     padding: 5px;
     margin-top: 10px;
     border: 1px solid #FA1DD9;
-    font-family: 'sweetheart';
+    font-family: 'zpix';
     font-size: 15px;
     padding: 5px;
     letter-spacing: 3px;
@@ -343,7 +343,7 @@ textarea {
     padding: 5px;
     margin-top: 10px;
     border: 1px solid #FA1DD9;
-    font-family: 'sweetheart';
+    font-family: 'zpix';
     font-size: 15px;
     letter-spacing: 3px;
     background-color: rgba(0, 0, 0, 0.69);
@@ -356,7 +356,7 @@ input[type="date"] {
     padding: 5px;
     margin-top: 10px;
     border: 1px solid #FA1DD9;
-    font-family: 'sweetheart';
+    font-family: 'zpix';
     font-size: 15px;
     letter-spacing: 3px;
     background-color: rgba(0, 0, 0, 0.69);
@@ -375,7 +375,7 @@ input[type="number"] {
     padding: 5px;
     margin-top: 10px;
     border: 1px solid #FA1DD9;
-    font-family: 'sweetheart';
+    font-family: 'zpix';
     font-size: 15px;
     letter-spacing: 3px;
     background-color: rgba(0, 0, 0, 0.69);
@@ -387,7 +387,7 @@ input[type="submit"] {
     width: 300px;
     padding: 5px;
     border: 1px solid #FA1DD9;
-    font-family: 'sweetheart';
+    font-family: 'zpix';
     font-size: 18px;
     letter-spacing: 3px;
     background-color: #FA1DD9;
@@ -403,7 +403,7 @@ select {
     padding: 5px;
     margin-top: 10px;
     border: 1px solid #FA1DD9;
-    font-family: 'sweetheart';
+    font-family: 'zpix';
     font-size: 18px;
     letter-spacing: 3px;
     background-color: rgba(0, 0, 0, 0.69);
@@ -469,7 +469,7 @@ i, em {
     color: #E21CC4
 }
 a {
-    font-family: 'sweetheart';
+    font-family: 'zpix';
     font-size: 18px;
     color: #F4D2F0;
     padding: 5px;
@@ -496,7 +496,7 @@ tr:hover {
     background: rgba(255, 0, 197, 0.60);
 }
 .list {
-    font-family: 'sweetheart';
+    font-family: 'zpix';
     font-size: 18px;
     color: #e879e6;
     padding: 5px;
@@ -516,7 +516,7 @@ li::before {
     height: 5px;
 }
 .quote {
-    font-family: 'sweetheart';
+    font-family: 'zpix';
     font-size: 18px;
     color: #e879e6;
     padding: 5px;
@@ -567,7 +567,7 @@ li::before {
 .inner-quotes-container h6{
    font-size: 10px;
    color: rgba(255, 0, 197, 0.38);
-   font-family: 'sweetheart', cursive;
+   font-family: 'zpix', cursive;
 }
  
 button{
