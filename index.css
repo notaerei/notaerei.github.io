@@ -141,6 +141,12 @@ img {
     filter: brightness(0)
 }
 
+.warningmsg {
+    position: fixed;
+    margin-left: -400px;
+    margin-top: -30px;
+}
+
 /*
 .▄▄ ·  ▄▄· ▄▄▄        ▄▄▌  ▄▄▌  ▄▄▄▄·  ▄▄▄· ▄▄▄  
 ▐█ ▀. ▐█ ▌▪▀▄ █·▪     ██•  ██•  ▐█ ▀█▪▐█ ▀█ ▀▄ █·

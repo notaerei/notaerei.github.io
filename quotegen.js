@@ -1,5 +1,18 @@
-const quotes = {
-    "poppy | EAT | 2021": 'maybe today <br> i throw it all away <br> let my body eat itself and finally get its way',
+document.getElementById('generate').addEventListener('click', () => {
+    let authors = Object.keys(quotes);
+    let author = authors[Math.floor(Math.random() * authors.length)];
+    let quote = quotes[author];
+
+    document.getElementById('quote').innerHTML = quote;
+    document.getElementById('author').innerHTML = author;
+});
+
+const quotes = [
+    {
+    author: "poppy | EAT | 2021",
+    quote: 'maybe today <br> i throw it all away <br> let my body eat itself and finally get its way'
+    },
+    {
     "poppy | EAT | 2021": 'i tell everyone that im okay <br> but im ashamed <br> im afraid <br> and it all eats at me ',
     "poppy | EAT | 2021": 'im not okay <br> i know that im not safe <br> could you come and eat me up and put me out my pain?',
     "elita | introverted | 2019": 'i dont hate you i just need some time alone',
@@ -155,34 +168,33 @@ const quotes = {
     "the living tombstone | i got no time | 2016": 'im stuttering again <br> no one will listen and no one will understand <br> because im crying as much as i speak',
     "built to spill | big dipper | 1994": 'you should have been here last night and heard what the big dipper said to me',
     "inabakumori feat. kaai yuki | ラグトレイン (lag train) | 2020": 'i wheeze out a pained breath as i sleep and fake my way through this ever lengthening day',
-    "connor spioto | the villain i appear to be | 2017": 'i assure you before you can find me im gone so come on and catch me youve still got a chance',
-    "connor spioto | the villain i appear to be | 2017": 'although i may not think everything through i dont take back what i say or regret what i do',
-    "connor spioto | the villain i appear to be | 2017": 'even if you cant see the good inside me i dont have the time to tell you why i do the things that i do',
-    "connor spioto | the villain i appear to be | 2017": 'please hold on and soon youll see that im not the villain i appear to be',
-    "connor spioto | the villain i appear to be | 2017": 'i know you think im crazy but i hope that maybe now youll see why i had to try',
-    "teddyloid | fly away | 2010": 'heart stood still when we first met i thought wed be together yet youre using me for your own gain and now ill never feel the same',
+    "connor spioto | the villain i appear to be | 2017": 'i assure you before you can find me im gone <br> so come on and catch me youve still got a chance',
+    "connor spioto | the villain i appear to be | 2017": 'although i may not think everything through <br> i dont take back what i say or regret what i do',
+    "connor spioto | the villain i appear to be | 2017": 'even if you cant see the good inside me <br> i dont have the time to tell you why i do the things that i do',
+    "connor spioto | the villain i appear to be | 2017": 'please hold on and soon youll see <br> that im not the villain i appear to be',
+    "connor spioto | the villain i appear to be | 2017": 'i know you think im crazy <br> but i hope that maybe now youll see why i had to try',
+    "teddyloid | fly away | 2010": 'heart stood still when we first met <br> i thought wed be together yet youre using me for your own gain <br> and now ill never feel the same',
     "teddyloid | fly away | 2010": 'youll never find a better time make your stand youll be fine',
-    " ": 'is this a dream or a waking fucking nightmare',
-    " ": 'at the tip of my wand i could write songs but why write why bother',
-    "13 the musical | what it means to be a friend | 2008": 'a friend is the person who most of all cares about what you feel and nothing is harder than learning a friend isnt real',
+    "mag.lo | who am i? | 2016": 'is this a dream or a waking fucking nightmare?',
+    "mag.lo | who am i? | 2016": 'at the tip of my wand i could write songs <br> but why write <br> why bother',
+    "13 the musical | what it means to be a friend | 2008": 'a friend is the person who most of all cares about what you feel <br> and nothing is harder than learning a friend isnt real',
     "13 the musical | if that's what it is | 2008": 'lets face it youve worked so hard and now youre scarred and free of any hope',
-    "13 the musical | if that's what it is | 2008": 'if thats what it is then thats what it is though thats not the way i choose to see it',
-    "13 the musical | if that's what it is | 2008": 'i make my own rules i do what i can if i hit the wall then maybe its all part of the plan',
-    "13 the musical | if that's what it is | 2008": 'tomorrow will come today will be gone and so i put one foot in front of the other',
-    "13 the musical | if that's what it is | 2008": 'i say i wont cry i cry until dawn and then i put one foot in front of the other',
+    "13 the musical | if that's what it is | 2008": 'if thats what it is then thats what it is <br> though thats not the way i choose to see it',
+    "13 the musical | if that's what it is | 2008": 'i make my own rules <br> i do what i can <br> if i hit the wall then maybe its all part of the plan',
+    "13 the musical | if that's what it is | 2008": 'tomorrow will come <br> today will be gone <br> and so i put one foot in front of the other',
+    "13 the musical | if that's what it is | 2008": 'i say i wont cry <br> i cry until dawn <br> and then i put one foot in front of the other',
     "13 the musical | if that's what it is | 2008": 'i face the world for what it is and not what i wish it could be',
-    "13 the musical | if that's what it is | 2008": 'one day ill be thirty one day ill be fine one day ill make fun of this dramatic life of mine',
+    "13 the musical | if that's what it is | 2008": 'one day ill be thirty <br> one day ill be fine <br> one day ill make fun of this dramatic life of mine',
     "13 the musical | a little more homework | 2008": 'one day ill be older and then ill write a book about the choices that i made',
-    "13 the musical | a little more homework | 2008": 'ill choose what to say what to see when presented with a candy coated opportunity',
-    "13 the musical | a little more homework | 2008": 'so you gotta hang in there til the whole story ends cus we all have a little more homework to do',
-    "mean girls the musical | what's wrong with me | 2018": 'tell me whats wrong with me my body face my hair tell me all my many faults tell me like you care',
-    "mean girls the musical | what's wrong with me | 2018": 'when we both know youre cruel and we both know youre right i could listen to you like a fool all night',
-    "mean girls the musical | what's wrong with me | 2018": 'mama called me beautiful dont believe her anymore now im listening to you',
-/*
-    " ": 'the sky goes blue and the sky goes black and no matter what you do you cant go back',
-    " ": 'whats wrong with me wheres my mind where does it end',
-    "flyleaf | all around me | 2005": 'i can feel you all around me thickening the air im breathing holding onto what im feeling savouring this heart thats healing',
-    " ": 'you said you would never leave me i believe you i believe',
+    "13 the musical | a little more homework | 2008": 'ill choose what to say <br> what to see when presented with a candy coated opportunity',
+    "13 the musical | a little more homework | 2008": 'so you gotta hang in there til the whole story ends <br>cus we all have a little more homework to do',
+    "mean girls the musical | what's wrong with me | 2018": 'tell me whats wrong with me <br> my body face my hair tell me <br> all my many faults <br> tell me like you care',
+    "mean girls the musical | what's wrong with me | 2018": 'when we both know youre cruel and we both know youre right <br> i could listen to you like a fool all night',
+    "mean girls the musical | what's wrong with me | 2018": 'mama called me beautiful <br> dont believe her anymore <br> now im listening to you',
+    "13 the musical | a little more homework | 2008": 'the sky goes blue and the sky goes black and no matter what you do you cant go back',
+    "mean girls the musical | what's wrong with me | 2018": 'whats wrong with me <br> wheres my mind <br> where does it end',
+    "flyleaf | all around me | 2005": 'i can feel you all around me thickening the air im breathing <br> holding onto what im feeling <br> savouring this heart thats healing',
+    "flyleaf | all around me | 2005": 'you said you would never leave me <br> i believe you <br> i believe',
     " ": 'step into my mind youll last two seconds then youre gone demons in my penthouse know the words to all my songs',
     " ": 'in all my searching theres one thing that i found we dont go to heaven we just rot inside the ground',
     " ": 'and you dont seem to understand a shame you seemed an honest man',
@@ -266,15 +278,5 @@ const quotes = {
     " ": 'a perplexing thing called love took over and then i couldnt keep my heart space from splitting in two never had the capacity to control it in the first place',
     " ": 'everyday is full of why did this did that but in the end its sayonara baby',
     " ": 'a blades edge with centimeters of suspicion stabbing a vein at the end of it all sickly love spurts out',
-    " ": 'each night i went to sleep wishing that this would turn out to be a nightmare <br> yet each morning i awoke to find that the world was just as horribly warped as it was the day before',
-*/
-}
-
-document.getElementById('generate').addEventListener('click', () => {
-    let authors = Object.keys(quotes);
-    let author = authors[Math.floor(Math.random() * authors.length)];
-    let quote = quotes[author];
-
-    document.getElementById('quote').innerHTML = quote;
-    document.getElementById('author').innerHTML = author;
-});
+    " ": 'each night i went to sleep wishing that this would turn out to be a nightmare <br> yet each morning i awoke to find that the world was just as horribly warped as it was the day before'
+}]
