@@ -34,6 +34,12 @@ img {
    font-family: "sweetheart";
    src: url('https://notaerei.github.io/fonts/sweetheart.ttf') format('truetype')
 }
+
+@font-face {
+    font-family: "zpix";
+    src: url('https://notaerei.github.io/fonts/zpix.ttf') format('truetype')
+}
+
 ::selection {
    background: #FF6BFF;
    color: white;
@@ -450,7 +456,7 @@ select {
     font-weight: 1;
 }
 .p {
-    font-family: 'sweetheart';
+    font-family: 'zpix';
     font-size: 18px;
     color: #e879e6;
     padding: 5px;
