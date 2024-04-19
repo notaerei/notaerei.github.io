@@ -23,21 +23,21 @@ img {
 }
 @font-face {
     font-family: "yoster";
-    src: url('https://notaerei.github.io/fonts/yoster.ttf') format('truetype') 
+    src: url('../fonts/yoster.ttf') format('truetype') 
 }
 @font-face {
     font-family: "romancea";
-    src: url('https://notaerei.github.io/fonts/romancea.ttf') format('truetype') 
+    src: url('../fonts/romancea.ttf') format('truetype') 
 }
 
 @font-face {
    font-family: "sweetheart";
-   src: url('https://notaerei.github.io/fonts/sweetheart.ttf') format('truetype')
+   src: url('../fonts/sweetheart.ttf') format('truetype')
 }
 
 @font-face {
     font-family: "zpix";
-    src: url('https://notaerei.github.io/fonts/zpix.ttf') format('truetype')
+    src: url('../fonts/zpix.ttf') format('truetype')
 }
 
 ::selection {
@@ -83,9 +83,9 @@ img {
     padding: 10px;
     display: flex;
     justify-content: center;
-    background-image: radial-gradient(circle, rgba(0, 0, 0, 0) 5%, rgb(0, 0, 0) 95%), url("https://cdn.discordapp.com/attachments/926974717263487046/1124232548155920436/spiderweb_header.png?ex=660666a6&is=65f3f1a6&hm=3c5ed80e4ed9b164ab4730f0b30a2e3d2cf020a2856219a08222800d4212624d&");
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0) 5%, rgb(0, 0, 0) 95%), url("../images/backgrounds/galaxytempmoshed.gif");
     border-radius: 25px;
-    background-size: 1200px 600px;
+    background-size: 1200px 400px;
     border: 1px solid rgba(255, 0, 197, 0.60) 
 }
 .container{
@@ -111,7 +111,7 @@ img {
     overflow-x: hidden;
     box-shadow: inset 0px 0px 30px 15px black;
     background-size: 1200px 600px;
-    background-image: radial-gradient(circle, rgba(0, 0, 0, 0.70) 5%, rgb(0, 0, 0) 100%), url("https://cdn.discordapp.com/attachments/1217560354322780311/1219489735039258666/test_header.png?ex=660b7d51&is=65f90851&hm=a1af68818d1e02d73b1dcf0305bf01b3e0abd75348c2f6dcdf94845c6c0b1ac3&");
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0.70) 5%, rgb(0, 0, 0) 100%), url('../images/backgrounds/pinkspiderweb.png');
     border-right: 1px solid rgba(255, 0, 197, 0.60) 
 }
 #right{
@@ -121,7 +121,7 @@ img {
     overflow-x: hidden;
     box-shadow: inset 0px 0px 30px 15px black;
     background-size: 1200px 600px;
-    background-image: radial-gradient(circle, rgba(0, 0, 0, 0.70) 5%, rgb(0, 0, 0) 100%), url("https://cdn.discordapp.com/attachments/1217560354322780311/1219489735039258666/test_header.png?ex=660b7d51&is=65f90851&hm=a1af68818d1e02d73b1dcf0305bf01b3e0abd75348c2f6dcdf94845c6c0b1ac3&")
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0.70) 5%, rgb(0, 0, 0) 100%), url("../images/backgrounds/pinkspiderweb.png")
 }
 
 .containercolumn {
