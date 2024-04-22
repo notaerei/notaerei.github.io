@@ -26,18 +26,21 @@
 			 display: inline-flex;
 			 width: 1120px; !important
 			 font-family: 'zpix';
-			 background: rgba(0, 0, 0, 0.69);
-			 color: #FA1DD9;
+			 background: rgba(0, 0, 0, 0.50);
 			}
 			.marquee p {
 			 position: relative;
 			 margin: 0;
 			 line-height: 20px;
 			 text-align: center;
+			 padding: 2px;
+			 color: #fa1dd9;
 			}
 			</style>
 		<div class="marquee">
-			<p>* * * * * * * * * * * * * use code "NEWSITE" to receive 10% off your print, commission, or genshin piloting order! * * * * * * * * * * * * *</p>
+			<marquee scrollamount=" onmouseout="start()" onmouseover="stop()">
+                <p class="p">use code NEWSITE for 10% off your commission, print, or piloting order !</p>
+		</marquee>
 		</div>
 			
 <!--
@@ -76,17 +79,41 @@
 <div class="container" id="container">
   <div id="left" class="columns">
 	<p class="p" align="center"><i><b>this site is best viewed on chromium desktop browsers on a 16:9 (1920 x 1080) display!</b></i>
-	<!-- temporary spacer if needed --><br>
+				<p><img style="border: 1px solid #FA1DD9; float: right; margin: 15px;" src="images\art\cat hat.png" width="100px" height="100px">
+    			<p class="p"><b>&nbsp &nbsp &nbsp hello, i'm ari!</b> i'm a filipino-american digital artist and twitch affiliate currently in my last year of studying for my B.S. in kinesiology in southern california. thanks for visiting my website!  please <a href="contact.html">contact me</a> if anything on this site seems to be actually broken.  i am not the best at coding.  like, at all.  i'm learning as i go.</p>
+				<style>
+					.stampmarquee {
+					 height: 20px;	
+					 overflow: hidden;
+					 position: relative;
+					 display: inline-flex;
+					 width: 640px; !important
+					 font-family: 'zpix';
+					}
+					</style>
+				<div class="stampmarquee">
+					<marquee scrollamount="6" onmouseout="start()" onmouseover="stop()">
+						<img src="https://blinkies.neocities.org/b/display/0071-bi.gif" alt="bi pride"/>
+						<img src="https://blinkiecollecti0n.neocities.org/images/nonbinarypride.gif" alt="nonbinary pride"/>
+						<img src="https://graphic.neocities.org/860c590c-49e9-42ce-b65b-3cf0b727cf70.gif" alt="i hate mean people"/>
+						<img src="https://blinkies.neocities.org/b/display/0172-rainbowequalizer.gif" alt="scene kid"/>
+						<img src="https://blinkies.neocities.org/b/geocities/web.archive.org---web---20091027001636---http:------geocities.com---blinktasticblinkie---blinktastic_meowmeow.gif" alt="meow meow meow meow"/>
+						<img src="https://blinkiecollecti0n.neocities.org/images/gamerselfdiagnosed.gif" alt="gamer self diagnosed"/>
+						<img src="https://files.catbox.moe/8ap0xi.gif" alt="i love my computer"/>
+					</marquee>
+				</div>
+				<!--<a href="https://www.imood.com/users/aerei"><img src="https://moods.imood.com/display/uname-aerei/fg-fa1dd9/trans-1/imood.gif" alt="my current mood" border="0"></a></p>-->
+	<!-- temporary spacer if needed --><br><br><br><br>
 	<p class="p"><iframe style="float: left; width: 420px; height: 240px; margin: 15px; border: 1px solid #FA1DD9" src="https://www.youtube.com/embed/xSop214zXYU?feature=oembed&amp;rel=0"></iframe>
     <h2 class="h2" align="right">latest youtube video . . .</h2>
     <p class="p">i've been in a mood to finish abandoned projects, and this is one of them!  a silly parody song of 'like that' by doja cat i initially wrote in the summer of 2022 where i shamelessly rave about how much i love zombie-themed games, featuring really terrible gameplay of project lazarus on roblox, call of duty: black ops 3, dayz, project zomboid, and more.</p>
     <!-- temporary spacer if needed --><br><br>
     <p class="p"><iframe style="float: right; width: 420px; height: 240px; margin: 15px; border: 1px solid #FA1DD9" src="https://www.youtube.com/embed/oY4WHKYVvTo?feature=oembed&amp;rel=0"></iframe>
     <h2 class="h2">latest twitch stream . . .</h2>
-    <p class="p">second day of the aerei community stardew farm following the 1.6 update!  decided to make it vanilla since the people who wanted to join so far were having trouble with the mods.  anyone is free to join so long as you're in my discord server!
+    <p class="p">&nbsp &nbsp &nbsp second day of the aerei community stardew farm following the 1.6 update!  decided to make it vanilla since the people who wanted to join so far were having trouble with the mods.  anyone is free to join so long as you're in my discord server!
   </div>
-  
 
+  
 
 <!--
 ▄▄▄  ▪   ▄▄ •  ▄ .▄▄▄▄▄▄     ▄▄·       ▄▄▌  ▄• ▄▌• ▌ ▄ ·.  ▐ ▄ 
@@ -97,9 +124,6 @@
 -->
 
   <div id="right" class="columns">
-    <p style="text-align: center"> <img style="border: 1px solid #FA1DD9" src="images\art\cat hat.png" width="150px" height="150px">
-    <h2 class="h2">welcome !!</h2>
-    <p class="p"><b>hello, i'm ari!</b> i'm a filipino-american digital artist and twitch affiliate currently studying for my B.S. in kinesiology in southern california. thanks for visiting my website!  please <a href="contact.html">contact me</a> if anything on this site seems to be broken.  i am not the best at coding.  like, at all.
 		<!--<div class="quotes-container">
 			<script src ="script.js" defer></script>
 			<button id="generate">ash says . . .</button>
@@ -108,21 +132,38 @@
 				 <h6 id="author"></h6>
 			 </div>
 		 </div>-->
-	<h2 class="h2">to be added . . .</h2>
-	<ul class="list">
-		<li>genshin piloting info page with order form system</li>
-		<li>print info page with order form system + self checkout system</li>
-		<li>overhauled music player</li>
-		<li>chat bot sprite</li>
-		<li>overhauled art gallery page</li>
-		<li>social media icon redraws</li>
-	</ul>
-	<h2 class="h2">known issues . . .</h2>
-	<ul class="list">
-		<li>site is not functional on mobile at all lol</li>
-		<li>most pages aren't updated to look as polished as the home page</li>
-		<li>submitting a commission order or contact form doesn't redirect you back to the main site</li>
-	</ul>
+		 <h2 class="h2">sitemap . . .</h2>
+		 <p class="p">
+			<i>last updated : april 22, 2024 </i> <br><br>
+			/ <a href="index">home</a> <br>
+			/ <a href="about">about</a>	<br>
+			/ <a href="art">art</a> <i>not up to date !</i><br>
+			&nbsp&nbsp&nbsp / gallery <i>WIP !</i><br>
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp / chr <i>WIP !</i><br> <!--my character database!-->
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp / sona <i>WIP !</i><br> <!--my sona database!-->
+			&nbsp&nbsp&nbsp / <a href="commissions">commissions</a><br>
+			&nbsp&nbsp&nbsp / prints <i>WIP !</i><br> <!--preferably the full page + a self checkout system but we might be getting too ambitious lol-->
+			&nbsp&nbsp&nbsp / <a href="https://www.notion.so/aerei/aerei-s-art-to-do-list-2a641b986f22430b8a95ddcaad921b5c?pvs=4">to-do</a><br>
+			/ piloting <i>WIP !</i><br> <!--needs full page + order form system-->
+			/ <a href="projects">projects</a> <i>not up to date !</i><br>
+			&nbsp&nbsp&nbsp / CODA <i>WIP !</i><br> <!--desktop simulator ARG type beat-->
+			&nbsp&nbsp&nbsp / aespador <i>WIP !</i><br> <!--mostly just info on it + character pages-->
+			&nbsp&nbsp&nbsp / frankenstein <i>WIP !</i><br> <!--info on it + progress checker-->
+			&nbsp&nbsp&nbsp / bible <i>WIP !</i><br> <!--the kinnie bible!-->
+			&nbsp&nbsp&nbsp / shrines <i>WIP !</i><br> <!--other interests :3  probably one for evanescence, emily the strange, etc etc -->
+			/ <a href="contact">contact</a> <br></p>
+		 <h3 class="h3">to be added . . .</h3>
+		 <ul class="list">
+			 <li>overhauled music player</li> <!--mostly just want to change the appearance if possible, plus maybe assign one song per page instead of random songs that keep changing per refresh :P-->
+			 <li>chat bot</li> <!--only really need the sprite to be done-->
+			 <li>overhauled art gallery page</li> <!--need to find a host for all my files; maybe tumblr?-->
+			 <li>social media icon redraws</li> <!--yeah because they're ugly-->
+		 </ul>
+		 <h3 class="h3">known issues . . .</h3>
+		 <ul class="list">
+			 <li>site is not functional on mobile at all lol this probably won't be fixed for a really long time</li>
+			 <li>submitting a commission order or contact form doesn't redirect you back to the main site</li>
+		 </ul>
     </div>
   </div>
 </div>

@@ -22,25 +22,28 @@
 		</div>
 		<style>
 			.marquee {
-				height: 20px;	
-				overflow: hidden;
-				position: relative;
-				display: inline-flex;
-				width: 1120px; !important
-				font-family: 'sweetheart';
-				background: rgba(0, 0, 0, 0.69);
-				color: #FA1DD9;
+			 height: 20px;	
+			 overflow: hidden;
+			 position: relative;
+			 display: inline-flex;
+			 width: 1120px; !important
+			 font-family: 'zpix';
+			 background: rgba(0, 0, 0, 0.50);
 			}
 			.marquee p {
-				position: relative;
-				margin: 0;
-				line-height: 20px;
-				text-align: center;
+			 position: relative;
+			 margin: 0;
+			 line-height: 20px;
+			 text-align: center;
+			 padding: 2px;
+			 color: #fa1dd9;
 			}
-		</style>
+			</style>
 		<div class="marquee">
-			<p>* * * * * * * * * * * * * use code "NEWSITE" to receive 10% off your print, commission, or genshin piloting order! * * * * * * * * * * * * *</p>
-		</div>
+			<marquee scrollamount=" onmouseout="start()" onmouseover="stop()">
+                <p class="p">use code NEWSITE for 10% off your commission, print, or piloting order !</p>
+		</marquee>
+    </div>
 	
 <!--
 ▄ .▄▄▄▄ . ▄▄▄· ·▄▄▄▄  ▄▄▄ .▄▄▄  
