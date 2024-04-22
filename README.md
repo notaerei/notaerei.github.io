@@ -1,5 +1,6 @@
 # update log
 ## 2024
+- *04/18/2024* || fixed broken photos and buttons.  updated recent twitch stream on home page.
 - *03/18/2024* || overhauled a lot of css stuff (adding a container border trim, a background overlay for the container, and changed the fonts + spacing again.)  temporarily removed the chat bot.
 
 ## 2023
