@@ -3,6 +3,10 @@ most recent entries are located towards the top!
 
 ## 2024
 
+#### *05/09/2024*
+
+- updated recent twitch stream on home page
+
 #### *04/22/2024*
 
 - overhauled how this update log looks
