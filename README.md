@@ -5,15 +5,18 @@ most recent entries are located towards the top!
 
 #### *07/03/2024*
 
-- updated recent youtube video + twitch stream on home page
+- changed header layout; added a space for a future logo, a status bar, and moved the social media buttons elsewhere
+- overhauled the music player from scratch.  it functions, just doesn't look pretty
+- [index.html] updated recent youtube video + twitch stream
+- [about.html] updated selfies to be more recent
 
 #### *05/14/2024*
 
-- updated recent twitch stream on home page
+- [index.html] updated recent twitch stream
 
 #### *05/09/2024*
 
-- updated recent twitch stream on home page
+- [index.html] updated recent twitch stream
 
 #### *04/22/2024*
 
