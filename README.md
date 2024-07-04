@@ -3,6 +3,10 @@ most recent entries are located towards the top!
 
 ## 2024
 
+#### *07/03/2024*
+
+- updated recent youtube video + twitch stream on home page
+
 #### *05/14/2024*
 
 - updated recent twitch stream on home page
