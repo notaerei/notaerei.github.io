@@ -1,3 +1,19 @@
+<!--
+ ▐ ▄  ▄▄▄·  ▌ ▐·▪   ▄▄ •  ▄▄▄· ▄▄▄▄▄▪         ▐ ▄ 
+•█▌▐█▐█ ▀█ ▪█·█▌██ ▐█ ▀ ▪▐█ ▀█ •██  ██ ▪     •█▌▐█
+▐█▐▐▌▄█▀▀█ ▐█▐█•▐█·▄█ ▀█▄▄█▀▀█  ▐█.▪▐█· ▄█▀▄ ▐█▐▐▌
+██▐█▌▐█ ▪▐▌ ███ ▐█▌▐█▄▪▐█▐█ ▪▐▌ ▐█▌·▐█▌▐█▌.▐▌██▐█▌
+▀▀ █▪ ▀  ▀ . ▀  ▀▀▀·▀▀▀▀  ▀  ▀  ▀▀▀ ▀▀▀ ▀█▄▀▪▀▀ █▪
+for ease of navigation, here is where everything is generally located...
+> site content @ line 17
+> header buttons @ line 62
+> left column @ line 88
+> right column @ line 133
+> chat bot @ line 186
+> music player @ line 203
+> cursor @ line 238
+-->
+
 <!DOCTYPE html>
 
 <!--
@@ -12,7 +28,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>ari's art hub . . .</title>
+		<title>crawl into ari's web . . .</title>
 		<link rel="icon" href="https://64.media.tumblr.com/tumblr_lv6pceasDY1qdlkyg.gif">
 		<link href="/index.css" rel="stylesheet" type="text/css" media="all">
 	</head>
@@ -26,7 +42,7 @@
 			 overflow: hidden;
 			 position: relative;
 			 display: inline-flex;
-			 width: 1120px; !important
+			 width: 333px; !important
 			 font-family: 'zpix';
 			 background: rgba(0, 0, 0, 0.50);
 			}
@@ -37,14 +53,21 @@
 			 text-align: center;
 			 padding: 2px;
 			 color: #fa1dd9;
+			 display: inline-block;
+			 width: 100%;
+			 animation: marquee 20s linear infinite;
+			}
+			@keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
 			}
 			</style>
 		<div class="marquee">
-			<marquee scrollamount=" onmouseout="start()" onmouseover="stop()">
+			<marquee>
                 <p class="p">use code NEWSITE for 10% off your commission, print, or piloting order !</p>
 		</marquee>
-    </div>
-	
+		</div>
+			
 <!--
 ▄ .▄▄▄▄ . ▄▄▄· ·▄▄▄▄  ▄▄▄ .▄▄▄  
 ██▪▐█▀▄.▀·▐█ ▀█ ██▪ ██ ▀▄.▀·▀▄ █·
@@ -52,24 +75,30 @@
 ██▌▐▀▐█▄▄▌▐█ ▪▐▌██. ██ ▐█▄▄▌▐█•█▌
 ▀▀▀ · ▀▀▀  ▀  ▀ ▀▀▀▀▀•  ▀▀▀ .▀  ▀
 -->
-
-    <div class="header" id="header">
-    	<div class="navigation" id="navigation">
+   <div class="header" id="header">
+		<div class="statustext" id="statustext">
+		<p class="statustext">ari is feeling . . . <a href="https://www.imood.com/users/aerei"><img class="imood" src="https://moods.imood.com/display/uname-aerei/fg-fa1dd9/trans-1/imood.gif" alt="my current mood" border="0"></a>!</p>
+		</div>
+		<div class="logo" id="logo">
+			<img src="images/placeholder.gif" height="500px">
+		</div>
+      <div class="navigation" id="navigation">
 			<a href="index"><img src="images\navibutton\home.gif" alt="home page" style="height: 40px;" title="take me home!"/></a>
-			<a href="commissions"><img src="images\navibutton\commissions.gif" alt="my commission info" style="height: 40px;" title="my commission info"></a>
-        	<a href="prints"><img src="images\navibutton\prints.gif" alt="art print info" style="height: 40px" title="art print info"></a>
+			<a href="prints"><img src="images\navibutton\commissions.gif" alt="commission info" style="height: 40px" title="commission info"></a>
+			<a href="prints"><img src="images\navibutton\prints.gif" alt="art print info" style="height: 40px" title="art print info"></a>
 			<a href="https://www.notion.so/aerei/aerei-s-art-to-do-list-2a641b986f22430b8a95ddcaad921b5c?pvs=4"><img src="images\navibutton\to-do.gif" alt="my art to-do list" style="height: 40px;" title="my art to-do list"></a>
-        	<a href="contact"><img src="images\navibutton\contact.gif" alt="contact me" style="height: 40px;" title="contact me"></a>
-		</div>
-		<div class="socialmedia" id="socialmedia">
-			<a href="https://youtube.com/c/aereii"><img src="images\social media icons\youtube.png" alt="my youtube channel" style="border-radius: 30px; width: 35px; height: 35px; box-shadow: inset 0px 0px 3px 20px #FA1DD9, 0px 0px 3px 2px #FA1DD9" title="my youtube channel"></a>
-			<a href="https://twitch.tv/notaerei"><img src="images\social media icons\twitch.png" alt="my twitch channel" style="border-radius: 30px; width: 35px; height: 35px; box-shadow: inset 0px 0px 3px 20px #FA1DD9, 0px 0px 3px 2px #FA1DD9" title="my twitch channel"></a>
-			<a href="https://discord.gg/gRRmgeZ"><img src="images\social media icons\discord.png" alt="my discord server" style="border-radius: 30px; width: 35px; height: 35px; box-shadow: inset 0px 0px 3px 20px #FA1DD9, 0px 0px 3px 2px #FA1DD9" title="my discord server"></a>
-			<a href="https://twitter.com/notaerei"><img src="images\social media icons\twitter.png" alt="my twitter page" style="border-radius: 30px; width: 35px; height: 35px; box-shadow: inset 0px 0px 3px 20px #FA1DD9, 0px 0px 3px 2px #FA1DD9" title="my twitter page"></a>
-			<a href="https://instagram.com/notaerei"><img src="images\social media icons\instagram.png" alt="my instagram page" style="border-radius: 30px; width: 35px; height: 35px; box-shadow: inset 0px 0px 3px 20px #FA1DD9, 0px 0px 3px 2px #FA1DD9" title="my instagram page"></a>
-			<a href="https://open.spotify.com/artist/2IGlCSTb53B8QMPBGwxMiV"><img src="images\social media icons\spotify.png" alt="my spotify page" style="border-radius: 30px; width: 35px; height: 35px; box-shadow: inset 0px 0px 3px 20px #FA1DD9, 0px 0px 3px 2px #FA1DD9" title="my spotify page"></a>
-		</div>
+			<a href="contact"><img src="images\navibutton\contact.gif" alt="contact me" style="height: 40px;" title="contact me"></a>
 	</div>
+	<div class="socialmedia" id="socialmedia">
+		<a href="https://youtube.com/c/aereii"><img src="images\social media icons\youtube.png" alt="my youtube channel" style="border-radius: 30px; width: 35px; height: 35px; box-shadow: inset 0px 0px 3px 20px #FA1DD9, 0px 0px 3px 2px #FA1DD9" title="my youtube channel"></a>
+		<a href="https://twitch.tv/notaerei"><img src="images\social media icons\twitch.png" alt="my twitch channel" style="border-radius: 30px; width: 35px; height: 35px; box-shadow: inset 0px 0px 3px 20px #FA1DD9, 0px 0px 3px 2px #FA1DD9" title="my twitch channel"></a>
+		<a href="https://discord.gg/gRRmgeZ"><img src="images\social media icons\discord.png" alt="my discord server" style="border-radius: 30px; width: 35px; height: 35px; box-shadow: inset 0px 0px 3px 20px #FA1DD9, 0px 0px 3px 2px #FA1DD9" title="my discord server"></a>
+		<a href="https://twitter.com/notaerei"><img src="images\social media icons\twitter.png" alt="my twitter page" style="border-radius: 30px; width: 35px; height: 35px; box-shadow: inset 0px 0px 3px 20px #FA1DD9, 0px 0px 3px 2px #FA1DD9" title="my twitter page"></a>
+		<a href="https://instagram.com/notaerei"><img src="images\social media icons\instagram.png" alt="my instagram page" style="border-radius: 30px; width: 35px; height: 35px; box-shadow: inset 0px 0px 3px 20px #FA1DD9, 0px 0px 3px 2px #FA1DD9" title="my instagram page"></a>
+		<a href="https://open.spotify.com/artist/2IGlCSTb53B8QMPBGwxMiV"><img src="images\social media icons\spotify.png" alt="my spotify page" style="border-radius: 30px; width: 35px; height: 35px; box-shadow: inset 0px 0px 3px 20px #FA1DD9, 0px 0px 3px 2px #FA1DD9" title="my spotify page"></a>
+	</div>
+</div>
+		
 
 <!--
 ▄▄▌  ▄▄▄ .·▄▄▄▄▄▄▄▄     ▄▄·       ▄▄▌  ▄• ▄▌• ▌ ▄ ·.  ▐ ▄ 
@@ -188,15 +217,31 @@
 ▀▀  █▪▀▀▀ ▀▀▀  ▀▀▀▀ ▀▀▀·▀▀▀     .▀   .▀▀▀  ▀  ▀   ▀ •  ▀▀▀ .▀  ▀
 -->
 
-<div class="musicplayer" id="cincopa_e115f9">...</div>
-	<script type="text/javascript">
-		var cpo = []; cpo["_object"] ="cincopa_e115f9"; cpo["_fid"] = "AMIAxCPGEckb";
-		var _cpmp = _cpmp || []; _cpmp.push(cpo);
-			(function() { var cp = document.createElement("script"); cp.type = "text/javascript";
-			cp.async = true; cp.src = "https://rtcdn.cincopa.com/libasync.js";
-		var c = document.getElementsByTagName("script")[0];
-			c.parentNode.insertBefore(cp, c); })(); 
-	</script>
+<div class="player">
+	<!--
+	<div class="song-list">
+		 <h3>Song Queue</h3>
+		 <ul id="songQueue"></ul>
+	</div>
+	-->
+	<script src="musicplayer.js"></script>
+	<audio id="audioPlayer"></audio>
+	<div class="controls">
+		 <div class="musicplayerbutton" id="playPause">play</div>
+		 <div class="musicplayerbutton" id="playRandom">next</div>
+		 <div id="customProgressBar">
+			  <div id="customProgressFill"></div>
+		 </div>
+		 <span id="currentTime">0:00</span> / <span id="totalTime">0:00</span>
+		 <div id="songTitleContainer">
+			<span id="songTitle"></span>
+	  </div>
+		 <div id="customVolumeControl">
+			  <div id="volumeHandle"></div>
+		 </div>
+		 <span id="volumeText">100%</span>
+	</div>
+</div>
 
 <!--
 ▄▄·  ▄ .▄ ▄▄▄· ▄▄▄▄▄    ▄▄▄▄·       ▄▄▄▄▄

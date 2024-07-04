@@ -1,3 +1,19 @@
+<!--
+ ▐ ▄  ▄▄▄·  ▌ ▐·▪   ▄▄ •  ▄▄▄· ▄▄▄▄▄▪         ▐ ▄ 
+•█▌▐█▐█ ▀█ ▪█·█▌██ ▐█ ▀ ▪▐█ ▀█ •██  ██ ▪     •█▌▐█
+▐█▐▐▌▄█▀▀█ ▐█▐█•▐█·▄█ ▀█▄▄█▀▀█  ▐█.▪▐█· ▄█▀▄ ▐█▐▐▌
+██▐█▌▐█ ▪▐▌ ███ ▐█▌▐█▄▪▐█▐█ ▪▐▌ ▐█▌·▐█▌▐█▌.▐▌██▐█▌
+▀▀ █▪ ▀  ▀ . ▀  ▀▀▀·▀▀▀▀  ▀  ▀  ▀▀▀ ▀▀▀ ▀█▄▀▪▀▀ █▪
+for ease of navigation, here is where everything is generally located...
+> site content @ line 17
+> header buttons @ line 62
+> left column @ line 88
+> right column @ line 133
+> chat bot @ line 186
+> music player @ line 203
+> cursor @ line 238
+-->
+
 <!DOCTYPE html>
 <!--
 .▄▄ · ▪  ▄▄▄▄▄▄▄▄ .     ▄▄·        ▐ ▄ ▄▄▄▄▄▄▄▄ . ▐ ▄ ▄▄▄▄▄
@@ -24,7 +40,7 @@
 			 overflow: hidden;
 			 position: relative;
 			 display: inline-flex;
-			 width: 1120px; !important
+			 width: 333px; !important
 			 font-family: 'zpix';
 			 background: rgba(0, 0, 0, 0.50);
 			}
@@ -35,10 +51,17 @@
 			 text-align: center;
 			 padding: 2px;
 			 color: #fa1dd9;
+			 display: inline-block;
+			 width: 100%;
+			 animation: marquee 20s linear infinite;
+			}
+			@keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
 			}
 			</style>
 		<div class="marquee">
-			<marquee scrollamount=" onmouseout="start()" onmouseover="stop()">
+			<marquee>
                 <p class="p">use code NEWSITE for 10% off your commission, print, or piloting order !</p>
 		</marquee>
 		</div>
@@ -50,7 +73,13 @@
 ██▌▐▀▐█▄▄▌▐█ ▪▐▌██. ██ ▐█▄▄▌▐█•█▌
 ▀▀▀ · ▀▀▀  ▀  ▀ ▀▀▀▀▀•  ▀▀▀ .▀  ▀
 -->
-    <div class="header" id="header">
+   <div class="header" id="header">
+		<div class="statustext" id="statustext">
+		<p class="statustext">ari is feeling . . . <a href="https://www.imood.com/users/aerei"><img class="imood" src="https://moods.imood.com/display/uname-aerei/fg-fa1dd9/trans-1/imood.gif" alt="my current mood" border="0"></a>!</p>
+		</div>
+		<div class="logo" id="logo">
+			<img src="images/placeholder.gif" height="500px">
+		</div>
       <div class="navigation" id="navigation">
 		<a href="index"><img src="images\navibutton\home.gif" alt="home page" style="height: 40px;" title="take me home!"/></a>
         <a href="about"><img src="images\navibutton\about.gif" alt="about me page" style="height: 40px;" title="learn more about me"></a>
@@ -68,6 +97,7 @@
 		<a href="https://open.spotify.com/artist/2IGlCSTb53B8QMPBGwxMiV"><img src="images\social media icons\spotify.png" alt="my spotify page" style="border-radius: 30px; width: 35px; height: 35px; box-shadow: inset 0px 0px 3px 20px #FA1DD9, 0px 0px 3px 2px #FA1DD9" title="my spotify page"></a>
 	</div>
 </div>
+
 <!--
 ▄▄▌  ▄▄▄ .·▄▄▄▄▄▄▄▄     ▄▄·       ▄▄▌  ▄• ▄▌• ▌ ▄ ·.  ▐ ▄ 
 ██•  ▀▄.▀·▐▄▄·•██      ▐█ ▌▪▪     ██•  █▪██▌·██ ▐███▪•█▌▐█
@@ -78,42 +108,20 @@
 
 <div class="container" id="container">
   <div id="left" class="columns">
-	<p class="p" align="center"><i><b>this site is best viewed on chromium desktop browsers on a 16:9 (1920 x 1080) display!</b></i>
-				<p><img style="border: 1px solid #FA1DD9; float: right; margin: 15px;" src="images\art\cat hat.png" width="100px" height="100px">
-    			<p class="p"><b>&nbsp &nbsp &nbsp hello, i'm ari!</b> i'm a filipino-american digital artist and twitch affiliate currently in my last year of studying for my B.S. in kinesiology in southern california. thanks for visiting my website!  please <a href="contact.html">contact me</a> if anything on this site seems to be actually broken.  i am not the best at coding.  like, at all.  i'm learning as i go.</p>
-				<style>
-					.stampmarquee {
-					 height: 20px;	
-					 overflow: hidden;
-					 position: relative;
-					 display: inline-flex;
-					 width: 640px; !important
-					 font-family: 'zpix';
-					}
-					</style>
-				<div class="stampmarquee">
-					<marquee scrollamount="6" onmouseout="start()" onmouseover="stop()">
-						<img src="https://blinkies.neocities.org/b/display/0071-bi.gif" alt="bi pride"/>
-						<img src="https://blinkiecollecti0n.neocities.org/images/nonbinarypride.gif" alt="nonbinary pride"/>
-						<img src="https://graphic.neocities.org/860c590c-49e9-42ce-b65b-3cf0b727cf70.gif" alt="i hate mean people"/>
-						<img src="https://blinkies.neocities.org/b/display/0172-rainbowequalizer.gif" alt="scene kid"/>
-						<img src="https://blinkies.neocities.org/b/geocities/web.archive.org---web---20091027001636---http:------geocities.com---blinktasticblinkie---blinktastic_meowmeow.gif" alt="meow meow meow meow"/>
-						<img src="https://blinkiecollecti0n.neocities.org/images/gamerselfdiagnosed.gif" alt="gamer self diagnosed"/>
-						<img src="https://files.catbox.moe/8ap0xi.gif" alt="i love my computer"/>
-					</marquee>
-				</div>
-				<!--<a href="https://www.imood.com/users/aerei"><img src="https://moods.imood.com/display/uname-aerei/fg-fa1dd9/trans-1/imood.gif" alt="my current mood" border="0"></a></p>-->
-	<!-- temporary spacer if needed --><br><br><br><br>
+		<p><img style="border: 1px solid #FA1DD9; float: right; margin: 15px;" src="images\art\cat hat.png" width="100px" height="100px">
+			<p class="p" align="center"><b>&nbsp &nbsp &nbsp <i><b>this site is best viewed on chromium desktop browsers on a 16:9 (1920 x 1080) display!</b></i>
+				<br>
+			<p class="p">hello, i'm ari!</b> i'm a filipino-american digital artist and twitch affiliate currently in my last year of studying for my B.S. in kinesiology in southern california. thanks for visiting my website!
+			<br><br>&nbsp &nbsp &nbsp please <a href="contact.html">contact me</a> if anything on this site seems to be absolutely broken.  i am not the best at coding.  like, at all.  i am learning as i go.
+	<!-- temporary spacer if needed --><br>
 	<p class="p"><iframe style="float: left; width: 420px; height: 240px; margin: 15px; border: 1px solid #FA1DD9" src="https://www.youtube.com/embed/0Jf3JUJFiXY?feature=oembed&amp;rel=0"></iframe>
     <h2 class="h2" align="right">latest youtube video . . .</h2>
     <p class="p">latest part of my 12 year youtube anniversary project where i recreate/remake 12 handpicked videos from my youtube "career" in 2024.  this one is a skywars kill montage inspired by the ones i used to make in 2017.  my skywars skills have still not improved to this day i fear</p>
-    <!-- temporary spacer if needed --><br><br>
+    <!-- temporary spacer if needed --><br><br><br>
     <p class="p"><iframe style="float: right; width: 420px; height: 240px; margin: 15px; border: 1px solid #FA1DD9" src="https://www.youtube.com/embed/52Bc-6q_77g?feature=oembed&amp;rel=0"></iframe>
     <h2 class="h2">latest twitch stream . . .</h2>
     <p class="p">&nbsp &nbsp &nbsp last year, i hosted a series of streams throughout may in honour of mental health awareness month, where viewers could farm channel points on my channel then redeem them to convert those points into real life money that i would donate to the brain and behavior research foundation.  this year, i wanted to bring back that idea, but do it better this time by staying live for longer, promoting the streams more, and hosting the actual streams more frequently.  here's me playing a bunch of game shows with my friend, dare, including jeopardy, family feud, and wheel of fortune.  if you're interested in learning more about the "maereithon", see more info <a href="https://rentry.co/maereithon24">here</a>!
   </div>
-
-  
 
 <!--
 ▄▄▄  ▪   ▄▄ •  ▄ .▄▄▄▄▄▄     ▄▄·       ▄▄▌  ▄• ▄▌• ▌ ▄ ·.  ▐ ▄ 
@@ -134,7 +142,7 @@
 		 </div>-->
 		 <h2 class="h2">sitemap . . .</h2>
 		 <p class="p">
-			<i>last updated : july 3, 2024 </i> <br><br>
+			<i>last updated : <a href="https://github.com/notaerei/notaerei.github.io/blob/main/README.md">july 3, 2024</a>.</i> <br><br>
 			/ <a href="index">home</a> <br>
 			/ <a href="about">about</a>	<br>
 			/ <a href="art">art</a> <i>not up to date !</i><br>
@@ -145,28 +153,82 @@
 			&nbsp&nbsp&nbsp / prints <i>WIP !</i><br> <!--preferably the full page + a self checkout system but we might be getting too ambitious lol-->
 			&nbsp&nbsp&nbsp / <a href="https://www.notion.so/aerei/aerei-s-art-to-do-list-2a641b986f22430b8a95ddcaad921b5c?pvs=4">to-do</a><br>
 			/ piloting <i>WIP !</i><br> <!--needs full page + order form system-->
-			/ <a href="projects">projects</a> <i>not up to date !</i><br>
+			/ <a href="projects">project</a> <i>not up to date !</i><br>
 			&nbsp&nbsp&nbsp / CODA <i>WIP !</i><br> <!--desktop simulator ARG type beat-->
 			&nbsp&nbsp&nbsp / aespador <i>WIP !</i><br> <!--mostly just info on it + character pages-->
 			&nbsp&nbsp&nbsp / frankenstein <i>WIP !</i><br> <!--info on it + progress checker-->
 			&nbsp&nbsp&nbsp / bible <i>WIP !</i><br> <!--the kinnie bible!-->
 			&nbsp&nbsp&nbsp / shrines <i>WIP !</i><br> <!--other interests :3  probably one for evanescence, emily the strange, etc etc -->
 			/ <a href="contact">contact</a> <br></p>
-		 <h3 class="h3">to be added . . .</h3>
+		 <h3 class="h3">soon to be added . . .</h3>
 		 <ul class="list">
-			 <li>overhauled music player</li> <!--mostly just want to change the appearance if possible, plus maybe assign one song per page instead of random songs that keep changing per refresh :P-->
-			 <li>chat bot</li> <!--only really need the sprite to be done-->
+			 <li>currently working on an overhauled music player!  just need to fix up the UI but it is fully functional :]</li>
+			 <li>also working on cleaning up my code in general</li>
+			 <li>the aerei chat bot</li> <!--only really need the sprite to be done-->
 			 <li>overhauled art gallery page</li> <!--need to find a host for all my files; maybe tumblr?-->
 			 <li>social media icon redraws</li> <!--yeah because they're ugly-->
 		 </ul>
 		 <h3 class="h3">known issues . . .</h3>
 		 <ul class="list">
-			 <li>site is not functional on mobile at all lol this probably won't be fixed for a really long time</li>
+			 <li>site is not functional on mobile at all lol (this probably won't be fixed for a really long time)</li>
 			 <li>submitting a commission order or contact form doesn't redirect you back to the main site</li>
 		 </ul>
     </div>
   </div>
 </div>
+
+<!--
+▄▄·  ▄ .▄ ▄▄▄· ▄▄▄▄▄    ▄▄▄▄·       ▄▄▄▄▄
+▐█ ▌▪██▪▐█▐█ ▀█ •██      ▐█ ▀█▪▪     •██  
+██ ▄▄██▀▐█▄█▀▀█  ▐█.▪    ▐█▀▀█▄ ▄█▀▄  ▐█.▪
+▐███▌██▌▐▀▐█ ▪▐▌ ▐█▌·    ██▄▪▐█▐█▌.▐▌ ▐█▌·
+·▀▀▀ ▀▀▀ · ▀  ▀  ▀▀▀     ·▀▀▀▀  ▀█▄▀▪ ▀▀▀ 
+
+
+<div class="chat-container">
+	<div class="chat-log" id="chat-log"></div>
+	<input type="text" id="user-input" placeholder="Type a message...">
+</div>
+<script src="chat.js"></script>
+<div class="pagedoll">
+<img src="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg" alt="aerei sprite" width="300px" height="200px">
+</div>
+-->
+
+<!--
+• ▌ ▄ ·. ▄• ▄▌.▄▄ · ▪   ▄▄·      ▄▄▄·▄▄▌   ▄▄▄·  ▄· ▄▌▄▄▄ .▄▄▄  
+·██ ▐███▪█▪██▌▐█ ▀. ██ ▐█ ▌▪    ▐█ ▄███•  ▐█ ▀█ ▐█▪██▌▀▄.▀·▀▄ █·
+▐█ ▌▐▌▐█·█▌▐█▌▄▀▀▀█▄▐█·██ ▄▄     ██▀·██▪  ▄█▀▀█ ▐█▌▐█▪▐▀▀▪▄▐▀▀▄ 
+██ ██▌▐█▌▐█▄█▌▐█▄▪▐█▐█▌▐███▌    ▐█▪·•▐█▌▐▌▐█ ▪▐▌ ▐█▀·.▐█▄▄▌▐█•█▌
+▀▀  █▪▀▀▀ ▀▀▀  ▀▀▀▀ ▀▀▀·▀▀▀     .▀   .▀▀▀  ▀  ▀   ▀ •  ▀▀▀ .▀  ▀
+-->
+
+<div class="player">
+	<!--
+	<div class="song-list">
+		 <h3>Song Queue</h3>
+		 <ul id="songQueue"></ul>
+	</div>
+	-->
+	<script src="musicplayer.js"></script>
+	<audio id="audioPlayer"></audio>
+	<div class="controls">
+		 <div class="musicplayerbutton" id="playPause">play</div>
+		 <div class="musicplayerbutton" id="playRandom">next</div>
+		 <div id="customProgressBar">
+			  <div id="customProgressFill"></div>
+		 </div>
+		 <span id="currentTime">0:00</span> / <span id="totalTime">0:00</span>
+		 <div id="songTitleContainer">
+			<span id="songTitle"></span>
+	  </div>
+		 <div id="customVolumeControl">
+			  <div id="volumeHandle"></div>
+		 </div>
+		 <span id="volumeText">100%</span>
+	</div>
+</div>
+
 
 <!--
 ▄▄· ▄• ▄▌▄▄▄  .▄▄ ·       ▄▄▄  
@@ -177,41 +239,10 @@
 -->
 
 <style type="text/css">*
-  {cursor: url(https://cur.cursors-4u.net/cursors/cur-9/cur837.cur), auto !important;}</style>
-  <a href="https://www.cursors-4u.com/cursor/2011/11/10/small-cute-bright-pink-pointer.html" target="_blank" title="Small Cute Bright Pink Pointer">
-  <img src="https://cur.cursors-4u.net/cursor.png" border="0" alt="Small Cute Bright Pink Pointer" style="position:absolute; top: 0px; right: 0px;" />
-  </a>
+	{cursor: url(https://cur.cursors-4u.net/cursors/cur-9/cur837.cur), auto !important;}</style>
+	<a href="https://www.cursors-4u.com/cursor/2011/11/10/small-cute-bright-pink-pointer.html" target="_blank" title="Small Cute Bright Pink Pointer">
+	<img src="https://cur.cursors-4u.net/cursor.png" border="0" alt="Small Cute Bright Pink Pointer" style="position:absolute; top: 0px; right: 0px;" />
+	</a>
 
-<!--
-• ▌ ▄ ·. ▄• ▄▌.▄▄ · ▪   ▄▄·      ▄▄▄·▄▄▌   ▄▄▄·  ▄· ▄▌▄▄▄ .▄▄▄  
-·██ ▐███▪█▪██▌▐█ ▀. ██ ▐█ ▌▪    ▐█ ▄███•  ▐█ ▀█ ▐█▪██▌▀▄.▀·▀▄ █·
-▐█ ▌▐▌▐█·█▌▐█▌▄▀▀▀█▄▐█·██ ▄▄     ██▀·██▪  ▄█▀▀█ ▐█▌▐█▪▐▀▀▪▄▐▀▀▄ 
-██ ██▌▐█▌▐█▄█▌▐█▄▪▐█▐█▌▐███▌    ▐█▪·•▐█▌▐▌▐█ ▪▐▌ ▐█▀·.▐█▄▄▌▐█•█▌
-▀▀  █▪▀▀▀ ▀▀▀  ▀▀▀▀ ▀▀▀·▀▀▀     .▀   .▀▀▀  ▀  ▀   ▀ •  ▀▀▀ .▀  ▀
--->
-
-<div class="musicplayer" id="cincopa_e115f9">...</div><script type="text/javascript">
-var cpo = []; cpo["_object"] ="cincopa_e115f9"; cpo["_fid"] = "AMIAxCPGEckb";
-var _cpmp = _cpmp || []; _cpmp.push(cpo);
-  (function() { var cp = document.createElement("script"); cp.type = "text/javascript";
-  cp.async = true; cp.src = "https://rtcdn.cincopa.com/libasync.js";
-var c = document.getElementsByTagName("script")[0];
-  c.parentNode.insertBefore(cp, c); })(); </script>
-<!--
-▄▄·  ▄ .▄ ▄▄▄· ▄▄▄▄▄    ▄▄▄▄·       ▄▄▄▄▄
-▐█ ▌▪██▪▐█▐█ ▀█ •██      ▐█ ▀█▪▪     •██  
-██ ▄▄██▀▐█▄█▀▀█  ▐█.▪    ▐█▀▀█▄ ▄█▀▄  ▐█.▪
-▐███▌██▌▐▀▐█ ▪▐▌ ▐█▌·    ██▄▪▐█▐█▌.▐▌ ▐█▌·
-·▀▀▀ ▀▀▀ · ▀  ▀  ▀▀▀     ·▀▀▀▀  ▀█▄▀▪ ▀▀▀ 
-
-<div class="chat-container">
-    <div class="chat-log" id="chat-log"></div>
-    <input type="text" id="user-input" placeholder="Type a message...">
-</div>
-<script src="chat.js"></script>
-<div class="pagedoll">
-<img src="https://cdn.discordapp.com/attachments/1217560354322780311/1219494140644032523/neutral.png?ex=660b816c&is=65f90c6c&hm=17a2f15659f1dbe3e280f46b412961df75b72e9bc3764bd4d11a2c3827b190a2&" alt="aerei sprite" width="400px" height="400px">
-</div>
--->
 </body>
 </html>
