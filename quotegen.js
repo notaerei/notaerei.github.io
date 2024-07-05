@@ -1,200 +1,752 @@
 document.getElementById('generate').addEventListener('click', () => {
-    let authors = Object.keys(quotes);
-    let author = authors[Math.floor(Math.random() * authors.length)];
-    let quote = quotes[author];
+    let randomIndex = Math.floor(Math.random() * quotes.length);
+    let selectedQuote = quotes[randomIndex];
 
-    document.getElementById('quote').innerHTML = quote;
-    document.getElementById('author').innerHTML = author;
+    document.getElementById('quote').innerHTML = selectedQuote.quote;
+    document.getElementById('author').innerHTML = selectedQuote.author;
 });
 
 const quotes = [
     {
     author: "poppy | EAT | 2021",
-    quote: 'maybe today <br> i throw it all away <br> let my body eat itself and finally get its way'
+    quote: "maybe today <br> i throw it all away <br> let my body eat itself and finally get its way"
     },
     {
-    "poppy | EAT | 2021": 'i tell everyone that im okay <br> but im ashamed <br> im afraid <br> and it all eats at me ',
-    "poppy | EAT | 2021": 'im not okay <br> i know that im not safe <br> could you come and eat me up and put me out my pain?',
-    "elita | introverted | 2019": 'i dont hate you i just need some time alone',
-    "waterparks | magnetic | 2021": 'but you said it im magnetic to the things i hate the most',
-    "persona 4 | heartbeat, heartbreak | 2008": 'tell me why you did it <br> every dream falling apart <br> tell me why you did it <br> after the promise',
-    "elita | introverted | 2019": 'im nervous observing <br> so determined its concerning <br> im a burden and im hurting <br> go easy on me Im learning',
-    "jack off jill | fear of dying | 2000": 'im not afraid of standing still <br> im just afraid of being bored <br> im not afraid of speaking my mind <br> im just afraid of being ignored',
-    "jack off jill | fear of dying | 2000": 'im not afraid of feeling <br> and im not afraid of trying im just afraid of losing <br> and i am afraid of dying',
-    "jack off jill | fear of dying | 2000": 'im not afraid put the gun in my hand <br> im just afraid itll hurt like hell',
-    "jack off jill | fear of dying | 2000": 'im not afraid of screaming <br> and im not afraid of crying <br> im just afraid of forgetting <br> and i am afraid of dying',
-    "mindless self indulgence | never wanted to dance | 2008": 'there is nothing you can do that i have not already done to myself',
-    "portal 2 | want you gone | 2011": 'oh how we laughed and laughed <br> except i wasnt laughing',
-    "cam meekins | better days | 2013": 'i sing about you every way <br> cause youre the perfect melody <br> know the world aint perfect <br> but to me you were my everything',
-    "CUCO | lover is a day | 2016": 'furthering my distance from you <br> realistically i cant leave now but im okay as long as you keep me from going crazy',
-    "CUCO | lover is a day | 2016": 'ill take the bumpy road <br> itll probably break my legs <br> as long as i dont show you whats ruining my head',
-    "hum | stars | 1995": 'i bring her home everything i want and nothing that she needs <br> i thought she would be there holding daisies <br> she always waits for me <br> she thinks she missed the train to mars <br> shes out back counting stars',
-    "the zombies | the way i feel inside | 1965": 'should i try to hide <br> the way i feel inside my heart for you <br> would you say that you would try to love me too <br> in your mind could you ever be really close to me',
-    "the zombies | the way i feel inside | 1965": 'but til i can see that you would really care for me <br> ill keep trying to hide the way i feel inside',
-    "carpenters | two lives | 1983": 'maybe im a dreamer <br> maybe just a fool <br> lately i can hardly see the sun',
-    "sorry | jealous guy | 2019": 'i dont wanna share your pretty heart with anybody else <br> im a selfish guy its only you me and myself <br> im a jealous guy dont want to see your pretty eyes with anybody else',
-    "sorry | jealous guy | 2019": 'i want to be the one to serve you <br> i have to be the one who serves you',
-    "BADBADNOTGOOD | time moves slow | 2016": 'time moves slow when youre all alone <br> and the time moves slow when youre out on your own <br> and the time moves slow when youre missing a friend <br> and the time moves slow when you came to the end',
-    "BADBADNOTGOOD | time moves slow | 2016": 'running away is easy <br> its the leaving thats hard',
-    "BADBADNOTGOOD | time moves slow | 2016": 'and loving you was easy <br> it was you leaving that scarred',
-    "BADBADNOTGOOD | time moves slow | 2016": 'i knew just what you were thinking that day <br> you just didnt love me like i do <br> like i love you <br> the sad thing is were better off this way',
-    "sammy rae | kick it to me | 2018": 'singing the blues all on my own in a dark room <br> nobody there all on my own in a dark room',
-    "lady gaga | replay | 2020": 'who was it that pulled the trigger <br> was it you or i?',
-    "lady gaga | replay | 2020": 'the monster inside you is torturing me <br> the scars on my mind are on replay',
-    "lady gaga | replay | 2020": 'psychologically its something that i cant explain',
-    "savlonic | epoch | 2016": 'i know we can make it better than it ever was',
-    "savlonic | epoch | 2016": 'our fates are not yet written <br> i will take the warning <br> choose a way thats less destructive',
-    "the living tombstone | my ordinary life | 2017": 'the people always different but it always feels the same',
-    "the living tombstone | my ordinary life | 2017": 'staying still, eyes closed <br> let the world just pass me by',
-    "the living tombstone | my ordinary life | 2017": 'lean in, let go <br> i feel fear for the very last time',
-    "the living tombstone | my ordinary life | 2017": 'they tell me that im special <br> i smile and shake my head <br> ill give them stories to tell friends about the things i said',
-    "the living tombstone | my ordinary life | 2017": 'they tell me im so humble <br> i say im turning red <br> they let me lie to them and dont feel like theyve been misled',
-    "the living tombstone | my ordinary life | 2017": 'when you become untouchable youre unable to touch',
-    "the living tombstone | i got no time | 2016": 'ive been staring at my death so many times',
-    "the living tombstone | i got no time | 2016": 'i felt like i won <br> but i wasnt done <br> the nightmare repeats itself every time',
-    "the living tombstone | i got no time | 2016": 'im getting sick from these apologies <br> from people with priorities <br> that their life matters so much more than mine',
-    "the powerpuff girls | love makes the world go round | 1999": 'you cant hurt me with the things that you do <br> ill pick up dandelions and ill give them to you',
-    "the powerpuff girls | you wanna make us feel real good | 2004": 'as i descend to the earth and i view the universe above me <br> i realize that life evolves revolves and dissolves completely around the opposites <br> therefore i conclude that i cannot exist in my utopian mind',
-    "giga-p | drop pop candy | 2014": 'even when its raining i dont use an umbrella',
-    "carpenters | i need to be in love | 1976": 'the hardest thing ive ever done is keep believing <br> theres someone in this crazy world for me',
-    "carpenters | i need to be in love | 1976": 'the way that people come and go through temporary lives <br> my chance could come and i might never know',
-    "carpenters | i need to be in love | 1976": 'it took awhile for me to learn that nothing comes for free <br> the price ive paid is high enough for me',
-    "carpenters | i need to be in love | 1976": 'i know i ask perfection of a quite imperfect world <br> and fool enough to think thats what ill find',
-    "carpenters | i need to be in love | 1976": 'here i am with pockets full of good intentions <br> but none of them will comfort me',
-    "carpenters | i need to be in love | 1976": 'without a friend in sight <br> hanging on a hope but im alright',
-    "persona 4 | heaven | 2008": 'cant get my mind out of those memories',
-    "persona 4 | heaven | 2008": 'music keeps on turning me from the words that hurt my soul',
-    "persona 4 | heaven | 2008": 'those long days passing by from that door <br> like late summer they slowly fade away',
-    "carpenters | superstar | 1971": 'loneliness is such a sad affair <br> and i can hardly wait to be with you again',
-    "carpenters | rainy days and mondays | 1974": 'sometimes id like to quit',
-    "carpenters | rainy days and mondays | 1974": 'funny but it seems that its the only thing to do run and find the one who loves me',
-    "carpenters | rainy days and mondays | 1974": 'what i feel has come and gone before <br> no need to talk it out',
-    "carpenters | ill never fall in love again | 1971": 'what do you get when you fall in love <br> you only get lies and pain and sorrow',
-    "carpenters | ill never fall in love again | 1971": 'dont tell me what its all about <br> cus ive been there and im glad im out',
-    "carpenters | i wont last a day without you | 1972": 'day after day i must face a world of strangers where i dont belong',
-    "carpenters | i wont last a day without you | 1972": 'when theres no getting over that rainbow <br> when my smallest of dreams wont come true <br> i can take all the madness the world has to give <br> but i wont last a day without you',
-    "carpenters | all you get from love is a love song | 1976": 'now the tears in my eyes are ever blinding <br> the future that lies before me i cannot see <br> although tomorrow i know the sun is rising <br> lighting up the world for everyone but not for me',
-    "death cab for cutie | ill follow you into the dark | 2014": 'love of mine <br> someday you will die <br> but ill be close behind <br> ill follow you into the dark',
-    "death cab for cutie | ill follow you into the dark | 2014": 'if theres no one beside you when your soul embarks <br> then ill follow you into the dark',
-    "death cab for cutie | ill follow you into the dark | 2014": 'well hold each other soon in the blackest of rooms',
-    "death cab for cutie | soul meets body | 2005": 'i want to live where soul meets body <br> and let the sun wrap its arms around me <br> and bathe my skin in water cool and cleansing <br> and feel what its like to be new',
-    "death cab for cutie | soul meets body | 2005": 'i do believe its true <br> that there are roads left in both of our shoes <br> but if the silence takes you then i hope it takes me too',
-    "death cab for cutie | soul meets body | 2005": 'youre the only song i want to hear <br> a melody softly soaring through my atmosphere',
-    "adele | skyfall | 2014": 'i know id never be me without the security of your loving arms',
-    "johnny goth | panic | 2019": 'get me out of here <br> get me away',
-    "mars argo | wasted away | 2014": 'wasted away again <br> warm milk dripping down my skin <br> your words running through my head <br> if im sick, im sad, im mad',
-    "mars argo | wasted away | 2014": 'you might lie and i might cry <br> ill wipe my eyes, nevermind',
-    "unaloon | CODEPENDENCY | 2019": 'im just as bad as you when im alone too',
-    "unaloon | CODEPENDENCY | 2019": 'i convince myself im fine <br> but now that i can see <br> its just my codependency',
-    "unaloon | CODEPENDENCY | 2019": 'please just speak to me <br> please just say you need me <br> please just speak to me <br> please just say you love me',
-    "unaloon | CODEPENDENCY | 2019": 'tell me that youll be alright <br> so i wont have to deny that its all in me <br>that its just my codependency',
-    "mars argo | using you | 2014": 'am i naive to think that he could be the love of my life? <br> there is a voice inside my head thats telling me that its right <br> i never thought id tell him how scared i am of losing him',
-    "mars argo | using you | 2014": 'i dont care if i dont live to see another day <br> i love you in the worst way',
-    "mars argo | runaway runaway | 2012": 'is there anybody listening? <br> eager words are making me an awful mess <br> you say you need me <br> were running out of time <br> i guess i fear the fear of consequence <br> you say youll leave me <br> but youll be sorry',
-    "mars argo | runaway runaway | 2012": 'i wish i was a dumb pop star so the words wouldnt matter to you',
-    "mars argo | runaway runaway | 2012": 'am i living an illusion? <br> i wanna runaway runaway runaway',
-    "mars argo | runaway runaway | 2012": 'i feel like im losing control <br> maybe i should let myself go cus this is so predictable',
-    "mars argo | runaway runaway | 2012": 'is there something that im missing? <br> my walls are caving in <br> i cant hear what youre saying <br> im afraid of giving in',
-    "mars argo | love in black and white | 2011": 'i fell into a phase that im not fairly proud of when i first met my permanent frown',
-    "mars argo | beauty is empty | 2011": 'your pretty smile is a monster and your beauty is empty',
-    "mars argo | technology is a dead bird | 2009": 'i need to be myself again <br> i know precisely when its time to be the actor',
-    "mars argo | technology is a dead bird | 2009": 'technology is a dead bird in your hands',
-    "evanescence | hello | 2003": 'if i smile and dont believe <br> soon i know ill wake from this dream',
-    "evanescence | hello | 2003": 'dont try to fix me im not broken <br> hello, im the lie living for you so you can hide',
-    "poppy | dont ask | 2020": 'ill keep quiet cus the truth is getting too loud',
-    "poppy | dont ask | 2020": 'ive given up too much to let this take me out',
-    "poppy | dont ask | 2020": 'dont ask me how im feeling <br> theres nothing to talk about',
-    "pink floyd | time | 1973": 'the time is gone <br> the song is over <br> thought id something more to say',
-    "flatsound | i exist i exist i exist": 'look at me look at me look at me look at me <br> because i exist i exist i exist i exist i exist i exist',
-    "now, now | thread | 2012": 'a hint of light in the dark <br> only enough to keep from giving up <br> if i could go back to the start to break the pattern forming between us',
-    "now, now | wolf | 2012": 'i would kill to be your clothes <br> cling to your body and hang from your bones',
-    "now, now | prehistoric | 2012": 'ill say that ive been trying to move on <br> we both know im not',
-    "now, now | prehistoric | 2012": 'i would trade this sleep for you in a heartbeat',
-    "now, now | prehistoric | 2012": 'each day you come closer <br> so close i can almost feel your breath on my shoulders <br> but i know if i turn around you might run away again',
-    "now, now | school friends | 2012": 'she will be invisible like you want her <br> she will try to do everything just right for you',
-    "now, now | school friends | 2012": 'you just like her where shes at <br> and youll thank her for the things she bought you <br> then youll go on your way',
-    "now, now | school friends | 2012": 'the next day when you chase the other girl <br> she will remember all the things you said to her',
-    "now, now | school friends | 2012": 'we can keep in touch if thats what you want <br> you can call me too if thats what friends do',
-    "now, now | school friends | 2012": 'i am what you need when you cant find it somewhere else <br> i am what you want when you dont have anything else',
-    "panucci's pizza | aesthetic? (more like ass-pathetic) | 2015": 'i wanna scoop out my cheeks so you cant pinch them anymore <br> i want to add to my legs and be as tall as the morgue <br> i want the fat in my arms to melt off my bones <br> and my stomach to fall out right onto the floor board',
-    "panucci's pizza | aesthetic? (more like ass-pathetic) | 2015": 'arms, legs, gut, face <br> all of the things you love but i hate',
-    "al bowlly | heartaches | 1931": 'heartaches, heartaches <br> my loving you meant only heartaches',
-    "al bowlly | heartaches | 1931": 'heartaches, heartaches <br> what does it matter how my heart breaks',
-    "al bowlly | heartaches | 1931": 'i should be happy with someone new <br> but my heart aches for you',
-    "AJJ | body terror song | 2020": 'im so sorry that you have to have a body <br> one that will hurt you and be the subject of so much of your fear',
-    "three days grace | pain | 2006": 'youre sick of feeling numb <br> youre not the only one',
-    "three days grace | pain | 2006": 'this life is filled with hurt when happiness doesnt work',
-    "three days grace | pain | 2006": 'id rather feel pain than nothing at all',
-    "flyleaf | all around me | 2005": 'i can feel you all around me <br> thickening the air im breathing',
-    "evanescence | missing | 2004": 'you wont cry for my absence <br> i know you forgot me long ago <br> am i that unimportant <br> am i so insignificant <br> isnt something missing? <br> isnt someone missing me?',
-    "evanescence | missing | 2004": 'even though im the sacrifice <br> you wont try for me, not now <br> though id die to know you love me <br> im all alone',
-    "evanescence | missing | 2004": 'and if i bleed, ill bleed knowing you dont care <br> and if i sleep just to dream of you <br> and wake without you there <br> isnt something missing?',
-    "tupac | keep ya head up | 1993": 'forgive but dont forget <br> keep your head up',
-    "bobby caldwell | what you won't do for love | 1978": 'my friends wonder what is wrong with me <br> well im in a daze from your love you see',
-    "bobby caldwell | what you won't do for love | 1978": 'what you wont do do for love <br> you tried everything but you dont give up <br> in my world only you make me do for love what i would not do',
-    "grover washington jr. & bill withers | just the two of us | 1980": 'we look for love no time for tears <br>wasted waters all that is and it dont make no flowers grow',
-    "grover washington jr. & bill withers | just the two of us | 1980": 'good things might come to those who wait <br> not for those who wait too late',
-    "grover washington jr. & bill withers | just the two of us | 1980": 'just the two of us <br> we can make it if we try',
-    "mac demarco | treat her better | 2014": 'treat her better boy <br> if having her at your sides something you enjoy <br> if having her in your lifes really so important to you now',
-    "daryl hall & john oates | she's gone | 1974": 'think ill spend eternity in the city <br> let the carbon and monoxide choke my thoughts away <br> and pretty bodies help dissolve the memories <br> they can never be what she was to me',
-    "little river band | reminiscing | 1978": 'i want to build my world around you',
-    "little river band | reminiscing | 1978": 'i said to myself when we are old <br> we will go dancing in the dark <br> walking through the park and reminiscing',
-    "karen carpenter | if i had you | 1989": 'if i had you i wouldnt need the sun to light the morning <br> if i could have your love to light my night id never for a second keep our love from burning bright',
-    "karen carpenter | if i had you | 1989": 'if i had you again i wouldnt be the fool ive been <br> if i had you again id never let the loving end',
-    "karen carpenter | if i had you | 1989": 'so say that you believe in second chances <br> and say youll let me be with you tonight <br> if youll take my hand ill show you just how love could be so right',
-    "bobby caldwell | my flame | 1978": 'my flame, some things will never change <br> i still hold your vision in my hand <br> say you still love me',
-    "poppy | am i a girl? | 2018": 'please dont complicate me <br> i dont understand <br> sometimes im feminine <br> sometimes im masculine',
-    "poppy | am i a girl? | 2018": 'dont evaluate me as woman or man <br> its keeping me awake <br> cant differentiate',
-    "poppy | am i a girl? | 2018": 'am i girl? <br> am i boy? <br> am i a girl? <br> what does that even mean? <br> im somewhere in between',
-    "TV girl | not allowed | 2016": 'wish that it was me <br> i guess its different cus you love him <br> but ive got an interactive sick and twisted imagination <br> and thats gotta count for something',
-    "TV girl | not allowed | 2016": 'i hope were still friends <br> yeah i hope you dont mind',
-    "cherish | chemical x | 2003": 'beware of the powerpuff girls',
-    "meg & dia | monster | 2006": 'he battered his tiny fists to feel something <br> wondered what its like to touch and feel something',
-    "meg & dia | monster | 2006": 'monster <br> how should i feel?',
-    "meg & dia | monster | 2006": 'he slowly saw their nightmares were his dreams',
-    "meg & dia | monster | 2006": 'turn the sheets down <br> murder ears with pillow lace <br> theres bath tubs full of glow flies <br> bathe in kerosene',
-    "poppy | flux | 2021": 'my body is fluid cus ive been through it all <br> chewed up and used its cut into pieces to feed them all',
-    "poppy | flux | 2021": 'when i see red, i go <br> and the serotonin will flow <br> and theres no bandage to lessen the damage',
-    "poppy | on the level | 2021": 'right into traffic driving straight through every light ive got a habit of ignoring obvious signs',
-    "poppy | hysteria | 2021": 'cant contain my emotions theres <br> no box big enough to hold them',
-    "poppy | her | 2021": 'run your mouth to keep her scared <br> you expected her to care <br> but when her mind made up you were illfully prepared',
-    "poppy | as strange as it seems | 2021": 'i was a passenger in a speeding car <br> you showed no regard for me',
-    "poppy | as strange as it seems | 2021": 'i was a careful girl with a broken heart <br> you showed no regard for me',
-    "poppy | as strange as it seems | 2021": 'im hanging on the steering wheel of a speeding car <br> ive got no regard for me',
-    "poppy | never find my place | 2021": 'tonight ill eat my brain and maybe find a resolution <br> tonight ill cure my pain',
-    "eels | your lucky day in hell | 1998": 'years go by <br> still i dont know who shall inherit this earth <br> and no one will know my name until its on a stone',
-    "the living tombstone | i got no time | 2016": 'im regretting having memories of my friends <br> who they used to be <br> beside me before they left me to die',
-    "the living tombstone | i got no time | 2016": 'i have this urge to kill and show that im alive <br> im getting sick from these apologies <br> from people with priorities that their life matters so much more than mine',
-    "the living tombstone | i got no time | 2016": 'im stuttering again <br> no one will listen and no one will understand <br> because im crying as much as i speak',
-    "built to spill | big dipper | 1994": 'you should have been here last night and heard what the big dipper said to me',
-    "inabakumori feat. kaai yuki | ラグトレイン (lag train) | 2020": 'i wheeze out a pained breath as i sleep and fake my way through this ever lengthening day',
-    "connor spioto | the villain i appear to be | 2017": 'i assure you before you can find me im gone <br> so come on and catch me youve still got a chance',
-    "connor spioto | the villain i appear to be | 2017": 'although i may not think everything through <br> i dont take back what i say or regret what i do',
-    "connor spioto | the villain i appear to be | 2017": 'even if you cant see the good inside me <br> i dont have the time to tell you why i do the things that i do',
-    "connor spioto | the villain i appear to be | 2017": 'please hold on and soon youll see <br> that im not the villain i appear to be',
-    "connor spioto | the villain i appear to be | 2017": 'i know you think im crazy <br> but i hope that maybe now youll see why i had to try',
-    "teddyloid | fly away | 2010": 'heart stood still when we first met <br> i thought wed be together yet youre using me for your own gain <br> and now ill never feel the same',
-    "teddyloid | fly away | 2010": 'youll never find a better time make your stand youll be fine',
-    "mag.lo | who am i? | 2016": 'is this a dream or a waking fucking nightmare?',
-    "mag.lo | who am i? | 2016": 'at the tip of my wand i could write songs <br> but why write <br> why bother',
-    "13 the musical | what it means to be a friend | 2008": 'a friend is the person who most of all cares about what you feel <br> and nothing is harder than learning a friend isnt real',
-    "13 the musical | if that's what it is | 2008": 'lets face it youve worked so hard and now youre scarred and free of any hope',
-    "13 the musical | if that's what it is | 2008": 'if thats what it is then thats what it is <br> though thats not the way i choose to see it',
-    "13 the musical | if that's what it is | 2008": 'i make my own rules <br> i do what i can <br> if i hit the wall then maybe its all part of the plan',
-    "13 the musical | if that's what it is | 2008": 'tomorrow will come <br> today will be gone <br> and so i put one foot in front of the other',
-    "13 the musical | if that's what it is | 2008": 'i say i wont cry <br> i cry until dawn <br> and then i put one foot in front of the other',
-    "13 the musical | if that's what it is | 2008": 'i face the world for what it is and not what i wish it could be',
-    "13 the musical | if that's what it is | 2008": 'one day ill be thirty <br> one day ill be fine <br> one day ill make fun of this dramatic life of mine',
-    "13 the musical | a little more homework | 2008": 'one day ill be older and then ill write a book about the choices that i made',
-    "13 the musical | a little more homework | 2008": 'ill choose what to say <br> what to see when presented with a candy coated opportunity',
-    "13 the musical | a little more homework | 2008": 'so you gotta hang in there til the whole story ends <br>cus we all have a little more homework to do',
-    "mean girls the musical | what's wrong with me | 2018": 'tell me whats wrong with me <br> my body face my hair tell me <br> all my many faults <br> tell me like you care',
-    "mean girls the musical | what's wrong with me | 2018": 'when we both know youre cruel and we both know youre right <br> i could listen to you like a fool all night',
-    "mean girls the musical | what's wrong with me | 2018": 'mama called me beautiful <br> dont believe her anymore <br> now im listening to you',
-    "13 the musical | a little more homework | 2008": 'the sky goes blue and the sky goes black and no matter what you do you cant go back',
-    "mean girls the musical | what's wrong with me | 2018": 'whats wrong with me <br> wheres my mind <br> where does it end',
-    "flyleaf | all around me | 2005": 'i can feel you all around me thickening the air im breathing <br> holding onto what im feeling <br> savouring this heart thats healing',
-    "flyleaf | all around me | 2005": 'you said you would never leave me <br> i believe you <br> i believe',
+        author: "poppy | EAT | 2021",
+        quote: "i tell everyone that i'm okay <br> but i'm ashamed <br> i'm afraid <br> and it all eats at me"
+    },
+    {
+        author: "poppy | EAT | 2021",
+        quote: "i'm not okay <br> i know that i'm not safe <br> could you come and eat me up and put me out my pain?"
+    },
+    {
+        author: "elita | introverted | 2019",
+        quote: "i dont hate you <br> i just need some time alone"
+    },
+    {
+        author: "waterparks | magnetic | 2021",
+        quote: "but you said it <br> i'm magnetic to the things i hate the most"
+    },
+    {
+        author: "persona 4 | heartbeat, heartbreak | 2008",
+        quote: "tell me why you did it <br> every dream falling apart <br> tell me why you did it <br> after the promise"
+    },
+    {
+        author: "elita | introverted | 2019",
+        quote: "i'm nervous observing <br> so determined it's concerning <br> i'm a burden and i'm hurting <br> go easy on me, i'm learning"
+    },
+    {
+        author: "jack off jill | fear of dying | 2000",
+        quote: "i'm not afraid of standing still <br> i'm just afraid of being bored <br> i'm not afraid of speaking my mind <br> i'm just afraid of being ignored"
+    },
+    {
+        author: "jack off jill | fear of dying | 2000",
+        quote: "i'm not afraid of feeling <br> and i'm not afraid of trying i'm just afraid of losing <br> and i am afraid of dying"
+    },
+    {
+        author: "jack off jill | fear of dying | 2000",
+        quote: "i'm not afraid, put the gun in my hand <br> i'm just afraid it'll hurt like hell"
+    },
+    {
+        author: "jack off jill | fear of dying | 2000",
+        quote: "i'm not afraid of screaming <br> and i'm not afraid of crying <br> i'm just afraid of forgetting <br> and i am afraid of dying"
+    },
+    {
+        author: "mindless self indulgence | never wanted to dance | 2008",
+        quote: "there is nothing you can do that i have not already done to myself"
+    },
+    {
+        author: "portal 2 | want you gone | 2011",
+        quote: "oh how we laughed and laughed <br> except i wasn't laughing"
+    },
+    {
+        author: "cam meekins | better days | 2013",
+        quote: "i sing about you every way <br> cause you're the perfect melody <br> know the world ain't perfect <br> but to me you were my everything"
+    },
+    {
+        author: "CUCO | lover is a day | 2016",
+        quote: "furthering my distance from you <br> realistically i can't leave now <br> but i'm okay as long as you keep me from going crazy"
+    },
+    {
+        author: "CUCO | lover is a day | 2016",
+        quote: "i'll take the bumpy road <br> it'll probably break my legs <br> as long as i don't show you what's ruining my head"
+    },
+    {
+        author: "hum | stars | 1995",
+        quote: "i bring her home everything i want and nothing that she needs <br> i thought she would be there holding daisies <br> she always waits for me <br> she thinks she missed the train to mars <br> she's out back counting stars"
+    },
+    {
+        author: "the zombies | the way i feel inside | 1965",
+        quote: "should i try to hide <br> the way i feel inside my heart for you <br> would you say that you would try to love me too <br> in your mind could you ever be really close to me?"
+    },
+    {
+        author: "the zombies | the way i feel inside | 1965",
+        quote: "but til i can see that you would really care for me <br> i'll keep trying to hide the way i feel inside"
+    },
+    {
+        author: "carpenters | two lives | 1983",
+        quote: "maybe i'm a dreamer <br> maybe just a fool <br> lately i can hardly see the sun"
+    },
+    {
+        author: "sorry | jealous guy | 2019",
+        quote: "i don't wanna share your pretty heart with anybody else <br> i'm a selfish guy its only you me and myself <br> i'm a jealous guy <br> dont want to see your pretty eyes with anybody else"
+    },
+    {
+        author: "sorry | jealous guy | 2019",
+        quote: "i want to be the one to serve you <br> i have to be the one who serves you"
+    },
+    {
+        author: "BADBADNOTGOOD | time moves slow | 2016",
+        quote: "time moves slow when you're all alone <br> and the time moves slow when you're out on your own <br> and the time moves slow when you're missing a friend <br> and the time moves slow when you came to the end"
+    },
+    {
+        author: "BADBADNOTGOOD | time moves slow | 2016",
+        quote: "running away is easy <br> it's the leaving thats hard"
+    },
+    {
+        author: "BADBADNOTGOOD | time moves slow | 2016",
+        quote: "and loving you was easy <br> it was you leaving that scarred"
+    },
+    {
+        author: "BADBADNOTGOOD | time moves slow | 2016",
+        quote: "i knew just what you were thinking that day <br> you just didn't love me like i do <br> like i love you <br> the sad thing is were better off this way"
+    },
+    {
+        author: "sammy rae | kick it to me | 2018",
+        quote: "singing the blues all on my own in a dark room <br> nobody there all on my own in a dark room"
+    },
+    {
+        author: "lady gaga | replay | 2020",
+        quote: "who was it that pulled the trigger <br> was it you or i?"
+    },
+    {
+        author: "lady gaga | replay | 2020",
+        quote: "the monster inside you is torturing me <br> the scars on my mind are on replay"
+    },
+    {
+        author: "lady gaga | replay | 2020",
+        quote: "psychologically its something that i cant explain"
+    },
+    {
+        author: "savlonic | epoch | 2016",
+        quote: "i know we can make it better than it ever was"
+    },
+    {
+        author: "savlonic | epoch | 2016",
+        quote: "our fates are not yet written <br> i will take the warning <br> choose a way thats less destructive"
+    },
+    {
+        author: "the living tombstone | my ordinary life | 2017",
+        quote: "the people always different but it always feels the same"
+    },
+    {
+        author: "the living tombstone | my ordinary life | 2017",
+        quote: "staying still, eyes closed <br> let the world just pass me by"
+    },
+    {
+        author: "the living tombstone | my ordinary life | 2017",
+        quote: "lean in, let go <br> i feel fear for the very last time"
+    },
+    {
+        author: "the living tombstone | my ordinary life | 2017",
+        quote: "they tell me that im special <br> i smile and shake my head <br> ill give them stories to tell friends about the things i said"
+    },
+    {
+        author: "the living tombstone | my ordinary life | 2017",
+        quote: "they tell me im so humble <br> i say im turning red <br> they let me lie to them and dont feel like theyve been misled"
+    },
+    {
+        author: "the living tombstone | my ordinary life | 2017",
+        quote: "when you become untouchable youre unable to touch"
+    },
+    {
+        author: "the living tombstone | i got no time | 2016",
+        quote: "ive been staring at my death so many times"
+    },
+    {
+        author: "the living tombstone | i got no time | 2016",
+        quote: "i felt like i won <br> but i wasnt done <br> the nightmare repeats itself every time"
+    },
+    {
+        author: "the living tombstone | i got no time | 2016",
+        quote: "im getting sick from these apologies <br> from people with priorities <br> that their life matters so much more than mine"
+    },
+    {
+        author: "the powerpuff girls | love makes the world go round | 1999",
+        quote: "you cant hurt me with the things that you do <br> ill pick up dandelions and ill give them to you"
+    },
+    {
+        author: "the powerpuff girls | you wanna make us feel real good | 2004",
+        quote: "as i descend to the earth and i view the universe above me <br> i realize that life evolves revolves and dissolves completely around the opposites <br> therefore i conclude that i cannot exist in my utopian mind"
+    },
+    {
+        author: "giga-p | drop pop candy | 2014",
+        quote: "even when its raining i dont use an umbrella"
+    },
+    {
+        author: "carpenters | i need to be in love | 1976",
+        quote: "the hardest thing ive ever done is keep believing <br> theres someone in this crazy world for me"
+    },
+    {
+        author: "carpenters | i need to be in love | 1976",
+        quote: "the way that people come and go through temporary lives <br> my chance could come and i might never know"
+    },
+    {
+        author: "carpenters | i need to be in love | 1976",
+        quote: "it took awhile for me to learn that nothing comes for free <br> the price ive paid is high enough for me"
+    },
+    {
+        author: "carpenters | i need to be in love | 1976",
+        quote: "i know i ask perfection of a quite imperfect world <br> and fool enough to think thats what ill find"
+    },
+    {
+        author: "carpenters | i need to be in love | 1976",
+        quote: "here i am with pockets full of good intentions <br> but none of them will comfort me"
+    },
+    {
+        author: "carpenters | i need to be in love | 1976",
+        quote: "without a friend in sight <br> hanging on a hope but im alright"
+    },
+    {
+        author: "persona 4 | heaven | 2008",
+        quote: "cant get my mind out of those memories"
+    },
+    {
+        author: "persona 4 | heaven | 2008",
+        quote: "music keeps on turning me from the words that hurt my soul"
+    },
+    {
+        author: "persona 4 | heaven | 2008",
+        quote: "those long days passing by from that door <br> like late summer they slowly fade away"
+    },
+    {
+        author: "carpenters | superstar | 1971",
+        quote: "loneliness is such a sad affair <br> and i can hardly wait to be with you again"
+    },
+    {
+        author: "carpenters | rainy days and mondays | 1974",
+        quote: "sometimes id like to quit"
+    },
+    {
+        author: "carpenters | rainy days and mondays | 1974",
+        quote: "funny but it seems that its the only thing to do run and find the one who loves me"
+    },
+    {
+        author: "carpenters | rainy days and mondays | 1974",
+        quote: "what i feel has come and gone before <br> no need to talk it out"
+    },
+    {
+        author: "carpenters | ill never fall in love again | 1971",
+        quote: "what do you get when you fall in love <br> you only get lies and pain and sorrow"
+    },
+    {
+        author: "carpenters | ill never fall in love again | 1971",
+        quote: "dont tell me what its all about <br> cus ive been there and im glad im out"
+    },
+    {
+        author: "carpenters | i wont last a day without you | 1972",
+        quote: "day after day i must face a world of strangers where i dont belong"
+    },
+    {
+        author: "carpenters | i wont last a day without you | 1972",
+        quote: "when theres no getting over that rainbow <br> when my smallest of dreams wont come true <br> i can take all the madness the world has to give <br> but i wont last a day without you"
+    },
+    {
+        author: "carpenters | all you get from love is a love song | 1976",
+        quote: "now the tears in my eyes are ever blinding <br> the future that lies before me i cannot see <br> although tomorrow i know the sun is rising <br> lighting up the world for everyone but not for me"
+    },
+    {
+        author: "death cab for cutie | ill follow you into the dark | 2014",
+        quote: "love of mine <br> someday you will die <br> but ill be close behind <br> ill follow you into the dark"
+    },
+    {
+        author: "death cab for cutie | ill follow you into the dark | 2014",
+        quote: "if theres no one beside you when your soul embarks <br> then ill follow you into the dark"
+    },
+    {
+        author: "death cab for cutie | ill follow you into the dark | 2014",
+        quote: "well hold each other soon in the blackest of rooms"
+    },
+    {
+        author: "death cab for cutie | soul meets body | 2005",
+        quote: "i want to live where soul meets body <br> and let the sun wrap its arms around me <br> and bathe my skin in water cool and cleansing <br> and feel what its like to be new"
+    },
+    {
+        author: "death cab for cutie | soul meets body | 2005",
+        quote: "i do believe its true <br> that there are roads left in both of our shoes <br> but if the silence takes you then i hope it takes me too"
+    },
+    {
+        author: "death cab for cutie | soul meets body | 2005",
+        quote: "youre the only song i want to hear <br> a melody softly soaring through my atmosphere"
+    },
+    {
+        author: "adele | skyfall | 2014",
+        quote: "i know id never be me without the security of your loving arms"
+    },
+    {
+        author: "johnny goth | panic | 2019",
+        quote: "get me out of here <br> get me away"
+    },
+    {
+        author: "mars argo | wasted away | 2014",
+        quote: "wasted away again <br> warm milk dripping down my skin <br> your words running through my head <br> if im sick, im sad, im mad"
+    },
+    {
+        author: "mars argo | wasted away | 2014",
+        quote: "you might lie and i might cry <br> ill wipe my eyes, nevermind"
+    },
+    {
+        author: "unaloon | CODEPENDENCY | 2019",
+        quote: "i convince myself im fine <br> but now that i can see <br> its just my codependency"
+    },
+    {
+        author: "unaloon | CODEPENDENCY | 2019",
+        quote: "please just speak to me <br> please just say you need me <br> please just speak to me <br> please just say you love me"
+    },
+    {
+        author: "unaloon | CODEPENDENCY | 2019",
+        quote: "tell me that youll be alright <br> so i wont have to deny that its all in me <br>that its just my codependency"
+    },
+    {
+        author: "unaloon | CODEPENDENCY | 2019",
+        quote: "im just as bad as you when im alone too"
+    },
+    {
+        author: "mars argo | using you | 2014",
+        quote: "i dont care if i dont live to see another day <br> i love you in the worst way"
+    },
+    {
+        author: "mars argo | using you | 2014",
+        quote: "am i naive to think that he could be the love of my life? <br> there is a voice inside my head thats telling me that its right <br> i never thought id tell him how scared i am of losing him"
+    },
+    {
+        author: "mars argo | runaway runaway | 2012",
+        quote: "is there anybody listening? <br> eager words are making me an awful mess <br> you say you need me <br> were running out of time <br> i guess i fear the fear of consequence <br> you say youll leave me <br> but youll be sorry"
+    },
+    {
+        author: "mars argo | runaway runaway | 2012",
+        quote: "i wish i was a dumb pop star so the words wouldnt matter to you"
+    },
+    {
+        author: "mars argo | runaway runaway | 2012",
+        quote: "am i living an illusion? <br> i wanna runaway runaway runaway"
+    },
+    {
+        author: "mars argo | runaway runaway | 2012",
+        quote: "i feel like im losing control <br> maybe i should let myself go cus this is so predictable"
+    },
+    {
+        author: "mars argo | runaway runaway | 2012",
+        quote: "is there something that im missing? <br> my walls are caving in <br> i cant hear what youre saying <br> im afraid of giving in"
+    },
+    {
+        author: "mars argo | love in black and white | 2011",
+        quote: "i fell into a phase that im not fairly proud of when i first met my permanent frown"
+    },
+    {
+        author: "mars argo | beauty is empty | 2011",
+        quote: "your pretty smile is a monster and your beauty is empty"
+    },
+    {
+        author: "mars argo | technology is a dead bird | 2009",
+        quote: "i need to be myself again <br> i know precisely when its time to be the actor"
+    },
+    {
+        author: "mars argo | technology is a dead bird | 2009",
+        quote: "technology is a dead bird in your hands"
+    },
+    {
+        author: "evanescence | hello | 2003",
+        quote: "if i smile and dont believe <br> soon i know ill wake from this dream"
+    },
+    {
+        author: "evanescence | hello | 2003",
+        quote: "dont try to fix me im not broken <br> hello, im the lie living for you so you can hide"
+    },
+    {
+        author: "poppy | dont ask | 2020",
+        quote: "ll keep quiet cus the truth is getting too loud"
+    },
+    {
+        author: "poppy | dont ask | 2020",
+        quote: "ive given up too much to let this take me out"
+    },
+    {
+        author: "poppy | dont ask | 2020",
+        quote: "dont ask me how im feeling <br> theres nothing to talk about"
+    },
+    {
+        author: "pink floyd | time | 1973",
+        quote: "the time is gone <br> the song is over <br> thought id something more to say"
+    },
+    {
+        author: "flatsound | i exist i exist i exist | 2009",
+        quote: "look at me look at me look at me look at me <br> because i exist i exist i exist i exist i exist i exist"
+    },
+    {
+        author: "now, now | thread | 2012",
+        quote: "a hint of light in the dark <br> only enough to keep from giving up <br> if i could go back to the start to break the pattern forming between us"
+    },
+    {
+        author: "now, now | wolf | 2012",
+        quote: "i would kill to be your clothes <br> cling to your body and hang from your bones"
+    },
+    {
+        author: "now, now | prehistoric | 2012",
+        quote: "ill say that ive been trying to move on <br> we both know im not"
+    },
+    {
+        author: "now, now | prehistoric | 2012",
+        quote: "i would trade this sleep for you in a heartbeat"
+    },
+    {
+        author: "now, now | prehistoric | 2012",
+        quote: "each day you come closer <br> so close i can almost feel your breath on my shoulders <br> but i know if i turn around you might run away again"
+    },
+    {
+        author: "now, now | school friends | 2012",
+        quote: "she will be invisible like you want her <br> she will try to do everything just right for you"
+    },
+    {
+        author: "now, now | school friends | 2012",
+        quote: "you just like her where shes at <br> and youll thank her for the things she bought you <br> then youll go on your way"
+    },
+    {
+        author: "now, now | school friends | 2012",
+        quote: "the next day when you chase the other girl <br> she will remember all the things you said to her"
+    },
+    {
+        author: "now, now | school friends | 2012",
+        quote: "we can keep in touch if thats what you want <br> you can call me too if thats what friends do"
+    },
+    {
+        author: "now, now | school friends | 2012",
+        quote: "i am what you need when you cant find it somewhere else <br> i am what you want when you dont have anything else"
+    },
+    {
+        author: "panucci's pizza | aesthetic? (more like ass-pathetic) | 2015",
+        quote: "i wanna scoop out my cheeks so you cant pinch them anymore <br> i want to add to my legs and be as tall as the morgue <br> i want the fat in my arms to melt off my bones <br> and my stomach to fall out right onto the floor board"
+    },
+    {
+        author: "panucci's pizza | aesthetic? (more like ass-pathetic) | 2015",
+        quote: "arms, legs, gut, face <br> all of the things you love but i hate"
+    },
+    {
+        author: "al bowlly | heartaches | 1931",
+        quote: "heartaches, heartaches <br> my loving you meant only heartaches"
+    },
+    {
+        author: "al bowlly | heartaches | 1931",
+        quote: "heartaches, heartaches <br> what does it matter how my heart breaks"
+    },
+    {
+        author: "al bowlly | heartaches | 1931",
+        quote: "i should be happy with someone new <br> but my heart aches for you"
+    },
+    {
+        author: "AJJ | body terror song | 2020",
+        quote: "im so sorry that you have to have a body <br> one that will hurt you and be the subject of so much of your fear"
+    },
+    {
+        author: "three days grace | pain | 2006",
+        quote: "youre sick of feeling numb <br> youre not the only one"
+    },
+    {
+        author: "three days grace | pain | 2006",
+        quote: "this life is filled with hurt when happiness doesnt work"
+    },
+    {
+        author: "three days grace | pain | 2006",
+        quote: "id rather feel pain than nothing at all"
+    },
+    {
+        author: "flyleaf | all around me | 2005",
+        quote: "i can feel you all around me <br> thickening the air im breathing"
+    },
+    {
+        author: "evanescence | missing | 2004",
+        quote: "you wont cry for my absence <br> i know you forgot me long ago <br> am i that unimportant <br> am i so insignificant <br> isnt something missing? <br> isnt someone missing me?"
+    },
+    {
+        author: "evanescence | missing | 2004",
+        quote: "even though im the sacrifice <br> you wont try for me, not now <br> though id die to know you love me <br> im all alone"
+    },
+    {
+        author: "evanescence | missing | 2004",
+        quote: "and if i bleed, ill bleed knowing you dont care <br> and if i sleep just to dream of you <br> and wake without you there <br> isnt something missing?"
+    },
+    {
+        author: "tupac | keep ya head up | 1993",
+        quote: "forgive but dont forget <br> keep your head up"
+    },
+    {
+        author: "bobby caldwell | what you won't do for love | 1978",
+        quote: "my friends wonder what is wrong with me <br> well im in a daze from your love you see"
+    },
+    {
+        author: "bobby caldwell | what you won't do for love | 1978",
+        quote: "what you wont do do for love <br> you tried everything but you dont give up <br> in my world only you make me do for love what i would not do"
+    },
+    {
+        author: "grover washington jr. & bill withers | just the two of us | 1980",
+        quote: "we look for love no time for tears <br>wasted waters all that is and it dont make no flowers grow"
+    },
+    {
+        author: "grover washington jr. & bill withers | just the two of us | 1980",
+        quote: "good things might come to those who wait <br> not for those who wait too late"
+    },
+    {
+        author: "grover washington jr. & bill withers | just the two of us | 1980",
+        quote: "just the two of us <br> we can make it if we try"
+    },
+    {
+        author: "mac demarco | treat her better | 2014",
+        quote: "treat her better boy <br> if having her at your sides something you enjoy <br> if having her in your lifes really so important to you now"
+    },
+    {
+        author: "daryl hall & john oates | she's gone | 1974",
+        quote: "think ill spend eternity in the city <br> let the carbon and monoxide choke my thoughts away <br> and pretty bodies help dissolve the memories <br> they can never be what she was to me"
+    },
+    {
+        author: "little river band | reminiscing | 1978",
+        quote: "i want to build my world around you"
+    },
+    {
+        author: "little river band | reminiscing | 1978",
+        quote: "i said to myself when we are old <br> we will go dancing in the dark <br> walking through the park and reminiscing"
+    },
+    {
+        author: "karen carpenter | if i had you | 1989",
+        quote: "if i had you i wouldnt need the sun to light the morning <br> if i could have your love to light my night id never for a second keep our love from burning bright"
+    },
+    {
+        author: "karen carpenter | if i had you | 1989",
+        quote: "if i had you again i wouldnt be the fool ive been <br> if i had you again id never let the loving end"
+    },
+    {
+        author: "karen carpenter | if i had you | 1989",
+        quote: "so say that you believe in second chances <br> and say youll let me be with you tonight <br> if youll take my hand ill show you just how love could be so right"
+    },
+    {
+        author: "bobby caldwell | my flame | 1978",
+        quote: "my flame, some things will never change <br> i still hold your vision in my hand <br> say you still love me"
+    },
+    {
+        author: "poppy | am i a girl? | 2018",
+        quote: "please dont complicate me <br> i dont understand <br> sometimes im feminine <br> sometimes im masculine"
+    },
+    {
+        author: "poppy | am i a girl? | 2018",
+        quote: "dont evaluate me as woman or man <br> its keeping me awake <br> cant differentiate"
+    },
+    {
+        author: "poppy | am i a girl? | 2018",
+        quote: "am i girl? <br> am i boy? <br> am i a girl? <br> what does that even mean? <br> im somewhere in between"
+    },
+    {
+        author: "TV girl | not allowed | 2016",
+        quote: "wish that it was me <br> i guess its different cus you love him <br> but ive got an interactive sick and twisted imagination <br> and thats gotta count for something"
+    },
+    {
+        author: "TV girl | not allowed | 2016",
+        quote: "i hope were still friends <br> yeah i hope you dont mind"
+    },
+    {
+        author: "cherish | chemical x | 2003",
+        quote: "beware of the powerpuff girls"
+    },
+    {
+        author: "meg & dia | monster | 2006",
+        quote: "he battered his tiny fists to feel something <br> wondered what its like to touch and feel something"
+    },
+    {
+        author: "meg & dia | monster | 2006",
+        quote: "monster <br> how should i feel?"
+    },
+    {
+        author: "meg & dia | monster | 2006",
+        quote: "he slowly saw their nightmares were his dreams"
+    },
+    {
+        author: "meg & dia | monster | 2006",
+        quote: "turn the sheets down <br> murder ears with pillow lace <br> theres bath tubs full of glow flies <br> bathe in kerosene"
+    },
+    {
+        author: "poppy | flux | 2021",
+        quote: "my body is fluid cus ive been through it all <br> chewed up and used its cut into pieces to feed them all"
+    },
+    {
+        author: "poppy | flux | 2021",
+        quote: "when i see red, i go <br> and the serotonin will flow <br> and theres no bandage to lessen the damage"
+    },
+    {
+        author: "poppy | on the level | 2021",
+        quote: "right into traffic driving straight through every light ive got a habit of ignoring obvious signs"
+    },
+    {
+        author: "poppy | hysteria | 2021",
+        quote: "cant contain my emotions theres <br> no box big enough to hold them"
+    },
+    {
+        author: "poppy | her | 2021",
+        quote: "run your mouth to keep her scared <br> you expected her to care <br> but when her mind made up you were illfully prepared"
+    },
+    {
+        author: "poppy | as strange as it seems | 2021",
+        quote: "i was a passenger in a speeding car <br> you showed no regard for me"
+    },
+    {
+        author: "poppy | as strange as it seems | 2021",
+        quote: "i was a careful girl with a broken heart <br> you showed no regard for me"
+    },
+    {
+        author: "poppy | as strange as it seems | 2021",
+        quote: "im hanging on the steering wheel of a speeding car <br> ive got no regard for me"
+    },
+    {
+        author: "poppy | never find my place | 2021",
+        quote: "tonight ill eat my brain and maybe find a resolution <br> tonight ill cure my pain"
+    },
+    {
+        author: "eels | your lucky day in hell | 1998",
+        quote: "years go by <br> still i dont know who shall inherit this earth <br> and no one will know my name until its on a stone"
+    },
+    {
+        author: "the living tombstone | i got no time | 2016",
+        quote: "im regretting having memories of my friends <br> who they used to be <br> beside me before they left me to die"
+    },
+    {
+        author: "the living tombstone | i got no time | 2016",
+        quote: "i have this urge to kill and show that im alive <br> im getting sick from these apologies <br> from people with priorities that their life matters so much more than mine"
+    },
+    {
+        author: "the living tombstone | i got no time | 2016",
+        quote: "im stuttering again <br> no one will listen and no one will understand <br> because im crying as much as i speak"
+    },
+    {
+        author: "built to spill | big dipper | 1994",
+        quote: "you should have been here last night and heard what the big dipper said to me"
+    },
+    {
+        author: "inabakumori feat. kaai yuki | lag train (ラグトレイン) | 2020",
+        quote: "i wheeze out a pained breath as i sleep and fake my way through this ever lengthening day"
+    },
+    {
+        author: "connor spioto | the villain i appear to be | 2017",
+        quote: "i assure you before you can find me im gone <br> so come on and catch me youve still got a chance"
+    },
+    {
+        author: "connor spioto | the villain i appear to be | 2017",
+        quote: "although i may not think everything through <br> i dont take back what i say or regret what i do"
+    },
+    {
+        author: "connor spioto | the villain i appear to be | 2017",
+        quote: "even if you cant see the good inside me <br> i dont have the time to tell you why i do the things that i do"
+    },
+    {
+        author: "connor spioto | the villain i appear to be | 2017",
+        quote: "please hold on and soon youll see <br> that im not the villain i appear to be"
+    },
+    {
+        author: "connor spioto | the villain i appear to be | 2017",
+        quote: "i know you think im crazy <br> but i hope that maybe now youll see why i had to try"
+    },
+    {
+        author: "teddyloid | fly away | 2010",
+        quote: "heart stood still when we first met <br> i thought wed be together yet youre using me for your own gain <br> and now ill never feel the same"
+    },
+    {
+        author: "teddyloid | fly away | 2010",
+        quote: "youll never find a better time make your stand youll be fine"
+    },
+    {
+        author: "mag.lo | who am i? | 2016",
+        quote: "is this a dream or a waking fucking nightmare?"
+    },
+    {
+        author: "mag.lo | who am i? | 2016",
+        quote: "at the tip of my wand i could write songs <br> but why write <br> why bother"
+    },
+    {
+        author: "13 the musical | what it means to be a friend | 2008",
+        quote: "a friend is the person who most of all cares about what you feel <br> and nothing is harder than learning a friend isnt real"
+    },
+    {
+        author: "13 the musical | if that's what it is | 2008",
+        quote: "lets face it youve worked so hard and now youre scarred and free of any hope"
+    },
+    {
+        author: "13 the musical | if that's what it is | 2008",
+        quote: "if thats what it is then thats what it is <br> though thats not the way i choose to see it"
+    },
+    {
+        author: "13 the musical | if that's what it is | 2008",
+        quote: "i make my own rules <br> i do what i can <br> if i hit the wall then maybe its all part of the plan"
+    },
+    {
+        author: "13 the musical | if that's what it is | 2008",
+        quote: "tomorrow will come <br> today will be gone <br> and so i put one foot in front of the other"
+    },
+    {
+        author: "13 the musical | if that's what it is | 2008",
+        quote: "i say i wont cry <br> i cry until dawn <br> and then i put one foot in front of the other"
+    },
+    {
+        author: "13 the musical | if that's what it is | 2008",
+        quote: "i face the world for what it is and not what i wish it could be"
+    },
+    {
+        author: "13 the musical | if that's what it is | 2008",
+        quote: "one day ill be thirty <br> one day ill be fine <br> one day ill make fun of this dramatic life of mine"
+    },
+    {
+        author: "13 the musical | a little more homework | 2008",
+        quote: "one day ill be older and then ill write a book about the choices that i made"
+    },
+    {
+        author: "13 the musical | a little more homework | 2008",
+        quote: "ill choose what to say <br> what to see when presented with a candy coated opportunity"
+    },
+    {
+        author: "13 the musical | a little more homework | 2008",
+        quote: "so you gotta hang in there til the whole story ends <br>cus we all have a little more homework to do"
+    },
+    {
+        author: "mean girls the musical | what's wrong with me | 2018",
+        quote: "whats wrong with me <br> wheres my mind <br> where does it end"
+    },
+    {
+        author: "mean girls the musical | what's wrong with me | 2018",
+        quote: "mama called me beautiful <br> dont believe her anymore <br> now im listening to you"
+    },
+    {
+        author: "mean girls the musical | what's wrong with me | 2018",
+        quote: "when we both know youre cruel and we both know youre right <br> i could listen to you like a fool all night"
+    },
+    {
+        author: "mean girls the musical | what's wrong with me | 2018",
+        quote: "tell me whats wrong with me <br> my body face my hair tell me <br> all my many faults <br> tell me like you care"
+    },
+    {
+        author: "13 the musical | a little more homework | 2008",
+        quote: "the sky goes blue and the sky goes black and no matter what you do you cant go back"
+    },
+    {
+        author: "flyleaf | all around me | 2005",
+        quote: "i can feel you all around me thickening the air im breathing <br> holding onto what im feeling <br> savouring this heart thats healing"
+    },
+    {
+        author: "flyleaf | all around me | 2005",
+        quote: "you said you would never leave me <br> i believe you <br> i believe"
+    },
+]
+
+/*
+    {
+        author: "",
+        quote: ""
+    },
+    
     " ": 'step into my mind youll last two seconds then youre gone demons in my penthouse know the words to all my songs',
     " ": 'in all my searching theres one thing that i found we dont go to heaven we just rot inside the ground',
     " ": 'and you dont seem to understand a shame you seemed an honest man',
@@ -279,4 +831,4 @@ const quotes = [
     " ": 'everyday is full of why did this did that but in the end its sayonara baby',
     " ": 'a blades edge with centimeters of suspicion stabbing a vein at the end of it all sickly love spurts out',
     " ": 'each night i went to sleep wishing that this would turn out to be a nightmare <br> yet each morning i awoke to find that the world was just as horribly warped as it was the day before'
-}]
+*/

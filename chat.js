@@ -13,15 +13,16 @@ const responses = {
     "where do you live": "i live in southern california!",
     "you located": "i live in southern california!",
     "you go to school": "i am currently pursuing a bachelor's degree in kinesiology in one of the california state universities.",
-    "boyfriend": "i currently have a very wonderful boyfriend that i have been dating for a year!",
-    "girlfriend": "i currently have a very wonderful boyfriend that i have been dating for a year!",
+    "boyfriend": "i currently have a very wonderful boyfriend that i have been dating since 2022!",
+    "girlfriend": "i currently have a very wonderful boyfriend that i have been dating since 2022!",
     
     // website related queries //
     "music player": "this website uses a free music player from cincopa.",
     "font": "this website uses the font RomanceA by asterism for headers and MS gothic for basically everything else.  in my videos, i use FOT-seurat pro EB for most of my captions, and cyberpunk waifus by isaac b.  my twitch chat and stream overlays uses rainydays by camellina.",
     
     // commission related queries//
-    "buy a commission": "please refer to the 'buy my art' page for my commission info!",
+    "buy a commission": "please refer to the 'art' page for my commission info!",
+    "commissions open": "my commissions are currently open!  see more info in the 'art' page",
     
     // social media related queries //
     "stream schedule": "i am a full time university student so my schedule fluctuates during each semester depending on my class and work schedule.  i try to upload once a week on saturdays and stream every friday night, but please refer to the #videos channel in my discord server for my actual stream and upload schedule during months where this is not the case!",
@@ -62,11 +63,11 @@ function generateResponse(userInput) {
             return responses[keyword];
         }
     }
-    return "i'm not sure i can answer that here!  try contacting me through discord (@aerei) for a better response.";
+    return "unfortunately, i don't have a response for that! try contacting me through discord (@aerei) for a better response.";
 }
 
 function initiateBotResponse() {
-    const initialMessage = "welcome to my website!  if you have any questions about me, my services, or this website, feel free to ask me using the chat box below!  please spell your words correctly and in english for the best results.  also note: i am a bot, so if you have any questions that i can't answer in this chat, please reach out to the real me on discord! (@aerei)";
+    const initialMessage = "welcome to my website!  if you have any questions about me, my services, or this website, feel free to ask me using the chat box below!  please spell your words correctly and in english for the best results.  since i am a bot, if you have any questions that i can't answer in this chat, please reach out to the real me on discord! (@aerei)  also note that your inquiries here are not saved.";
     const messageElement = `<div class="message bot-message initial-bot-message">${initialMessage}</div>`;
     const chatLog = document.getElementById("chat-log");
     chatLog.innerHTML += messageElement;
