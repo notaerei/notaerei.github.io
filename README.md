@@ -3,6 +3,9 @@ most recent entries are located towards the top!
 
 ## 2024
 
+#### *07/04/2024*
+- [index.html] added a quote bot to the sidebar, moved the short welcome message to the sidebar, embedded my status.cafe status, and added a page hit counter to the navigation bar.
+
 #### *07/03/2024*
 
 - changed header layout; added a space for a future logo, a status bar, and moved the social media buttons elsewhere
