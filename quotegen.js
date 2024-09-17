@@ -8,8 +8,8 @@ document.getElementById('generate').addEventListener('click', () => {
 
 const quotes = [
     {
-    author: "poppy | EAT | 2021",
-    quote: "maybe today <br> i throw it all away <br> let my body eat itself and finally get its way"
+        author: "poppy | EAT | 2021",
+        quote: "maybe today <br> i throw it all away <br> let my body eat itself and finally get its way"
     },
     {
         author: "poppy | EAT | 2021",
