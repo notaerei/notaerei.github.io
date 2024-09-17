@@ -2,6 +2,16 @@
 most recent entries are located towards the top!
 
 ## 2024
+#### *09/16/2024*
+- added sound effects for hovering over and clicking links
+- added chat bot to each page
+- added credits to code/script wherever possible within notes of each page
+- changed link colour for better visibility
+- changed all page titles to actually match each page's content
+- changed code of 404 error page to be cleaner
+- removed navigation section from all pages (since it will take too much effort to keep updating it every time a new line is added)
+- [index.html] updated recent youtube video
+- [project.html] converted into a 'wip' page
 
 #### *07/22/2024*
 
@@ -14,8 +24,8 @@ most recent entries are located towards the top!
 
 - changed header layout; added a space for a future logo, a status bar, and moved the social media buttons elsewhere
 - overhauled the music player from scratch.  it functions, just doesn't look pretty
-- [index.html] updated recent youtube video + twitch stream
 - [about.html] updated selfies to be more recent
+- [index.html] updated recent youtube video + twitch stream
 
 #### *05/14/2024*
 
@@ -30,9 +40,8 @@ most recent entries are located towards the top!
 - overhauled how this update log looks
 - fixed more broken buttons, and broken navigation links
 - fixed marquees so they actually scroll now
-- [index.html] added a scrolling blinkie line
-- [index.html] added a sitemap navigation thing to the sidebar
 - [contact.html] added a link masterlist to the sidebar
+- [index.html] added a scrolling blinkie line, and a sitemap navigation thing to the sidebar
 
 #### *04/18/2024*
 - fixed broken photos and buttons
