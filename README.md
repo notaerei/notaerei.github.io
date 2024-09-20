@@ -2,6 +2,10 @@
 most recent entries are located towards the top!
 
 ## 2024
+#### *09/19/2024*
+- added sound effects for clicking anywhere on the page, and transitioning between pages
+- [gallery.html] used to be art.html; created barebones art gallery system for 2024 only.  made separate pages for years 2011-2023 as well under gallery folder.  the gallery page itself is not created yet, so some links may be broken because of this change.
+
 #### *09/16/2024*
 - added sound effects for hovering over and clicking links
 - added chat bot to each page
