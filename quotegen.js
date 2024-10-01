@@ -739,6 +739,106 @@ const quotes = [
         author: "flyleaf | all around me | 2005",
         quote: "you said you would never leave me <br> i believe you <br> i believe"
     },
+    {
+        author: "scarlxrd | 6 feet | 2017",
+        quote: "step into my mind youll last two seconds then youre gone <br> demons in my penthouse know the words to all my songs"
+    },
+    {
+        author: "scarlxrd | 6 feet | 2017",
+        quote: "in all my searching theres one thing that i found <br> we dont go to heaven we just rot inside the ground"
+    },
+    {
+        author: "boa | duvet | 1998",
+        quote: "and you dont seem to understand <br> a shame you seemed an honest man"
+    },
+    {
+        author: "boa | duvet | 1998",
+        quote: "and you know what they say might hurt you <br> and you know that it means so much <br> and you dont even feel a thing"
+    },
+    {
+        author: "boa | duvet | 1998",
+        quote: "i am falling <br> i am fading <br> i am drowning <br> help me to breathe <br> i am hurting <br> i have lost it all <br> i am losing"
+    },
+    {
+        author: "boa | duvet | 1998",
+        quote: "and you dont seem the lying kind <br> a shame that i can read your mind"
+    },
+    {
+        author: "toni braxton | breathe | 1993",
+        quote: "please understand if love ends, then i promise you that i shall never breathe again"
+    },
+    {
+        author: "toni braxton | breathe | 1993",
+        quote: "i cant get you out of my head, and i know i cant pretend that i wont die if you decide you wont see me again"
+    },
+    {
+        author: "the notorious b.i.g. | suicidal thoughts | 1994",
+        quote: "when i die, fuck it, i wanna go to hell cus im a piece of shit it aint hard to fuckin tell"
+    },
+    {
+        author: "the notorious b.i.g. | suicidal thoughts | 1994",
+        quote: "i wonder if i died would tears come to her eyes <br> forgive me for my disrespect, forgive me for my lies"
+    },
+    {
+        author: "melanie martinez | carousel | 2015",
+        quote: "chasing after you is like a fairytale but i feel like i'm glued on tight to this carousel"
+    },
+    {
+        author: "melanie martinez | bittersweet tragedy | 2014",
+        quote: "it's no fun when im sitting all alone <br> you're right in front of me and i'm done with your bittersweet tragedy"
+    },
+    {
+        author: "melanie martinez | pity party | 2015",
+        quote: "tell me why the hell no one is here <br> tell me what to do to make it all feel better <br> maybe its a cruel joke on me <br> whatever, whatever"
+    },
+    {
+        author: "melanie martinez | pity party | 2016",
+        quote: "maybe if i know all of them well <br> i wouldnt have been trapped inside this hell that holds me"
+    },
+    {
+        author: "melanie martinez | milk and cookies | 2015",
+        quote: "can't take it anymore <br> need to put you to bed <br> sing you a lullaby where you die in the end"
+    },
+    {
+        author: "melanie martinez | mad hatter | 2015",
+        quote: "i'm peeling the skin off my face cus i really hate feeling safe"
+    },
+    {
+        author: "melanie martinez | cake | 2015",
+        quote: "i'm not a piece of cake for you to just discard while you walk away"
+    },
+    {
+        author: "maroon 5 | she will be loved | 2004",
+        quote: "beauty queen of only eighteen, she had some trouble with herself <br> he was always there to help her <br> she always belonged to someone else"
+    },
+    {
+        author: "maroon 5 | she will be loved | 2004",
+        quote: "i don't mind spending every day out in your corner in the pouring rain"
+    },
+    {
+        author: "pinkpantheress | just for me | 2021",
+        quote: "i'm obsessed with you in a way i can't believe <br> when you wipe your tears do you wipe them just for me"
+    },
+    {
+        author: "toni braxton | fairytale | 2000",
+        quote: "and even if i was wrong i know i don't deserve this"
+    },
+    {
+        author: "beebadoobee feat. oscar lang | the moon song | 2017",
+        quote: "i'm lying on the moon <br> my dear, i'll be there soon"
+    },
+    {
+        author: "rebzyyx | all i want is you | 2021",
+        quote: "all i want is you now <br> all i wanna do now is wait for you to call me <br> baby im so sorry <br> do you wanna hurt me? <br> are you gonna hurt me? <br> please dont desert me"
+    },
+    {
+        author: "emeline | what it means to be a girl | 2021",
+        quote: "but even if he were my man, he'd never truly understand what it means to be a girl"
+    },
+    {
+        author: "emeline | what it means to be a girl | 2021",
+        quote: "put ribbons in my curls then carry around a knife with my diamonds <br> it's psycho"
+    },
 ]
 
 /*
@@ -746,32 +846,6 @@ const quotes = [
         author: "",
         quote: ""
     },
-    
-    " ": 'step into my mind youll last two seconds then youre gone demons in my penthouse know the words to all my songs',
-    " ": 'in all my searching theres one thing that i found we dont go to heaven we just rot inside the ground',
-    " ": 'and you dont seem to understand a shame you seemed an honest man',
-    " ": 'and you know what they say might hurt you and you know that it means so much and you dont even feel a thing',
-    " ": 'i am falling i am fading i am drowning help me to breathe i am hurting i have lost it all i am losing',
-    " ": 'and you dont seem the lying kind a shame that i can read your mind',
-    " ": 'please understand if love ends then i promise you that i shall never breathe again',
-    " ": 'i cant get you out of my head and i know i cant pretend that i wont die if you decide you wont see me again',
-    " ": 'when i die fuck it i wanna go to hell cus im a piece of shit it aint hard to fuckin tell',
-    " ": 'i wonder if i died would tears come to her eyes forgive me for my disrespect forgive me for my lies',
-    " ": 'chasing after you is like a fairytale but i feel like im glued on tight to this carousel',
-    " ": 'its no fun when im sitting all alone youre right in front of me and im done with your bittersweet bittersweet tragedy',
-    " ": 'tell me why the hell no one is here tell me what to do to make it all feel better maybe its a cruel joke one me whatever whatever',
-    " ": 'maybe if i know all of them well i wouldnt have been trapped inside this hell that holds me',
-    " ": 'cant take it anymore need to put you to bed sing you a lullaby where you die in the end',
-    " ": 'im peeling the skin off my face cus i really hate feeling safe',
-    " ": 'im not a piece of cake for you to just discard while you walk away',
-    " ": 'beauty queen of only eighteen she had some trouble with herself he was always there to help her she always belonged to someone else',
-    " ": 'i dont mind spending every day out in your corner in the pouring rain',
-    " ": 'im obsessed with you in a way i cant believe when you wipe your tears do you wipe them just for me',
-    " ": 'and even if i was wrong i know i dont deserve this',
-    " ": 'im lying on the moon my dear ill be there soon',
-    " ": 'all i want is you now all i wanna do now is wait for you to call me baby im so sorry do you wanna hurt me are you gonna hurt me please dont desert me',
-    " ": 'but even if he were my man hed never truly understand what it means to be a girl',
-    " ": 'put ribbons in my curls then carry around a knife with my diamonds its psycho',
     " ": 'trade it all for a false self insecurity fall in love fall in line with all his fantasies',
     " ": 'fake it til we make everyone happy but ourselves use us for our bodies til theres nothing but a shell',
     " ": 'i was born and raised as an eastern girl in a western world i was told to choose to be what i chose to be there doesnt seem to be a place for me',
