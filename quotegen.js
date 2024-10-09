@@ -730,37 +730,227 @@ const quotes = [
     {author: "VIOLENT VIRA | god complex | 2022",
         quote: "i wanna be the true savior, the one with the terrible demise"
     },
+    {author: "VIOLENT VIRA | god complex | 2022",
+        quote: "i wanna be your true love, i'm the only one you could cry to all the time <br> i could just be who you need, darling <br> won't you just plead or should i begin to bleed?"
+    },
+    {author: "VIOLENT VIRA | god complex | 2022",
+        quote: "i'll tear down the sky <br> what do you want? <br> i'll do it all for life <br> my love, my alibi <br> tonight i'll try to do it for you"
+    },
+    {author: "VIOLENT VIRA | god complex | 2022",
+        quote: "i wanna be a white angel, the one with two billion of eyes <br> i wanna be like a fly on the wall to watch you until you die <br> i'm gonna be where you are, doesn't matter how far because we are meant to be"
+    },
+    {author: "the living tombstone | discord | 2012",
+        quote: "i'm not a fan of puppeteers, but i've a nagging fear someone else is pulling at the strings"
+    },
+    {author: "the living tombstone | discord | 2012",
+        quote: "a terrible catastrophe played by your symphony <br> what a terrifying work of art"
+    },
+    {author: "blake robinson synthetic orchestra | an unhealthy obsession | 2016",
+        quote: "you just don't know it yet, but you love me and i love you the same <br> one day well have a pretty wedding and i'll be your everything <br> we'll be together, yes forever <br> we will never ever part <br> you don't know it yet but baby i've already got your heart"
+    },
+    {author: "kz feat. hatsune miku | last night, good night | 2008",
+        quote: "last night, good night <br> this night i'll hold your hand tight and go to sleep <br> goodnight"
+    },
+    {author: "kz feat. hatsune miku | last night, good night | 2008",
+        quote: "it'd be wonderful if i could spend morning with you once more <br> i just wish even such a small hope can be made a miracle"
+    },
+    {author: "kz feat. hatsune miku | last night, good night | 2008",
+        quote: "when i think that the end will arrive someday <br> that's when i hope that the night sky will keep your smile <br> goodnight"
+    },
+    {author: "sayori | doki doki literature club | 2017",
+        quote: "if it wasn't for you i could sleep forever, but i'm not mad <br> i want breakfast"
+    },
+    {author: "sayori | doki doki literature club | 2017",
+        quote: "happy thoughts <br> happy thoughts <br> happy thoughts in bottles, all in a row"
+    },
+    {author: "sayori | doki doki literature club | 2017",
+        quote: "sometimes my friend feels a certain way <br> down comes a bottle to save the day"
+    },
+    {author: "sayori | doki doki literature club | 2017",
+        quote: "night after night <br> more dreams <br> friend after friend <br> more bottles"
+    },
+    {author: "sayori | doki doki literature club | 2017",
+        quote: "holding them out to each and every friend <br> each and every bottle <br> but every time i let one go, it shatters against the tile between my feet <br> happy thoughts <br> happy thoughts <br> happy thoughts in shards all over the floor"
+    },
+    {author: "sayori | doki doki literature club | 2017",
+        quote: "a poem is never actually finished <br> it just stops moving"
+    },
+    {author: "yujii feat. hatsune miku | milk crown on sonechka (ミルククラウン・オン・ソーネチカ) | 2014",
+        quote: "i mean i only tried to laugh along because i was being laughed at <br> so why did they get angry at me?"
+    },
+    {author: "yujii feat. hatsune miku | milk crown on sonechka (ミルククラウン・オン・ソーネチカ) | 2014",
+        quote: "when things don't go as well as they do in my imagination, why do i always have to say i'm sorry?"
+    },
+    {author: "yujii feat. hatsune miku | milk crown on sonechka (ミルククラウン・オン・ソーネチカ) | 2014",
+        quote: "i've mastered the art of whiling away my time by pretending to sleep so much that i turned to stone and stopped breathing"
+    },
+    {author: "yujii feat. hatsune miku | milk crown on sonechka (ミルククラウン・オン・ソーネチカ) | 2014",
+        quote: "a useless loving tool that was never painted in any colour <br> even when i got down on my knees and tolerated everything, nothing came to save me <br> isn't this too much? <br> haven't i been left out? <br> is that right?"
+    },
+    {author: "yujii feat. hatsune miku | milk crown on sonechka (ミルククラウン・オン・ソーネチカ) | 2014",
+        quote: "i mean even if you try to blame your sins and such on this tiny, tiny world full of lies and curse it <br> will that blame make things better or worse?"
+    },
+    {author: "mitchie m feat. hatsune miku | viva happy (ビバハピ) | 2013",
+        quote: "viva, viva happy <br> i cry big tears all night <br> all night, all by myself"
+    },
+    {author: "wowaka feat. hatsune miku | two faced lovers (裏表ラバーズ) | 2017",
+        quote: "a perplexing thing called love took over <br> and then i couldn't keep my heart space from splitting in two <br> never had the capacity to control it in the first place"
+    },
+    {author: "wowaka feat. hatsune miku | two faced lovers (裏表ラバーズ) | 2017",
+        quote: "everyday is full of why did this, did that <br> but in the end it's sayonara, baby"
+    },
+    {author: "fuminori sakisaka | the song of saya | 2003",
+        quote: "each night i went to sleep wishing that this would turn out to be a nightmare <br> yet each morning i awoke to find that the world was just as horribly warped as it was the day before"
+    },
+    {author: "ryo feat. hatsune miku | world is mine | 2008",
+        quote: "its not like it's selfish or anything to want you to believe from the bottom of your heart that i'm adorable"
+    },
+    {author: "neru feat. kagamine rin | lost one's weeping | 2013",
+        quote: "a blade's edge with centimeters of suspicion stabbing a vein <br> at the end of it all, sickly love spurts out"
+    },
+    {author: "joker | batman: the enemy within - same stitch | 2018",
+        quote: "i was such an idiot.  i was so busy looking at you.  admiring you.  wanting to be like you.  be loved by you.  i lost myself.  but not anymore."
+    },
+    {author: "joker | batman: the enemy within - same stitch | 2018",
+        quote: "i know you used me.  i know i should hate you.  but i don't because i had such a great time with you."
+    },
+    {author: "MADI | dying angel | 2023",
+        quote: "i'm disillusioned <br> i fall apart every time it gets too hard <br> bandaged up both my knees when i scraped them <br> dying angel, oh baby, i can't move"
+    },
+    {author: "flyleaf | freedom | 2012",
+        quote: "bleeding dry the promise of worth <br> knowing you were meant for this thirst <br> drink it in slowly while life puts a heart in you <br> weaving new blankets of words"
+    },
+    {author: "glass beach | the CIA | 2023",
+        quote: "in your teeth, on your mind <br> your sympathy's a waste of time <br> little blinking light you hide behind <br> i can't help it, i keep coming back to you"
+    },
+    {author: "glass beach | the CIA | 2023",
+        quote: "is your surveillance tenderness? <br> lost without your love <br> there's a war inside us"
+    },
+    {author: "flyleaf | great love | 2012",
+        quote: "i am in awe of who you are <br> and it's your love i'm living for"
+    },
+    {author: "flyleaf | great love | 2012",
+        quote: "there i was awaiting death for you <br> and all i did was love you too <br> i'm facing what you won't tonight <br> the dawn is breaking, my body's shaking"
+    },
+    {author: "three days grace | never too late | 2006",
+        quote: "even if i say it'll be alright <br> still i hear you say you want to end your life <br> now and again we try to just stay alive <br> maybe we'll turn it all around, 'cus it's not too late, it's never too late"
+    },
+    {author: "knocked loose feat. poppy | suffocate | 2024",
+        quote: "burdened by our connection, i long for separation"
+    },
+    {author: "vana | clandestine | 2024",
+        quote: "i can't remember how it felt to be alive <br> and now i'm haunted by the thoughts of suicide"
+    },
+    {author: "vana | clandestine | 2024",
+        quote: "leadened and rusted silver lined tragedy haunting me <br> bury me in a clandestine garden"
+    },
+    {author: "holywatr | fake tears | 2024",
+        quote: "tell me you love even if it's a lie <br> tell me you love me and then hang me out to dry"
+    },
+    {author: "shadow academy | white whale | 2022",
+        quote: "so, silent tide <br> tell me which face do i show the world, and which one do i hide?"
+    },
+    {author: "aiobahn feat. KOTOKO | INTERNET YAMERO | 2023",
+        quote: "the phenomenon called internet angel is one postulated, organic, alternating current lamp"
+    },
+    {author: "aiobahn feat. KOTOKO | INTERNET YAMERO | 2023",
+        quote: "my screen illuminates the dark, bathing me in anxiety"
+    },
+    {author: "aiobahn feat. KOTOKO | INTERNET YAMERO | 2023",
+        quote: "we'll bear witness to something that can only be found there <br> from that terrifying, disturbed internet <br> these poison radio waves fall like beautiful snow"
+    },
+    {author: "aiobahn feat. KOTOKO | INTERNET YAMERO | 2023",
+        quote: "i don't care what happens in the real world, i like it here"
+    },
+    {author: "aiobahn feat. KOTOKO | INTERNET YAMERO | 2023",
+        quote: "from the blue light of the world's monitors, it is my mission to heal the loneliness of all nerds for i am the internet angel"
+    },
+    {author: "aiobahn feat. KOTOKO | INTERNET OVERDOSE | 2022",
+        quote: "a promise of future peace <br> manic and moody but it's alright <br> the internet angel has descended"
+    },
+    {author: "aiobahn feat. KOTOKO | INTERNET OVERDOSE | 2022",
+        quote: "this messed up internet is a psychedelic rainbow <br> send help to this hell in a bottle that is social media"
+    },
+    {author: "joel tumelty & troy_en | a world i built for you | 2024",
+        quote: "beyond the screen, you cannot leave <br> inside my code, you'll always be <br> in moments old, we'll make some new <br> in a world i built for you"
+    },
+    {author: "joel tumelty & troy_en | a world i built for you | 2024",
+        quote: "hand in hand in each endeavor <br> in this world, we're friends forever"
+    },
+    {author: "ghost | majesty | 2015",
+        quote: "pathetic humans in despair defaced, deflowered, now to death devout <br> a fallen angel in his lair in midst of sinners kneeling down before his clout"
+    },
+    {author: "ghost | from the pinnacle to the pit | 2015",
+        quote: "you are cast out from the heavens to the ground <br> blackened feathers falling down <br> you will wear your independence like a crown"
+    },
+    {author: "ghost | cirice | 2015",
+        quote: "i feel your presence amongst us <br> you cannot hide in the darkness <br> can you hear the rumble?"
+    },
+    {author: "ghost | cirice | 2015",
+        quote: "can't you see that you're lost without me? <br> i can feel the thunder that's breaking in your heart <br> i can see through the scars inside you"
+    },
+    {author: "ame-chan | needy streamer overload | 2022",
+        quote: "i guess i could talk about the emptiness of life or something. the good thing about the internet is that you could talk about nothingness and people would still listen"
+    },
+    {author: "kangel | needy streamer overload | 2022",
+        quote: "i need to feel recognized by others and feel like i'm offering something of use to someone out there.  otherwise, i'd just be hollow inside.  my heart would break."
+    },
+    {author: "kangel | needy streamer overload | 2022",
+        quote: "we had a lot of fun together.  we were best friends.  i knew it was just a fanciful illusion i made up, but i wished it could have continued forever.  but you know, nothing lasts forever."
+    },
+    {author: "ame-chan | needy streamer overload - comment te dire adieu | 2022",
+        quote: "there's a side of myself that i don't know yet and i want to get to know her better"
+    },
+    {author: "kangel | needy streamer overload - DARK ANGEL | 2022",
+        quote: "a wave of darkness enveloping the abysmal internet bringing the sweet promise of death to the vermin floating in this electronic sea <br> trapped by my past traumas, i'm dead inside, and my wings have broken <br> the internet dark angel has descended..."
+    },
+    {author: "kangel | needy streamer overload - DARK ANGEL | 2022",
+        quote: "you're all going to get what you deserve one day.  goodbye."
+    },
+    {author: "kangel | needy streamer overload - DARK ANGEL | 2022",
+        quote: "the internet was the forbidden fruit that sank humanity to its deepest depths of depravity.  everything from all the razor words pushed me closer to the edge, and soon, i was holding the razor too."
+    },
+    {author: "kangel | needy streamer overload - DARK ANGEL | 2022",
+        quote: "how do i make you taste your own medicine?  how do i make you all hurt like i have?"
+    },
+    {author: "kangel | needy streamer overload - galactic express | 2022",
+        quote: "i was way too worried about how i appeared to others, and no one saw me for who i was."
+    },
+    {author: "kangel | needy streamer overload - galactic express | 2022",
+        quote: "you deserve to live your own life and be free.  i'm letting you go.  that's my final duty as the internet angel."
+    },
+    {author: "kangel | needy streamer overload - rainbow girl | 2022",
+        quote: "i've always known that the divine was watching over me.  i tried so hard in my duties as an angel.  am i a good girl?"
+    },
+    {author: "kangel | needy streamer overload - rainbow girl | 2022",
+        quote: "you showed me kindness, and you showed me warmth.  thank you, god..."
+    },
+    {author: "ame-chan | needy streamer overload - there are no angels | 2022",
+        quote: "i want lots of people to come see me, just as i had dreamed once upon a time"
+    },
+    {author: "ame-chan | needy streamer overload - there are no angels | 2022",
+        quote: "all i did was get hurt over and over again. i don't think i can do this anymore."
+    },
+    {author: "ame-chan | needy streamer overload - utopian parody | 2022",
+        quote: "i have everything i need to lead a happy life, but... i just feel really empty inside"
+    },
+    {author: "ame-chan | needy streamer overload - welcome to my religion | 2022",
+        quote: "i want to save everyone on the internet.  i want to save the internet, as it had saved me once upon a time, when it was my only refuge"
+    },
+    {author: "ame-chan | needy streamer overload | 2022",
+        quote: "but for some reason, whenever i'm with you, i feel something warm stirring in my chest <br> is this what they call happiness?"
+    },
+    {author: "ame-chan | needy streamer overload | 2022",
+        quote: "if you died then i think i would just lose it so i've decided that no matter what i will die before you do."
+    },
+    {author: "ame-chan | needy streamer overload | 2022",
+        quote: "i was so scared of being at home everyday so i promised myself that when i grew up, i would get married to someone that would make me happy, unlike my parents <br> you get where i'm coming from, right?"
+    },
 ]
 
-/*
-    {author: "",
+/* quote template:
+    {author: " | | ",
         quote: ""
     },
-    " ": '',
-    " ": 'i wanna be your true love i'm the only one you could cry to all the time i could just be who you need darling won't you just plead or should i begin to bleed',
-    " ": 'i'll tear down the sky what do you want i'll do it all for life my love my alibi tonight i'll try to do it for you',
-    " ": 'i wanna be a white angel the one with two billion of eyes i wanna be like a fly on the wall to watch you until you die i'm gonna be where you are doesn't matter how far because we are meant to be',
-    " ": 'i'm not a fan of puppeteers but ive a nagging fear someone else is pulling at the strings',
-    " ": 'a terrible catastrophe played by your symphony what a terrifying work of art',
-    " ": 'you just don't know it yet but you love me and i love you the same one day well have a pretty wedding and i'll be your everything well be together yes forever we wi'll never ever part you don't know it yet but baby ive already got your heart',
-    " ": 'last night goodnight this night i'll hold you hand tight and go to sleep goodnight',
-    " ": 'itd be wonderful if i could spend morning with you once more i just wish even such a small hope can be made a miracle',
-    " ": 'when i think that the end wi'll arrive someday that's when i hope that the night sky wi'll keep your smile goodnight',
-    " ": 'if it wasn't for you i could sleep forever but i'm not mad i want breakfast',
-    " ": 'happy thoughts happy thoughts happy thoughts in bottles all in a row',
-    " ": 'sometimes my friend feels a certain way down comes a bottle to save the day',
-    " ": 'night after night more dreams friend after friend more bottles',
-    " ": 'holding them out to each and every friend each and every bottle but every time i let one go it shatters against the tile between my feet happy thoughts happy thoughts happy thoughts in shards all over the floor',
-    " ": 'a poem is never actually finished it just stops moving',
-    " ": 'i mean i only tried to laugh along because i was being laughed at so why did they get angry at me',
-    " ": 'when things don't go as well as they do in my imagination why do i always have to say i'm sorry',
-    " ": 'ive mastered the art of whiling away my time by pretending to sleep so much that i turned to stone and stopped breathing',
-    " ": 'a useless loving tool that was never pain'ted in any colour even when i got down on my knees and tolerated everything nothing came to save me isn't this too much haven't i been left out is that right',
-    " ": 'i mean even if you try to blame your sins and such on this tiny tiny world full of lies and curse it wi'll that blame make things better or worse',
-    " ": 'its not like its selfish or anything to want you to believe from the bottom of your heart that i'm adorable',
-    " ": 'viva viva happy i cry big tears all night all night all by myself',
-    " ": 'a perplexing thing called love took over and then i couldn't keep my heart space from splitting in two never had the capacity to control it in the first place',
-    " ": 'everyday is full of why did this did that but in the end its sayonara baby',
-    " ": 'a blades edge with centimeters of suspicion stabbing a vein at the end of it all sickly love spurts out',
-    " ": 'each night i went to sleep wishing that this would turn out to be a nightmare <br> yet each morning i awoke to find that the world was just as horribly warped as it was the day before'
+
 */
