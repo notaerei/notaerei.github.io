@@ -68,6 +68,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
         { name: "[2009] watery graves (toontown version)- plants vs. zombies", path: "../audio/music/aereicore list/watery graves (toontown version).mp3" },
         { name: "[2006] wii sports theme - wii sports", path: "../audio/music/aereicore list/wii sports theme (in minor).mp3" },
         { name: "[2008] world is mine (ワールドイズマイン) - ryo feat. hatsune miku", path: "../audio/music/aereicore list/world is mine (sega megadrive version).mp3" },
+        { name: "[2011] cara mia addio - portal 2", path: "../audio/music/aereicore list/carra mia addio.mp3"},
+        { name: "[1829] waltz in b minor - chopin", path: "../audio/music/aereicore list/waltz in b minor.mp3"},
+        { name: "[1791] lacrimosa requiem - mozart", path: "../audio/music/aereicore list/requiem.mp3"},
+        { name: "[1882] valse sentimentale - tchaikovsky", path: "../audio/music/aereicore list/valse sentimentale.mp3"},
+        { name: "[2015] cirice - ghost", path: "../audio/music/aereicore list/cirice.wav"},
+        { name: "[2013] world bowser - super mario 3d world", path: "../audio/music/aereicore list/world bowser.wav"}
     ];
 
     let currentSongIndex = 0;

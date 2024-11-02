@@ -145,9 +145,8 @@ img {
 
 .statustext {
     position: absolute;
-    margin-left: -250px;
-    margin-top: 35px;
-    transform: rotate(-4deg);
+    margin-left: -230px;
+    margin-top: -5px;
     font-family: 'zpix';
     font-size: 10px;
     color: #ff1bc6;
@@ -178,9 +177,13 @@ img {
 .logo {
     position: absolute;
     display: inline-block;
-    margin-left: -800px;
-    margin-top: -200px;
-    transform: rotate(-7deg);
+    margin-left: -870px;
+    margin-top: -10px
+}
+
+.logo:hover {
+    transform-origin: 50% 50%; 
+    filter: brightness(100) drop-shadow(0px 0px 10px #ff1bc6);
 }
 
 .socialmedia {
