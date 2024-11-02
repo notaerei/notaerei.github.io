@@ -946,6 +946,57 @@ const quotes = [
     {author: "ame-chan | needy streamer overload | 2022",
         quote: "i was so scared of being at home everyday so i promised myself that when i grew up, i would get married to someone that would make me happy, unlike my parents <br> you get where i'm coming from, right?"
     },
+    {author: " saya no uta | sakisaka fuminori | 2003",
+        quote: "night after night, i went to sleep praying for an end to this nightmare, only to wake each morning to the same twisted hellscape as the day before."
+    },
+    {author: "saya no uta | 2003",
+        quote: "some degree of paranoia is natural when dealing with a person whose mistakes could kill you."
+    },
+    {author: "saya no uta | sakisaka fuminori | 2003",
+        quote: "there is a deep loneliness in her eyes, a loneliness from which now springs boundless affection."
+    },
+    {author: "saya no uta | 2003",
+        quote: "he remembers, and still he has treated her so coldly.  that is all the answer she needs.  if his words stab any deeper, she might very well die."
+    },
+    {author: "saya no uta | sakisaka fuminori | 2003",
+        quote: "G, H, I <br> j, k, l <br> m, n, o <br> t, u, v <br> d, e <br> w, x, y <br> m, n, o <br> t, u"
+    },
+    {author: "saya no uta | saya | 2003",
+        quote: "i was afraid of you.  of how you were changing because of me."
+    },
+    {author: "saya no uta | 2003",
+        quote: "the lifeless characters on the screen are like a knife against her throat."
+    },
+    {author: "saya no uta | saya | 2003",
+        quote: "all it needs... is to be loved by just one person in the whole desert.  all it needs is to be told how pretty dandelions are."
+    },
+    {author: "saya no uta | ogai masahiko | 2003",
+        quote: "in learning all that there was to know about humanity, she herself had become hopelessly human.  weary of loneliness, she despaired of the world."
+    },
+    {author: "saya no uta | ogai masahiko | 2003",
+        quote: "i have a dream -- that one day my daughter will know the blessings of love.  i pray there will come a day when her heart burns with the flames of passion, and her world becomes bright and joyous once more."
+    },
+    {author: "saya no uta | ogai masahiko | 2003",
+        quote: "the whole world will know your love, and be reborn."
+    },
+    {author: "zero escape: 999 | akane kurashiki | 2009",
+        quote: "a part of him knew the lump of lead in his chest had once been a heart.  he couldn't quite remember what it had been for.  tears poured from his eyes in great streams.  he wasn't sure why."
+    },
+    {author: "zero escape: 999 | akane kurashiki | 2009",
+        quote: "but there was... something else.  there was a holy light that surrounded her.  she was both a fierce god, and a benevolent goddess, filled with love..."
+    },
+    {author: "zero escape: 999 | akane kurashiki | 2009",
+        quote: "perhaps she had to convince herself he was real.  perhaps she was worried he would be gone the moment she let go."
+    },
+    {author: "zero escape: 999 | akane kurashiki | 2009",
+        quote: "what he was thinking, what he was feeling, what he was sensing...  all of his feelings and worries and fears became mine... my mind, my consciousness, was inside of him.  through the morphic fieldset we were resonant, and we were as one."
+    },
+    {author: "zero escape: 999 | light field | 2009",
+        quote: "now don't ever forget...  so long as you have that we will always be connected."
+    },
+    {author: "zero escape: 999 | akane kurashiki | 2009",
+        quote: "every time i thought about him, i thought my heart would burst."
+    },
 ]
 
 /* quote template:
