@@ -1,0 +1,130 @@
+body{
+   font-family: Verdana;
+   font-size: 16px;
+   max-width: max-content;
+   margin: auto;
+   overflow-y: hidden;
+}
+
+.header{
+   position: relative;
+   height: 200px;
+   width: 600px;
+   padding: 10px;
+   display: flex;
+   justify-content: center;
+   background-size: 1200px 400px;
+   border-radius: 50%;
+   background-image: radial-gradient(ellipse, rgba(53,49,115,0) 17%, rgba(255,255,255,1) 24%, rgba(255,255,255,1) 100%), url('../codatest.png');
+   background-size: contain;
+}
+
+.title{
+   position: absolute;
+   display: inline-block;
+   height: 50px;
+   justify-content: center;
+   margin-left: 21px;
+   margin-top: -35px;
+}
+
+.title:hover {
+   filter: drop-shadow(0px 0px 2px #000000);
+}
+
+.navi{
+   padding: 20px;
+   position: absolute;
+   display: inline-block;
+   justify-content: center;
+   margin-top: 100px;
+   font-family: 'Cascadia Code';
+}
+
+.navibutton:hover {
+   filter: drop-shadow(0px 0px 1px #000000);
+}
+
+.container{
+   position: relative;
+   height: 600px;
+   width: 600px;
+   padding: 10px;
+   padding: 10px;
+   margin-top: 10px;
+   overflow-y: scroll;
+}
+
+.footer{
+   position: relative;
+   height: 20px;
+   width: 600px;
+   display: flex;
+   justify-content: center;
+   padding: 10px;
+   margin-bottom: 10px;
+   margin-top: 10px;
+   font-size: 12px;
+}
+
+::-webkit-scrollbar {
+   width: 1px;
+}
+::-webkit-scrollbar-thumb {
+   background: darkslategrey;
+}
+::-webkit-scrollbar-track {
+   background: rgba(211, 211, 211, 0);
+}
+::-webkit-scrollbar-thumb:hover {
+   background: black;
+}
+
+.standout{
+   font-family: Georgia;
+   font-size: 20px;
+   justify-content: center;
+   padding: 20px;
+}
+
+h1{
+   font-family: 'Courier New', Courier, monospace;
+   letter-spacing: -20px;
+   font-size: 100px;
+   color: #black;
+   text-shadow:
+   1px 1px 1px white,
+   1px 1px 1px white,
+   1px 1px 0 white,
+   1px 1px 0 white;
+}
+
+h2{
+   font-family: 'Cascadia Code';
+   font-size: 24px;
+   text-shadow:
+   1px 1px 1px grey,
+   1px 1px 1px grey,
+   1px 1px 0 grey,
+   1px 1px 0 grey;
+}
+
+h3{
+   font-family: 'Cascadia Code';
+   font-size: 20px;
+   text-shadow:
+   1px 1px 1px grey,
+   1px 1px 1px grey,
+   1px 1px 0 grey,
+   1px 1px 0 grey;
+}
+
+a{
+   color: grey;
+}
+
+.lastupdate{
+   text-align: right;
+   color: lightgrey;
+   font-size: 10px;
+}
