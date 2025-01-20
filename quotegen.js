@@ -997,6 +997,18 @@ const quotes = [
     {author: "zero escape: 999 | akane kurashiki | 2009",
         quote: "every time i thought about him, i thought my heart would burst."
     },
+    {author: "yuri | doki doki literature club | 2017",
+        quote: "isn't it amazing how a writer can so deliberately take advantage of your own lack of imagination to completely throw you for a loop?"
+    },
+    {author: "yuri | doki doki literature club | 2017",
+        quote: "surreal horror is often very successful at changing the way you look at the world, if only for a brief moment."
+    },
+    {author: "yuri | doki doki literature club | 2017",
+        quote: "you must be willing to open up to your readers, exposing your vulnerabilities and showing even the deepest reaches of your heart."
+    },
+    {author: "sayori | doki doki literature club | 2017",
+        quote: "it's okay, though. <br> i'm happy we're like this."
+    },
 ]
 
 /* quote template:
