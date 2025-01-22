@@ -7,7 +7,7 @@ function openModal(title, date, style, colour, area, references, description, im
     const modalHTML = `
         <div class="modal" id="${modalId}">
             <div class="modal-header">
-                <h3 class="h3">${title}</h2>
+                <h3 class="gallery-modal-header">${title}</h3>
                 <span class="close" onclick="closeModal('${modalId}')">&times;</span>
             </div>
             <div class="modal-content">
@@ -15,7 +15,7 @@ function openModal(title, date, style, colour, area, references, description, im
                 <div class="modal-caption">
                 <a href="${imgSrc}" target="_blank" class="open-full-image">open full image in new tab</a>
                     <div class="modal-properties">
-                        <div><p class="p"><i>originally published</i> ${date} <br><i>art style</i>: ${style} <br><i>colouring style</i>: ${colour} <br><i>area</i>: ${area} <br><i>references</i> ${references} <br><br>${description}</div>
+                        <div><p class="p"><i>originally published</i>: ${date} <br><i>art style</i>: ${style} <br><i>colouring style</i>: ${colour} <br><i>area</i>: ${area} <br><i>references</i>: ${references} <br><br>${description}</div>
                 </div>
             </div>
         </div>
@@ -25,17 +25,14 @@ function openModal(title, date, style, colour, area, references, description, im
     const modal = document.getElementById(modalId);
     modal.style.display = 'block';
 
-    // Make the modal draggable
     makeModalDraggable(modal);
 }
 
-// Close modal function
 function closeModal(modalId) {
     const modal = document.getElementById(modalId);
     modal.remove();
 }
 
-// Dragging functionality
 function makeModalDraggable(modal) {
     let isDragging = false;
     let startX, startY, initialMouseX, initialMouseY;
