@@ -1,0 +1,46 @@
+/*
+  _                     
+ | |                    
+ | |  __  _  _   _   ,  
+ |/ \/  \/ |/ | |/  / \_
+  \_/\__/  |  |_|__/ \/ 
+                        
+                        */
+html {
+  background-color: black;}
+
+.overlay {
+  position: fixed;
+  width: 1020px;
+  height: 820px;
+  background-image: url('https://i.makeagif.com/media/6-07-2017/Z5iAQW.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.1;
+  margin: -50px;}
+
+.screen {
+  position: fixed;
+  width: 1154px;
+  height: 830px;
+  background-image: url('https://www.nicepng.com/png/full/413-4139876_old-tv-frame-png.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: -50px;}
+
+body {
+  width: 960px;
+  height: 720px;
+  background-image:url(https://thumbs.gfycat.com/HarmfulOptimalAlligatorsnappingturtle-size_restricted.gif);
+  background-repeat:repeat;
+  margin-top: 20px;
+  margin-left: 400px;
+  padding: 50px;}
+
+.content {
+  width: 1024px;
+  height: 720px;
+  margin-top: 10px;
+  margin-left: 20px;
+  padding: 50px;}
+  
