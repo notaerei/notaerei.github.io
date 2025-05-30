@@ -13,6 +13,7 @@
 		<title>contact ari . . .</title>
 		<link rel="icon" href="https://64.media.tumblr.com/tumblr_lv6pceasDY1qdlkyg.gif">
 		<link href="/index.css" rel="stylesheet" type="text/css" media="all">
+		<script src="https://iframe.chat/scripts/main.min.js"></script>
 	</head>
 	<body id="site">
 		<div class="weboverlaybase">
@@ -83,7 +84,8 @@
 	<div class="container" id="container">
   		<div id="left" class="columns">
     		<h2 class="h2">contact me . . .</h2>
-    			<p class="p">want to report a bug you see on this site, ask me a question, or simply share something with me?  feel free to use this contact form and i will get back to you as soon as i can!</p>
+    			<p class="p" style="text-align: center"><b><u>KNOWN ISSUE</u> : so funny enough, this contact page no longer works.  until i am able to fix it, please contact me through the chatbox to the left or through discord if you have any bug reports, questions, or comments!</b></p>
+				<p class="p"><strike>want to report a bug you see on this site, ask me a question, or simply share something with me?  feel free to use this contact form and i will get back to you as soon as i can!</p></strike>
 				<p class="p">for business or professional inquiries, please do not use this form.  instead, contact me through <a href="mailto:aricharmm@gmail.com?subject=business%20inquiry%3A%20%5Binsert%20brief%20description%20here%5D&body=please%20include%20your%20name%2C%20the%20best%20way%20i%20can%20reach%20you%20(email%2C%20phone%20number%2C%20etc.)%2C%20and%20a%20detailed%20description%20of%20your%20inquiry.%20%20thank%20you!" class="text-link">email</a> instead.  this is because sometimes i take short breaks from social media, but i will always have notifications for my email turned on no matter what.
 					<p class="p">for less serious inquiries, you may also contact me through any of my social media instead of this form!
 					<p class="p">on all platforms, i will avoid responding to messages like "hey" or "hi."  please let me know what you're asking for within the first few messages if we are messaging for the first time, or i will ignore or delete it!
@@ -106,7 +108,7 @@
 						<textarea name="contactformmsg" style="height=100px" placeholder="write here and upload as many files as needed !"></textarea>
 						<span style="color: #e879e6"><input type="file" name="contactformmsg" multiple></span>
 					</div>
-              		<input type="submit" value="submit my message!">
+              		<!--<input type="submit" value="submit my message!">--><p class="p" style="text-align: center"><b><u>KNOWN ISSUE</u> : until i fix this form, i have taken away the submit button!  muahahah!</b></p>
         	</div>
   		</div>
 
@@ -177,12 +179,17 @@
 ·▀▀▀ ▀▀▀ · ▀  ▀  ▀▀▀     ·▀▀▀▀  ▀█▄▀▪ ▀▀▀ 
 -->
 
-<div class="chat-container"> <!-- unfinished please ignore lol -->
-	<div class="chat-log" id="chat-log"></div>
-	<input type="text" id="user-input" placeholder="type a message...">
+
+<div class="chat-container" id="chat-container">
+   <div class="chat-header" id="chat-header">be kind.</div>
+   <iframe src='https://iframe.chat/embed?chat=92135614' id='chattable' frameborder='none' height='300px'></iframe>
+   <script>
+      chattable.initialize({
+      stylesheet : "../scripts/chattable.css"
+      });
+   </script>
 </div>
 
-<script src="chat.js"></script>
 <!--
 <div class="pagedoll">
 <img src="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg" alt="aerei sprite" width="300px" height="200px">
@@ -204,7 +211,7 @@
 		 		<ul id="songQueue"></ul>
 			</div>
 		-->
-	<script src="musicplayer.js"></script>
+	<script src="../scripts/musicplayer.js"></script>
 	<audio id="audioPlayer"></audio>
 	<div class="controls">
 		 <div class="musicplayerbutton" id="playPause">play</div>
@@ -245,7 +252,7 @@
 ▐█▄▪▐█▐█▌.▐▌▐█▄█▌██▐█▌██. ██     ▐█▄▄▌██▌.██▌.▐█▄▄▌▐███▌ ▐█▌·▐█▄▪▐█
  ▀▀▀▀  ▀█▄▀▪ ▀▀▀ ▀▀ █▪▀▀▀▀▀•      ▀▀▀ ▀▀▀ ▀▀▀  ▀▀▀ ·▀▀▀  ▀▀▀  ▀▀▀▀ 	
 -->
-	<script src="cursorsound.js" defer></script>
+	<script src="../scripts/cursorsound.js" defer></script>
 
 </body>
 </html>
