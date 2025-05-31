@@ -1,188 +1,121 @@
-/*
-Design by Free CSS Templates
-http://www.freecsstemplates.org
-Released for free under a Creative Commons Attribution 2.5 License
-*/
+@font-face {
+    font-family: "yoster";
+    src: url('../fonts/yoster.ttf') format('truetype') 
+}
+@font-face {
+    font-family: "romancea";
+    src: url('../fonts/romancea.ttf') format('truetype') 
+}
 
-/*
-SUPER OUTDATED OLD STUFF BELOW!  will polish eventually
-*/
+@font-face {
+   font-family: "sweetheart";
+   src: url('../fonts/sweetheart.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: "zpix";
+    src: url('../fonts/zpix.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: "mamemoji";
+    src: url('../fonts/mamemoji.ttf') format('truetype')
+}
 
 body {
-	margin: 0;
+	margin: 20px 50px 0px 400px;
+   overflow-x: hidden;
+   overflow-y: hidden;
+   background-image: radial-gradient(circle, rgba(255,0,0,0) 0%, black 80%), url("https://files.catbox.moe/k5zjmn.png");
+   background-repeat: repeat;
+   background-size: 1920px 1080px, auto;
+   font-family: 'MS Gothic';
+   background-color: #000000;
+   text-shadow: 0.5px 0.5px 1px rgb(67, 27, 116);margin: 0;
 	padding: 0;
-	background: #000000 url(https://i.pinimg.com/236x/26/65/2e/26652e5a142ab626b823c35bc864bd95.jpg);
-	font: normal small "MS Gothic";
+	font-family: "mamemoji";
 	color: #6E697D;
 }
 
-form, h1, h2, h3 {
-	margin: 0;
-	padding: 0;
-	text-transform: lowercase;
-	color: #FC6ABF;
+.book {
+	height: 716px;
+	max-width: 1104px;
+	background-image: url("../images/blog/book.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: absolute;
+	display: inline-block;
+	padding: 20px;
+	margin: 90px 70px 0px 350px;
 }
 
-blockquote {
-	font-style: italic;
+.pageleft {
+	background-image: url("../images/blog/page left.png");
+	position: absolute;
+	background-repeat: no-repeat;
+   height: 736px;
+   width: 50%;
+   margin-left: auto;
 }
 
-a {
-	text-decoration: none;
-	color: #FC6ABF;
+.pageleftmiddle {
+	margin-top: -40px;
+	margin-left: 30px;
 }
 
-a:hover {
-	text-decoration: underline;
+.pageleftbottom {
+	margin-top: -40px;
+	margin-left: 80px;
+	margin-right: 40px;
 }
 
-#header {
-	width: 526px;
-	height: 80px;
-	margin: 0 auto;
+.pageright {
+	background-image: url("../images/blog/page right.png");
+	background-repeat: no-repeat;
+   height: 736px;
+   width: 50%;
+   margin-left: auto;
 }
 
-#header h1 {
-	float: left;
-	padding: 30px 0 0 13px;
-	letter-spacing: -4px;
-	font-size: 3em;
+.pagerightmiddle {
+	margin-top: -40px;
+	margin-right: 45px;
 }
 
-#header h2 {
-	float: right;
-	padding: 52px 13px 0 0;
-	font-size: 1.2em;
+.pagerightbottom {
+	margin-top: -40px;
+	margin-left: 80px;
+	margin-right: 40px;
 }
 
-#header a {
-	text-decoration: none;
-	color: #FC6ABF;
+.pagecontent {
+	padding: 40px;
 }
 
-#menu {
-	width: 500px;
-	height: 50px;
-	padding: 13px 13px 0 13px;
+.h1 {
+    font-family: 'romancea';
+    font-size: 30px;
+    color: black;
+    border-bottom: 2px dashed;
+    padding: 5px;
+    font-weight: 1;
 }
 
-#menu ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
+.publishinfo {
+    font-family: 'mamemoji';
+    font-size: 22px;
+    color: black;
+    border-bottom: 1px dotted;
+    padding: 10px 10px 5px 10px;
+	 margin-top: -45px;
+	 font-weight: bold;
+	 text-shadow: -1px -1px 0 white, 1px -1px 0 white, 1px 1px 0 white, 1px 1px 0 white;
+	 text-align: right;
 }
 
-#menu li {
-	display: inline;
-}
-
-#menu a {
-	display: block;
-	float: left;
-	width: 125px;
-	height: 40px;
-	padding: 10px 0 0 0;
-	background: url(https://media.tenor.com/18SBZln9s3AAAAAC/black-space-outer-space.gif);
-	text-align: center;
-	text-transform: lowercase;
-	text-decoration: none;
-	letter-spacing: -2px;
-	font-size: 1.8em;
-	color: #FC6ABF;
-}
-
-#menu .first a {
-	background: url(https://media.tenor.com/18SBZln9s3AAAAAC/black-space-outer-space.gif);
-}
-
-#menu a:hover {
-	color: #7C6DA6;
-}
-
-#content {
-	width: 526px;
-	margin: 0 auto;
-	padding: 0;
-	background: #FFFFFF url(images/img2.gif) no-repeat;
-}
-
-#colOne {
-	float: left;
-	width: 280px;
-	padding: 20px 0 0 23px;
-}
-
-#colOne a {
-	border-bottom: 1px dotted #7C6DA6;
-}
-
-#colOne a:hover {
-	border: none;
-}
-
-#colOne .post {
-	margin-bottom: 30px;
-	border-bottom: 1px solid #E6E2F1;
-}
-
-#colOne .title {
-	letter-spacing: -2px;
-	font-size: 1.6em;
-}
-
-#colOne .posted {
-	font-size: x-small;
-}
-
-#colOne .meta {
-	height: 25px;
-	padding: 1px 0 0 0;
-	background: url(https://media.tenor.com/18SBZln9s3AAAAAC/black-space-outer-space.gif);
-}
-
-#colOne .meta p {
-	margin: 10px;
-	padding: 0;
-	font-size: x-small;
-}
-
-#colTwo {
-	float: right;
-	width: 180px;
-	padding: 20px 23px 0 0;
-}
-
-}
-
-#colTwo ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-
-#colTwo li ul, #colTwo li form {
-	margin: 0 0 10px 0;
-	padding: 10px 10px 15px 10px;
-	background: url(images/img4.gif) no-repeat left bottom;
-}
-
-#colTwo h2 {
-	height: 28px;
-	padding: 4px 0 0 10px;
-	background: url(images/img3.gif) no-repeat;
-	letter-spacing: -1px;
-	font-size: 1.2em;
-	color: #FC6ABF;
-}
-
-#footer {
-	width: 526px;
-	margin: 0 auto;
-	padding: 10px 0;
-	border-top: 1px solid #A396C4;
-}
-
-#footer p {
-	text-align: center;
-	font-size: x-small;
+.p {
+    font-family: 'mamemoji';
+    font-size: 18px;
+    color: black;
+    padding: 10px;
 }
