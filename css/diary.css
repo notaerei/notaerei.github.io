@@ -1,0 +1,242 @@
+/*
+ ▄▄▄· ▄▄▄·  ▄▄ • ▄▄▄ .    ▄▄▌   ▄▄▄·  ▄· ▄▌      ▄• ▄▌▄▄▄▄▄
+▐█ ▄█▐█ ▀█ ▐█ ▀ ▪▀▄.▀·    ██•  ▐█ ▀█ ▐█▪██▌▪     █▪██▌•██  
+ ██▀·▄█▀▀█ ▄█ ▀█▄▐▀▀▪▄    ██▪  ▄█▀▀█ ▐█▌▐█▪ ▄█▀▄ █▌▐█▌ ▐█.▪
+▐█▪·•▐█ ▪▐▌▐█▄▪▐█▐█▄▄▌    ▐█▌▐▌▐█ ▪▐▌ ▐█▀·.▐█▌.▐▌▐█▄█▌ ▐█▌·
+.▀    ▀  ▀ ·▀▀▀▀  ▀▀▀     .▀▀▀  ▀  ▀   ▀ •  ▀█▄▀▪ ▀▀▀  ▀▀▀ 
+*/
+
+@font-face {
+    font-family: "yoster";
+    src: url('../fonts/yoster.ttf') format('truetype') 
+}
+@font-face {
+    font-family: "romancea";
+    src: url('../fonts/romancea.ttf') format('truetype') 
+}
+
+@font-face {
+   font-family: "sweetheart";
+   src: url('../fonts/sweetheart.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: "zpix";
+    src: url('../fonts/zpix.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: "mamemoji";
+    src: url('../fonts/mamemoji.ttf') format('truetype')
+}
+
+body {
+	margin: 20px 50px 0px 350px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-image: radial-gradient(circle, rgba(255,0,0,0) 0%, black 80%), url("https://files.catbox.moe/k5zjmn.png");
+    background-repeat: repeat;
+    background-size: 1920px 1080px, auto;
+    font-family: 'MS Gothic';
+    background-color: #000000;
+    text-shadow: 0.5px 0.5px 1px rgb(67, 27, 116);margin: 0;
+	padding: 0;
+	font-family: "mamemoji";
+	color: #6E697D;
+    transform: rotate(-2deg);
+}
+
+.book {
+	height: 716px;
+	max-width: 1104px;
+	background-image: url("../images/diary/book.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: absolute;
+	display: inline-block;
+	padding: 20px;
+	margin: 90px 70px 0px 350px;
+}
+
+.pageleft {
+	background-image: url("../images/diary/page left.png");
+	position: absolute;
+	background-repeat: no-repeat;
+    height: 736px;
+    width: 50%;
+    margin-left: auto;
+}
+
+.pageleftmiddle {
+	margin-top: -40px;
+	margin-left: 30px;
+}
+
+.pageleftbottom {
+	margin-top: -40px;
+	margin-left: 80px;
+	margin-right: 40px;
+}
+
+.pageright {
+    background-image: url("../images/diary/page right.png");
+    background-repeat: no-repeat;
+    height: 736px;
+    width: 50%;
+    margin-left: auto;
+}
+
+.pagerightmiddle {
+	margin-top: -40px;
+	margin-right: 45px;
+}
+
+.pagerightbottom {
+	margin-top: -40px;
+	margin-left: 80px;
+	margin-right: 40px;
+}
+
+.pagecontent {
+	padding: 40px;
+}
+
+.navileft {
+    opacity: 0;
+    position: fixed;
+    top: 750px;
+    left: 375px;
+}
+
+.navileft:hover {
+    opacity: 1;
+}
+
+.naviright {
+    opacity: 0;
+    position: fixed;
+    top: 750px;
+    right: 410px;
+}
+
+.naviright:hover {
+    opacity: 1;
+}
+
+.controls {
+    display: none;
+}
+
+/*
+▄▄▄▄▄ ▄▄▄· ▄▄▄▄· ▄▄▌  ▄▄▄ .          ·▄▄▄     ▄▄·        ▐ ▄ ▄▄▄▄▄▄▄▄ . ▐ ▄ ▄▄▄▄▄.▄▄ · 
+•██  ▐█ ▀█ ▐█ ▀█▪██•  ▀▄.▀·    ▪     ▐▄▄·    ▐█ ▌▪▪     •█▌▐█•██  ▀▄.▀·•█▌▐█•██  ▐█ ▀. 
+ ▐█.▪▄█▀▀█ ▐█▀▀█▄██▪  ▐▀▀▪▄     ▄█▀▄ ██▪     ██ ▄▄ ▄█▀▄ ▐█▐▐▌ ▐█.▪▐▀▀▪▄▐█▐▐▌ ▐█.▪▄▀▀▀█▄
+ ▐█▌·▐█ ▪▐▌██▄▪▐█▐█▌▐▌▐█▄▄▌    ▐█▌.▐▌██▌.    ▐███▌▐█▌.▐▌██▐█▌ ▐█▌·▐█▄▄▌██▐█▌ ▐█▌·▐█▄▪▐█
+ ▀▀▀  ▀  ▀ ·▀▀▀▀ .▀▀▀  ▀▀▀      ▀█▄▀▪▀▀▀     ·▀▀▀  ▀█▄▀▪▀▀ █▪ ▀▀▀  ▀▀▀ ▀▀ █▪ ▀▀▀  ▀▀▀▀ 
+code modified from https://css-tricks.com/a-perfect-table-of-contents-with-html-css/*/
+
+.toc-list, .toc-list ol {
+  list-style-type: none;
+}
+
+.toc-list {
+  padding: 0;
+}
+
+.toc-list ol {
+  padding-inline-start: 2ch;
+}
+
+.toc-list > li > a {
+  font-weight: bold;
+  margin-block-start: 1em;
+}
+
+.toc-list li > a {
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: auto max-content;
+    align-items: end;
+}
+
+.toc-list li > a > .title {
+    position: relative;
+    overflow: hidden;
+}
+
+.toc-list li > a .leaders::after {
+    position: absolute;
+    padding-inline-start: .25ch;
+    content: " . . . . . . . . . . . . . . . . . . . "
+        ". . . . . . . . . . . . . . . . . . . . . . . "
+        ". . . . . . . . . . . . . . . . . . . . . . . "
+        ". . . . . . . . . . . . . . . . . . . . . . . "
+        ". . . . . . . . . . . . . . . . . . . . . . . "
+        ". . . . . . . . . . . . . . . . . . . . . . . "
+        ". . . . . . . . . . . . . . . . . . . . . . . ";
+    text-align: right;
+}
+
+.toc-list li > a > .page {
+    min-width: 2ch;
+    font-variant-numeric: tabular-nums;
+    text-align: right;
+}
+
+/* 
+▄▄▄▄▄▄▄▄ .▐▄• ▄ ▄▄▄▄▄    • ▌ ▄ ·.  ▄▄▄· ▄▄▄  ▄ •▄ ·▄▄▄▄        ▄▄▌ ▐ ▄▌ ▐ ▄ 
+•██  ▀▄.▀· █▌█▌▪•██      ·██ ▐███▪▐█ ▀█ ▀▄ █·█▌▄▌▪██▪ ██ ▪     ██· █▌▐█•█▌▐█
+ ▐█.▪▐▀▀▪▄ ·██·  ▐█.▪    ▐█ ▌▐▌▐█·▄█▀▀█ ▐▀▀▄ ▐▀▀▄·▐█· ▐█▌ ▄█▀▄ ██▪▐█▐▐▌▐█▐▐▌
+ ▐█▌·▐█▄▄▌▪▐█·█▌ ▐█▌·    ██ ██▌▐█▌▐█ ▪▐▌▐█•█▌▐█.█▌██. ██ ▐█▌.▐▌▐█▌██▐█▌██▐█▌
+ ▀▀▀  ▀▀▀ •▀▀ ▀▀ ▀▀▀     ▀▀  █▪▀▀▀ ▀  ▀ .▀  ▀·▀  ▀▀▀▀▀▀•  ▀█▄▀▪ ▀▀▀▀ ▀▪▀▀ █▪
+*/
+
+.h1 {
+    font-family: 'romancea';
+    font-size: 30px;
+    color: black;
+    border-bottom: 2px dashed;
+    padding: 5px;
+    font-weight: 1;
+}
+
+.publishinfo {
+    font-family: 'mamemoji';
+    font-size: 22px;
+    color: black;
+    border-bottom: 1px dotted;
+    padding: 10px 10px 5px 10px;
+	 margin-top: -45px;
+	 font-weight: bold;
+	 text-shadow: -1px -1px 0 white, 1px -1px 0 white, 1px 1px 0 white, 1px 1px 0 white;
+	 text-align: right;
+}
+
+.p {
+    font-family: 'mamemoji';
+    font-size: 18px;
+    color: black;
+    padding: 10px;
+}
+
+blockquote {
+    font-family: 'mamemoji';
+    font-size: 18px;
+    color: black;
+    padding: 10px;
+    margin-top: -20px;
+}
+
+
+a {
+    color: black;
+}
+
+a:hover {
+    font-style: italic;
+}
+
+::selection {
+  color: white;
+  background: black;
+}
