@@ -210,6 +210,16 @@ img {
     filter: brightness(10) drop-shadow(0px 0px 10px #ff1bc6);
 }
 
+.sitebuttons {
+   position: absolute;
+   display: inline-block;
+   justify-content: center;
+   margin-left: 70px;
+   margin-top: -40px;
+   padding: 45px;
+   min-width: 1000px;
+}
+
 /* 
 ▄▄▄▄▄▄▄▄ .▐▄• ▄ ▄▄▄▄▄    • ▌ ▄ ·.  ▄▄▄· ▄▄▄  ▄ •▄ ·▄▄▄▄        ▄▄▌ ▐ ▄▌ ▐ ▄ 
 •██  ▀▄.▀· █▌█▌▪•██      ·██ ▐███▪▐█ ▀█ ▀▄ █·█▌▄▌▪██▪ ██ ▪     ██· █▌▐█•█▌▐█
@@ -672,6 +682,43 @@ select {
 }
 
 /*
+ ▐ ▄       ▄▄▄▄▄▄▄▄ .
+•█▌▐█▪     •██  ▀▄.▀·
+▐█▐▐▌ ▄█▀▄  ▐█.▪▐▀▀▪▄
+██▐█▌▐█▌.▐▌ ▐█▌·▐█▄▄▌
+▀▀ █▪ ▀█▄▀▪ ▀▀▀  ▀▀▀ 
+*/
+
+ .note-container {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    z-index: 1000;
+    top: 100px;
+    left: 30px;
+    width: 250px;
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.69);
+    border: 1px solid #FA1DD9;
+    padding: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    font-size: 13px;
+    font-family: 'zpix';
+    overflow-y: scroll;
+}
+
+.note-header {
+    font-family: 'zpix';
+    font-size: 12px;
+    color: #FA1DD9;
+    padding: 10px 10px 5px 10px;
+    background: linear-gradient(to right, #2a0046c2 0%, #3b006b0a 100%);
+    margin-bottom: 13px;
+    font-weight: bold;
+    cursor: move;
+}
+
+/*
 ▄▄·  ▄ .▄ ▄▄▄· ▄▄▄▄▄    ▄▄▄▄·       ▄▄▄▄▄
 ▐█ ▌▪██▪▐█▐█ ▀█ •██      ▐█ ▀█▪▪     •██  
 ██ ▄▄██▀▐█▄█▀▀█  ▐█.▪    ▐█▀▀█▄ ▄█▀▄  ▐█.▪
@@ -791,6 +838,43 @@ button{
    .inner-quotes-container h3{
        font-size: 1.5rem;
    }
+}
+
+/*
+.▄▄ · ▪  ▄▄▄▄▄▄▄▄ .• ▌ ▄ ·.  ▄▄▄·  ▄▄▄·
+▐█ ▀. ██ •██  ▀▄.▀··██ ▐███▪▐█ ▀█ ▐█ ▄█
+▄▀▀▀█▄▐█· ▐█.▪▐▀▀▪▄▐█ ▌▐▌▐█·▄█▀▀█  ██▀·
+▐█▄▪▐█▐█▌ ▐█▌·▐█▄▄▌██ ██▌▐█▌▐█ ▪▐▌▐█▪·•
+ ▀▀▀▀ ▀▀▀ ▀▀▀  ▀▀▀ ▀▀  █▪▀▀▀ ▀  ▀ .▀   
+ */
+
+ .sitemap-container {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    z-index: 1000;
+    top: 700px;
+    left: 50px;
+    width: 150px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.69);
+    border: 1px solid #FA1DD9;
+    padding: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    font-size: 13px;
+    font-family: 'zpix';
+    overflow-y: scroll;
+}
+
+.sitemap-header {
+    font-family: 'zpix';
+    font-size: 12px;
+    color: #FA1DD9;
+    padding: 10px 10px 5px 10px;
+    background: linear-gradient(to right, #2a0046c2 0%, #3b006b0a 100%);
+    margin-bottom: 13px;
+    font-weight: bold;
+    cursor: move;
 }
 
 /*
