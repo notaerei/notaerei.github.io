@@ -814,7 +814,7 @@ const quotes = [
     {author: "joker | batman: the enemy within - same stitch | 2018",
         quote: "i know you used me.  i know i should hate you.  but i don't because i had such a great time with you."
     },
-    {author: "MADI | dying angel | 2023",
+    {author: "MADI | DYING ANGEL | 2023",
         quote: "i'm disillusioned <br> i fall apart every time it gets too hard <br> bandaged up both my knees when i scraped them <br> dying angel, oh baby, i can't move"
     },
     {author: "flyleaf | freedom | 2012",
@@ -1008,6 +1008,120 @@ const quotes = [
     },
     {author: "sayori | doki doki literature club | 2017",
         quote: "it's okay, though. <br> i'm happy we're like this."
+    },
+    {author: "MADI | CUFFED | 2023",
+        quote: "and i have a long, long way to move forward <br> but i won't give up again"
+    },
+    {author: "MADI | CUFFED | 2023",
+        quote: "i have a reverie place in my brain that you live inside"
+    },
+    {author: "MADI | CUFFED | 2023",
+        quote: "and i know we can't always be patient <br> but here i am to be yours"
+    },
+    {author: "MADI | HORROR NITE | 2023",
+        quote: "it's what i can't chew <br> what i can't swallow <br> got a lot of room for a little bit of sorrow"
+    },
+    {author: "MADI | HORROR NITE | 2023",
+        quote: "all of my friends they live up in my head <br> yelling at me to stop thinking of the end"
+    },
+    {author: "MADI | HORROR NITE | 2023",
+        quote: "thought i tripped on you when you went away <br> turns out you were scared of my brain"
+    },
+    {author: "MADI | HORROR NITE | 2023",
+        quote: "i'm selfish or just cursed <br> i don't know what is worse <br> but every time i love, i love too much <br> until it's troubling myself and everyone"
+    },
+    {author: "MADI | HORROR NITE | 2023",
+        quote: "am i actually a monster? <br> am i actually a liar?"
+    },
+    {author: "MADI | WE CAN NEVER BE FRIENDS | 2023",
+        quote: "get me out of your head <br> get me off from your skin <br> it will never be normal, oh no"
+    },
+    {author: "MADI | WE CAN NEVER BE FRIENDS | 2023",
+        quote: "and all i hope <br> is peace from the grave that you left me that night"
+    },
+    {author: "imogen heap | headlock | 2005",
+        quote: "you say too late to start <br> got your heart in a headlock <br> i don't believe any of it"
+    },
+    {author: "imogen heap | headlock | 2005",
+        quote: "you've been walking <br> you've been hiding <br> and you look half dead half the time <br> monitoring you like machines do"
+    },
+    {author: "ariana grande | everytime | 2018",
+        quote: "i get drunk, pretend that i'm over it <br> self destruct, show up like an idiot <br> why, oh why, does god keep bringing me back to you?"
+    },
+    {author: "julia wolf | in my room | 2025",
+        quote: "i want your things in my room <br> i miss you all of the time <br> i stalk myself on the internet just to see what you'll find"
+    },
+    {author: "julia wolf | in my room | 2025",
+        quote: "i want your things in my room <br> i miss you all of the time <br> you make it look so easy leaving everything behind"
+    },
+    {author: "julia wolf | in my room | 2025",
+        quote: "not asking for much, man <br> thought maybe you'd call me"
+    },
+    {author: "richard orofino | kept the water inside of my mouth | 2024",
+        quote: "but i assume that the path we both chose operates just as machines beyond soul"
+    },
+    {author: "chi | afterparty | 2023",
+        quote: "the other day i wanted to escape <br> but something made me stay <br> yeah, i'm not done yet"
+    },
+    {author: "ghost | satanized | 2025",
+        quote: "it's a sickening heartache <br> and it's slowly tormenting my soul"
+    },
+    {author: "ghost | satanized | 2025",
+        quote: "i've been fighting the notion <br> to, by love, by coerced"
+    },
+    {author: "boa | beautiful and broken | 2024",
+        quote: "silence take care of me <br> bold me in a way you've never held me before"
+    },
+    {author: "boa | beautiful and broken | 2024",
+        quote: "i wish that i was stronger <br> i wish that i was better <br> but i think there's something beautiful in the broken"
+    },
+    {author: "boa | beautiful and broken | 2024",
+        quote: "take care of your loved ones <br> give them something else they can focus on <br> give me a moment to rest my eyes <br> and i'll be with you soon"
+    },
+    {author: "lacey sturm | not your fight | 2023",
+        quote: "i want you remember what i told you <br> soak it in until you feel my ghost hold you"
+    },
+    {author: "lacey sturm | not your fight | 2023",
+        quote: "and i will set you free from every enemy <br> and you will sing about the way that i have loved you"
+    },
+    {author: "charli xcx | party 4 u | 2020",
+        quote: "if you saw my tears, would you touch me? <br> kiss me on the mouth, say you love me?"
+    },
+    {author: "charli xcx | party 4 u | 2020",
+        quote: "why you treating me like someone that you never loved?"
+    },
+    {author: "tinashe | touch & go | 2019",
+        quote: "baby, do you hear me? <br> tell me you still see me <br> all i know is <br> i just need to <br> know if you still need me"
+    },
+    {author: "tinashe | unconditional | 2021",
+        quote: "check my pulse, i can't feel it anymore <br> waiting on my love to walk through the door"
+    },
+    {author: "tinashe | unconditional | 2021",
+        quote: "i forgive you whatever you've done to me <br> that's how much i love you"
+    },
+    {author: "tinashe | unconditional | 2021",
+        quote: "two steps forward, one step back <br> we can never stay on track"
+    },
+    {author: "flyleaf | this close | 2009",
+        quote: "had a dream that we were dead <br> but we pretended that we still lived"
+    },
+    {author: "flyleaf | this close | 2009",
+        quote: "with no regrets, we never bled <br> and we took everything life can give <br> and came up broken <br> emptyhanded in the end"
+    },
+    {author: "flyleaf | this close | 2009",
+        quote: "i don't know who i am anymore <br> not once in life have i been real <br> but i never felt this close before"
+    },
+    {author: "flyleaf | this close | 2009",
+        quote: "i've been looking in your window <br> i've been dressing in your clothes <br> i've been walking dead, watching you <br> long enough to know i can't go on"
+    },
+    {author: "flyleaf | much like falling | 2005",
+        quote: "when i said good morning, i was lying <br> i was truly thinking of how i might quit waking up <br> he pointed out how selfish it would be to kill myself <br> so i keep waking up"
+    },
+    {author: "flyleaf | much like falling | 2005",
+        quote: "feels so much like falling <br> dying while i wait to die <br> the fear of something or nothing <br> lonely, empty lie"
+    },
+    {author: "flyleaf | much like falling | 2005",
+        quote: "you grip my wrists, i let go <br> it feels so much like falling <br> separated from the fear <br> aware of a destination far away from here"
     },
 ]
 
