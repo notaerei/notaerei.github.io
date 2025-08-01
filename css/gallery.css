@@ -1,0 +1,245 @@
+[name=archive] {
+  display: none;
+}
+
+[name=gallery] {
+  max-width: 100%;
+  padding: 1em 1em 0 1em;
+  padding: 1em 0 0 0;
+  box-sizing: border-box;
+}
+
+img,
+video,
+iframe {
+  display: block;
+}
+
+
+/*=========== GRID ===========*/
+
+.grid {
+  margin: 1em auto;
+  padding: 0 1em;
+  justify-content: space-around;
+  justify-items: center;
+  align-items: center;
+}
+
+.grid .card {
+  position: relative;
+  text-align: center;
+  padding: 0 0em;
+  margin: 0 1em;
+}
+
+.grid .permalink {
+  margin: auto;
+  max-width: 100%;
+  text-align: center;
+  position: relative;
+}
+.grid .permalink:after {
+  content:'';
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom: 0;
+}
+
+
+
+.grid .permalink.title {
+  display: block;
+  margin: .5em 0 0 0;
+  color:  #337287;
+  font-weight: bold;
+  text-decoration: none;
+}
+.grid .permalink.title:focus,
+.grid .permalink.title:hover {
+  text-decoration: underline;
+}
+
+.grid .taglist {
+  text-align: center;
+}
+
+/* nomasonry */
+
+.grid.nomasonry {
+  justify-content: space-around;
+}
+
+.grid.nomasonry img,
+.grid.nomasonry video,
+.grid.nomasonry iframe {
+  max-width: 100%;
+}
+
+.nomasonry .card {
+  justify-content: center;
+  justify-items: center;
+  align-items: start;
+}
+
+.nomasonry .permalink.title {
+  display: inline-block;
+  min-height: 0;
+}
+
+
+
+/*=========== FORM ===========*/
+
+.search-form {
+  box-sizing: border-box;
+  line-height: 1.5;
+  width: fit-content;
+  max-width: 100%;
+  margin: auto 1em;
+}
+.search-form label{
+  display: inline-block;
+  margin: .125em;
+}
+
+.search-form input {
+  font: inherit;
+  border-radius: .25em;
+}
+
+.results {
+  margin: 1em;
+}
+
+
+
+
+/*=========== NAV ===========*/
+
+
+.navigation,
+.pagination {
+  text-align: center;
+  margin: 1em auto;
+  padding: 0 1em;
+}
+
+.pagination:not(:first-of-type) {
+  margin-top: 3em;
+}
+
+.all-tags {
+  text-align: left;
+}
+
+.pagination label,
+.navigation a,
+.pagination a {
+  color: #337287;
+  border: .125em solid transparent;
+  display: inline-block;
+  padding: .5em;
+  line-height: 1;
+  text-decoration: none;
+  border-radius: .25em;
+  vertical-align: middle;
+  margin: .125em 0;
+  font-weight: bold;
+}
+.pagination a[aria-current] {
+  text-decoration: underline double;
+  font-weight: bold;
+}
+.navigation a:hover,
+.navigation a:focus,
+.pagination a:focus,
+.pagination a:hover {
+  border-color: black;
+}
+
+
+
+
+
+
+
+
+/*=========== VIEW ===========*/
+
+.view .card {
+  position: relative;
+  border-radius: .25em;
+  margin: 1em auto;
+  padding: 0 1em;
+}
+.download {
+  display: block;
+  width: fit-content;
+  text-align: right;
+  margin-right: 0;
+  margin-left: auto;
+}
+.view img,
+.view video,
+.view iframe {
+  display: block;
+  margin: 1em auto;
+}
+
+.view iframe {
+  width: 100vh;
+  height: 75vh;
+}
+
+@media (min-height: calc(100vw - 2em)) {
+  .view iframe {
+    width: 100%;
+    height: 75vw;
+  }
+}
+
+
+
+
+
+
+/*=========== TAGS ===========*/
+
+.taglist {
+  display: block;
+  list-style-type: none;
+  margin: 0;
+  padding:0;
+  text-align: left;
+  font-size: smaller;
+  position: relative;
+}
+.taglist:before {
+  content: 'in ';
+}
+.tag {
+  display: inline-block;
+}
+
+.tag a {
+  color: #3B5A4A;
+  border-radius: .25em;
+  margin: 0 .125em;
+  padding: .125em;
+  line-height: 1;
+  text-decoration: none;
+  transition:
+    background-color .25s,
+    color .25s;
+}
+.tag:not(:last-child) a:after {
+  content: ','
+}
+
+.tag a:focus, 
+.tag a:hover {
+  text-decoration: underline;
+}

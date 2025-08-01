@@ -1,0 +1,61 @@
+<!--
+credits : https://metemo.neocities.org/do_gallery -->
+
+<!doctype html>
+<html>
+
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1.0">
+
+<title>Gallery</title>
+
+<link rel=stylesheet href=gallery.css>
+<script defer src=scripts/exhibit.js></script>
+
+<script>
+   GALLERY = {
+  path: '',
+  
+  masonry: 0,
+  masonry_direction: 'vertical',
+  
+  images_per_page: 24,  
+  
+  max_width: '50vw',
+  max_height: '50vw',
+  
+  min_width: '180px',
+  max_width: '180px',
+  
+  grid_gap: 24,
+  
+  max_pagination_links: 9,
+
+  grid_card_layout:
+    ['image','title','tags'],
+  
+  view_card_layout:
+    ['image','title','tags','download','description']
+}
+  window.GALLERY = {
+    grid_gap: 50
+  }
+</script>
+
+<body>
+
+<pre name=archive hidden>
+
+../gallery/2025/aerei ref 2025.png
+  # tag1, tag2, tag3
+  title: Image Title
+  caption: This is an image
+
+../gallery/2025/aries ref 2025.png
+  # tag1, tag2, tag3
+  title: Image Title
+  caption: This is an image
+
+</pre>
+
+<div name=gallery>The gallery needs JavaScript to load! If you can see this, you may have blocked JavaScript.</div>
