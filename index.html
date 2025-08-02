@@ -16,6 +16,11 @@
 		<script src="https://iframe.chat/scripts/main.min.js"></script>
 	</head>
 	<body id="site">
+		<div id="loading-screen">
+  			<video id="loading-video" autoplay playsinline loop muted>
+    		<source src="../images/loadin.mp4" type="video/mp4"/>
+  			</video>
+		</div>
 		<div class="weboverlaybase">
 			<img src="images/container border.png">
 		</div>
@@ -47,8 +52,7 @@
 			<marquee scrollamount="5">
                 <p class="p">use code NEWSITE for 10% off your commission, print, or piloting order !</p>
 		</marquee>
-		</div>
-			
+		</div>	
 <!--
 ▄ .▄▄▄▄ . ▄▄▄· ·▄▄▄▄  ▄▄▄ .▄▄▄  
 ██▪▐█▀▄.▀·▐█ ▀█ ██▪ ██ ▀▄.▀·▀▄ █·
@@ -294,6 +298,16 @@
  ▀▀▀▀  ▀█▄▀▪ ▀▀▀ ▀▀ █▪▀▀▀▀▀•      ▀▀▀ ▀▀▀ ▀▀▀  ▀▀▀ ·▀▀▀  ▀▀▀  ▀▀▀▀ 	
 -->
 	<script src="../scripts/cursorsound.js" defer></script>
+
+<!--
+▄▄▌         ▄▄▄· ·▄▄▄▄  ▪   ▐ ▄  ▄▄ • 
+██•  ▪     ▐█ ▀█ ██▪ ██ ██ •█▌▐█▐█ ▀ ▪
+██▪   ▄█▀▄ ▄█▀▀█ ▐█· ▐█▌▐█·▐█▐▐▌▄█ ▀█▄
+▐█▌▐▌▐█▌.▐▌▐█ ▪▐▌██. ██ ▐█▌██▐█▌▐█▄▪▐█
+.▀▀▀  ▀█▄▀▪ ▀  ▀ ▀▀▀▀▀• ▀▀▀▀▀ █▪·▀▀▀▀ 	
+-->
+
+<script src="../scripts/loading.js"></script>
 
 </body>
 </html>

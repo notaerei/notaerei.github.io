@@ -135,6 +135,42 @@ img {
     background: #ff94ef;
 }
 
+/*
+▄▄▌         ▄▄▄· ·▄▄▄▄  ▪   ▐ ▄  ▄▄ • 
+██•  ▪     ▐█ ▀█ ██▪ ██ ██ •█▌▐█▐█ ▀ ▪
+██▪   ▄█▀▄ ▄█▀▀█ ▐█· ▐█▌▐█·▐█▐▐▌▄█ ▀█▄
+▐█▌▐▌▐█▌.▐▌▐█ ▪▐▌██. ██ ▐█▌██▐█▌▐█▄▪▐█
+.▀▀▀  ▀█▄▀▪ ▀  ▀ ▀▀▀▀▀• ▀▀▀▀▀ █▪·▀▀▀▀ 
+*/
+
+#loading-screen {
+  position: fixed;
+  inset: 0;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity 1s ease;
+  pointer-events: none;
+}
+
+#loading-screen.show {
+    opacity: 1;
+    pointer-events: all;
+}
+
+#loading-screen.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#loading-video {
+  position: fixed;
+}
+
+
 /* 
  ▄ .▄▄▄▄ . ▄▄▄· ·▄▄▄▄  ▄▄▄ .▄▄▄      ▄▄▄▄· ▄• ▄▌▄▄▄▄▄▄▄▄▄▄       ▐ ▄ .▄▄ · 
 ██▪▐█▀▄.▀·▐█ ▀█ ██▪ ██ ▀▄.▀·▀▄ █·    ▐█ ▀█▪█▪██▌•██  •██  ▪     •█▌▐█▐█ ▀. 
