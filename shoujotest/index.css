@@ -1,0 +1,20 @@
+body {
+   background: url("../shoujotest/Screenshot 2025-08-04 174258.png");
+   min-width: 500px;
+   background-size: 1920px;
+   background-repeat: no-repeat;
+   background-attachment: scroll;
+   overflow-y: scroll;
+}
+
+.sociallinks {
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-size: 40px;
+   transform: rotate(-30deg);
+   margin-top: 900px;
+   margin-left: 900px;
+}
+
+.letmescroll {
+   height: 2500px;
+}
