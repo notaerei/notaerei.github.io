@@ -1,0 +1,24 @@
+/*
+ ▄▄▄· ▄▄▄·  ▄▄ • ▄▄▄ .    ▄▄▌   ▄▄▄·  ▄· ▄▌      ▄• ▄▌▄▄▄▄▄
+▐█ ▄█▐█ ▀█ ▐█ ▀ ▪▀▄.▀·    ██•  ▐█ ▀█ ▐█▪██▌▪     █▪██▌•██  
+ ██▀·▄█▀▀█ ▄█ ▀█▄▐▀▀▪▄    ██▪  ▄█▀▀█ ▐█▌▐█▪ ▄█▀▄ █▌▐█▌ ▐█.▪
+▐█▪·•▐█ ▪▐▌▐█▄▪▐█▐█▄▄▌    ▐█▌▐▌▐█ ▪▐▌ ▐█▀·.▐█▌.▐▌▐█▄█▌ ▐█▌·
+.▀    ▀  ▀ ·▀▀▀▀  ▀▀▀     .▀▀▀  ▀  ▀   ▀ •  ▀█▄▀▪ ▀▀▀  ▀▀▀ 
+*/
+
+body {
+    /* margin: 20px 50px 0px 400px; */
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-image: radial-gradient(circle, rgba(255,0,0,0) 60%, rgba(2,0,36,1) 100%), url("https://bettysgraphics.neocities.org/images/backgrounds/555.GIF") /*https://64.media.tumblr.com/7d37f1c49b250847eb5d1eca35aba349/631d5887f5d13666-c4/s1280x1920/d6e050c83c37027b0dde29067cfee61a3816964a.jpg*/, linear-gradient(0deg, hsl(310deg 60% 53%) 0%, hsl(290deg 48% 31%) 52%, hsl(273deg 7% 10%) 100%);
+    background-repeat: no-repeat, repeat, no-repeat;
+    background-size: 1920px 1080px, auto, 1920px 1080px;
+    font-family: 'MS Gothic';
+    background-color: #000000;
+    text-shadow: 0.5px 0.5px 1px rgb(67, 27, 116);
+}
+
+.p {
+   font-family: 'Courier New', Courier, monospace;
+   color: red;
+}

@@ -21,6 +21,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
         { name: "[2012] blue bird lamentation - zero escape: virtue's last reward", path: "../audio/music/aereicore list/blue bird lamentation (8-bit).mp3" },
         { name: "[2001] caramelldansen - caramell", path: "../audio/music/aereicore list/caramelldansen (sega genesis version).mp3" },
         { name: "[1994] carnival night act II (in minor) - sonic the hedgehog 3", path: "../audio/music/aereicore list/carnival night act II (in minor).mp3" },
+        { name: "[2011] cara mia addio - portal 2", path: "../audio/music/aereicore list/carnival night act II (in minor).mp3" },
+        { name: "[2015] cirice - ghost", path: "../audio/music/aereicore list/cirice.wav"},
         { name: "[2016] crumbling dreams - five nights at freddy's: sister location", path: "../audio/music/aereicore list/crumbling dreams (8-bit).mp3" },
         { name: "[2021] dialtone (earthbound version) - deltarune chapter 2", path: "../audio/music/aereicore list/dialtone (earthbound version).mp3" },
         { name: "[1990] donut plains (in minor) - super mario world", path: "../audio/music/aereicore list/donut plains theme (in minor).mp3" },
@@ -36,6 +38,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         { name: "[2022] INTERNET OVERDOSE - aiobahn feat. KOTOKO", path: "../audio/music/aereicore list/INTERNET OVERDOSE (noteblock version).mp3" },
         { name: "[2001] kamek's library - mario party DS", path: "../audio/music/aereicore list/kamek's library.mp3" },
         { name: "[2003] shoes of glass (ガラスのくつ) - saya no uta", path: "../audio/music/aereicore list/kanako-itou.mp3" },
+        { name: "[1791] lacrimosa requiem - mozart", path: "../audio/music/aereicore list/requiem.mp3"},
         { name: "[1996] lavender town - pokemon red & green", path: "../audio/music/aereicore list/lavender town.mp3" },
         { name: "[2007] lavender waters - yume 2kki", path: "../audio/music/aereicore list/lavender waters.mp3" },
         { name: "[2021] let the living beware - genshin impact", path: "../audio/music/aereicore list/let the living beware (8-bit).mp3" },
@@ -61,6 +64,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         { name: "[2009] the penis (eek!) (vinesauce ROM corrupter version) - surasshu", path: "../audio/music/aereicore list/the penis (EEK!) (vinesauce rom corrupter version).mp3" },
         { name: "[2011] tokyo teddy bear (東京テディベア) - neru feat. kagamine rin", path: "../audio/music/aereicore list/tokyo teddy bear (8-bit).mp3" },
         { name: "[1985] underwater (in minor) - super mario bros.", path: "../audio/music/aereicore list/underwater theme (in minor).mp3" },
+        { name: "[1882] valse sentimentale - tchaikovsky", path: "../audio/music/aereicore list/valse sentimentale.mp3"},
         { name: "[2006] versus overworld (in minor) - new super mario bros.", path: "../audio/music/aereicore list/versus overworld theme (in minor).mp3" },
         { name: "[1996] virtual insanity - jamiroquai", path: "../audio/music/aereicore list/virtual insanity (8-bit).mp3" },
         { name: "[1990] water - super mario world", path: "../audio/music/aereicore list/water (in F harmonic minor).mp3" },
@@ -68,11 +72,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         { name: "[2009] watery graves (toontown version)- plants vs. zombies", path: "../audio/music/aereicore list/watery graves (toontown version).mp3" },
         { name: "[2006] wii sports theme - wii sports", path: "../audio/music/aereicore list/wii sports theme (in minor).mp3" },
         { name: "[2008] world is mine (ワールドイズマイン) - ryo feat. hatsune miku", path: "../audio/music/aereicore list/world is mine (sega megadrive version).mp3" },
-        { name: "[2011] cara mia addio - portal 2", path: "../audio/music/aereicore list/carra mia addio.mp3"},
         { name: "[1829] waltz in b minor - chopin", path: "../audio/music/aereicore list/waltz in b minor.mp3"},
-        { name: "[1791] lacrimosa requiem - mozart", path: "../audio/music/aereicore list/requiem.mp3"},
-        { name: "[1882] valse sentimentale - tchaikovsky", path: "../audio/music/aereicore list/valse sentimentale.mp3"},
-        { name: "[2015] cirice - ghost", path: "../audio/music/aereicore list/cirice.wav"},
         { name: "[2013] world bowser - super mario 3d world", path: "../audio/music/aereicore list/world bowser.wav"}
     ];
 
@@ -83,14 +83,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
     audioPlayer.volume = defaultVolume;
     updateVolumeHandle(defaultVolume); 
 
-    // Function to format time in MM:SS format
     function formatTime(seconds) {
         const minutes = Math.floor(seconds / 60);
         const secs = Math.floor(seconds % 60);
         return `${minutes}:${secs < 10 ? '0' : ''}${secs}`;
     }
 
-    // Function to update current time and total time
     function updateTimes() {
         currentTimeSpan.textContent = formatTime(audioPlayer.currentTime);
         if (!isNaN(audioPlayer.duration)) {
@@ -98,12 +96,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
         }
     }
     
-    // Function to update song title
     function updateSongTitle(index) {
     songTitle.textContent = songs[index].name;
 }
 
-    // Function to play a song by index
     function playSong(index) {
         currentSongIndex = index;
         audioPlayer.src = songs[index].path;
@@ -113,19 +109,16 @@ document.addEventListener('DOMContentLoaded', (event) => {
         saveProgress();
     }
 
-    // Function to play the next song in the list
     function playNextSong() {
         currentSongIndex = (currentSongIndex + 1) % songs.length;
         playSong(currentSongIndex);
     }
 
-    // Function to play a random song
     function playRandomSong() {
         const randomIndex = Math.floor(Math.random() * songs.length);
         playSong(randomIndex);
     }
 
-    // Save progress in local storage
     function saveProgress() {
         const currentSong = audioPlayer.src;
         const currentTime = audioPlayer.currentTime;
@@ -133,7 +126,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
         localStorage.setItem('currentTime', currentTime);
     }
 
-    // Load progress from local storage and autoplay
     function loadProgress() {
         const savedSongIndex = localStorage.getItem('currentSongIndex');
         const savedTime = localStorage.getItem('currentTime');
@@ -148,11 +140,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
             playPauseButton.textContent = 'pause';
             updateSongTitle(currentSongIndex);
         } else {
-            playRandomSong(); // If no song is saved, play a random song
+            playRandomSong();
         }
     }
 
-    // Function to update volume based on click position
     function updateVolume(event) {
         const clickPosition = event.clientX - customVolumeControl.getBoundingClientRect().left;
         const volumePercentage = clickPosition / customVolumeControl.offsetWidth;
@@ -160,38 +151,32 @@ document.addEventListener('DOMContentLoaded', (event) => {
         updateVolumeHandle(volumePercentage);
     }
 
-    // Function to update visual handle position and volume text
     function updateVolumeHandle(volumePercentage) {
         const handlePosition = volumePercentage * (customVolumeControl.offsetWidth - volumeHandle.offsetWidth);
         volumeHandle.style.left = handlePosition + 'px';
-        volumeText.textContent = `${Math.round(volumePercentage * 100)}%`; // Update volume text
+        volumeText.textContent = `${Math.round(volumePercentage * 100)}%`;
     }
 
-    // Event listener to update volume when clicking on custom volume control
     customVolumeControl.addEventListener('click', updateVolume);
     customVolumeControl.addEventListener('mousemove', (event) => {
-        if (event.buttons === 1) { // Check if left mouse button is held down
+        if (event.buttons === 1) {
             updateVolume(event);
         }
     });
 
-    // Event listener to seek audio when clicking on custom progress bar
     customProgressBar.addEventListener('click', (event) => {
         const clickPosition = event.clientX - customProgressBar.getBoundingClientRect().left;
         const progress = clickPosition / customProgressBar.offsetWidth;
         audioPlayer.currentTime = progress * audioPlayer.duration;
 
-        // Update custom progress bar immediately
         updateCustomProgressBar();
     });
 
-    // Update custom progress bar
     function updateCustomProgressBar() {
         const progress = (audioPlayer.currentTime / audioPlayer.duration) * 100;
         customProgressFill.style.width = progress + '%';
     }
 
-    // Display song queue
     function displaySongQueue() {
         songQueue.innerHTML = '';
         songs.forEach((song, index) => {
@@ -202,7 +187,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
         });
     }
 
-    // Event listeners
     playPauseButton.addEventListener('click', () => {
         if (audioPlayer.paused) {
             audioPlayer.play();
@@ -219,15 +203,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
         updateCustomProgressBar();
         saveProgress();
     });
-    audioPlayer.addEventListener('ended', playNextSong); // Play the next song when the current song ends
+    audioPlayer.addEventListener('ended', playNextSong);
 
-    // Load saved progress and autoplay when the page loads
     loadProgress();
 
-    // Display the song queue
     displaySongQueue();
 
-    // Initial setup
     updateTimes();
     updateVolumeHandle(audioPlayer.volume);
 });
