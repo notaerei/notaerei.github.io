@@ -6,8 +6,17 @@
 .▀    ▀  ▀ ·▀▀▀▀  ▀▀▀     .▀▀▀  ▀  ▀   ▀ •  ▀█▄▀▪ ▀▀▀  ▀▀▀ 
 */
 
+@font-face {
+    font-family: "alagard";
+    src: url('/fonts/alagard.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: "dotrix";
+    src: url('/fonts/dotrix.ttf') format('truetype')
+}
+
 body {
-    /* margin: 20px 50px 0px 400px; */
     overflow-x: hidden;
     overflow-y: hidden;
     background-image: radial-gradient(circle, rgba(255,0,0,0) 60%, rgba(2,0,36,1) 100%), url("https://bettysgraphics.neocities.org/images/backgrounds/555.GIF") /*https://64.media.tumblr.com/7d37f1c49b250847eb5d1eca35aba349/631d5887f5d13666-c4/s1280x1920/d6e050c83c37027b0dde29067cfee61a3816964a.jpg*/, linear-gradient(0deg, hsl(310deg 60% 53%) 0%, hsl(290deg 48% 31%) 52%, hsl(273deg 7% 10%) 100%);
@@ -16,9 +25,99 @@ body {
     font-family: 'MS Gothic';
     background-color: #000000;
     text-shadow: 0.5px 0.5px 1px rgb(67, 27, 116);
+    margin-top: 20px;
+}
+
+.title {
+    position: absolute;
+    left: 430px;
+    rotate: -2deg;
+    filter: brightness(0.5) contrast(200%) drop-shadow(0px 0px 5px orangered);
+}
+
+.titleexclaim {
+    position: absolute;
+    right: 490px;
+    rotate: 20deg;
+    filter: brightness(0.5) contrast(200%) drop-shadow(0px 0px 5px orangered);
+    z-index: 1;
+}
+
+.lily {
+    position: absolute;
+    left: 430px;
+    bottom: 100px;
+    rotate: -35deg;
+}
+
+.lefttao {
+    position: absolute;
+    top: 450px;
+    left: 200px;
+    filter: drop-shadow(0px 0px 5px #800605);
+    z-index: 1;
+}
+
+.container {
+    background-color: black;
+    margin: auto;
+    width: 888px;
+    height: 888px;
+    border-radius: 15px;
+    border: solid 1px #800605;
+    padding: 10px;
+    display: flex;
+}
+
+.columns {
+    padding: 10px;
+    margin-top: 110px;
+}
+
+#left{
+    flex-basis: 100%;
+    margin-left: 10px;
+    overflow: auto;
+}
+
+#right{
+    flex-basis: 100%;
+    margin-right: 10px;
+    overflow: auto;
+}
+
+.blurframe {
+    position: absolute;
+    filter: brightness(100%);
+}
+
+.bootao {
+    position: absolute;
+    width: 150px;
+    right: 395px;
+    top: 10px;
+    rotate: 30deg;
+    filter: drop-shadow(0px 0px 20px darkred) saturate(500%) brightness(.7) contrast(10);
+}
+
+.h2 {
+   font-family: 'alagard';
+   color: rgb(182, 21, 0);
+   text-shadow: 1px 1px #4e0c00;
+   font-size: 22px;
+   font-weight: normal;
 }
 
 .p {
-   font-family: 'Courier New', Courier, monospace;
-   color: red;
+   font-family: 'dotrix';
+   color: #d44e00;
+   font-size: 16px;
+}
+
+.righttao {
+    width: 900px;
+    position: absolute;
+    top: 60px;
+    filter: drop-shadow(0px 0px 20px darkred) sepia(0.9) saturate(500%) hue-rotate(10deg) brightness(1.1) contrast(10);
+    opacity: 0.1;
 }
