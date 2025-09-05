@@ -800,6 +800,17 @@ select {
     cursor: move;
 }
 
+.biblebutton {
+    transition: transform .2s;
+    margin: 0 auto;
+    filter: sepia(1) saturate(300%) hue-rotate(280deg) brightness(1) contrast(2) drop-shadow(0px 0px 2px black);
+}
+
+.biblebutton:hover {
+    transform-origin: 50% 50%; 
+    filter: sepia(1) saturate(1000%) hue-rotate(280deg) brightness(1.1) contrast(11) drop-shadow(0px 0px 10px #ff1bc6);
+}
+
 /*
 ▄▄·  ▄ .▄ ▄▄▄· ▄▄▄▄▄    ▄▄▄▄·       ▄▄▄▄▄
 ▐█ ▌▪██▪▐█▐█ ▀█ •██      ▐█ ▀█▪▪     •██  

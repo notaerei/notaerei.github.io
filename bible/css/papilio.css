@@ -28,19 +28,25 @@ body {
     margin-top: 20px;
 }
 
+.leftbutterfly {
+    position: absolute;
+    left: 333px;
+    filter: brightness(0.4) contrast(200%) drop-shadow(0px 0px 5px orangered);
+    pointer-events: none;
+}
+
 .title {
     position: absolute;
     left: 430px;
     rotate: -2deg;
     filter: brightness(0.5) contrast(200%) drop-shadow(0px 0px 5px orangered);
+    transition: transform .2s;
 }
 
-.titleexclaim {
-    position: absolute;
-    right: 490px;
-    rotate: 20deg;
-    filter: brightness(0.5) contrast(200%) drop-shadow(0px 0px 5px orangered);
-    z-index: 1;
+.title:hover {
+    transform: scale(1.05);
+    transform-origin: 50% 50%;
+    filter: drop-shadow(0px 0px 10px #ff0000);
 }
 
 .lily {
@@ -48,6 +54,7 @@ body {
     left: 430px;
     bottom: 100px;
     rotate: -35deg;
+    pointer-events: none;
 }
 
 .lefttao {
@@ -56,10 +63,11 @@ body {
     left: 200px;
     filter: drop-shadow(0px 0px 5px #800605);
     z-index: 1;
+    pointer-events: none;
 }
 
 .container {
-    background-color: black;
+    background-image: linear-gradient(black, rgb(32, 4, 0));
     margin: auto;
     width: 888px;
     height: 888px;
@@ -86,6 +94,14 @@ body {
     overflow: auto;
 }
 
+.writing {
+    height: 500px;
+    overflow-y: scroll;
+    padding: 10px;
+    border-radius: 15px;
+    border: solid 1px #800605;
+}
+
 .blurframe {
     position: absolute;
     filter: brightness(100%);
@@ -100,18 +116,51 @@ body {
     filter: drop-shadow(0px 0px 20px darkred) saturate(500%) brightness(.7) contrast(10);
 }
 
+.bootao:hover {
+    transform: scale(1.1) rotate(3deg);
+    transform-origin: 50% 50%;
+    filter: drop-shadow(0px 0px 20px darkred) saturate(500%) brightness(.75) contrast(10);
+}
+
+.h1 {
+   font-family: 'alagard';
+   color: rgb(0, 0, 0);
+   filter: drop-shadow(0px 0px 3px #ff000079);
+   font-size: 55px;
+   font-weight: bold;
+   display: inline;
+   -webkit-text-stroke: 1px black;
+}
+
 .h2 {
    font-family: 'alagard';
-   color: rgb(182, 21, 0);
-   text-shadow: 1px 1px #4e0c00;
+   color: rgb(228, 91, 0);
+   text-shadow: 1px 3px #4e0c00;
+   filter: drop-shadow(0px 0px 4px #ff0000);
    font-size: 22px;
    font-weight: normal;
+   line-height: 16px;
+   letter-spacing: -1px;
 }
 
 .p {
-   font-family: 'dotrix';
-   color: #d44e00;
-   font-size: 16px;
+    font-family: 'dotrix';
+    color: #b42400;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: -1px;
+}
+
+b {
+    color: rgb(255, 51, 0);
+}
+
+a {
+    color: rgb(218, 80, 0);
+}
+
+a:hover {
+    color: rgb(107, 21, 0);
 }
 
 .righttao {
@@ -120,4 +169,47 @@ body {
     top: 60px;
     filter: drop-shadow(0px 0px 20px darkred) sepia(0.9) saturate(500%) hue-rotate(10deg) brightness(1.1) contrast(10);
     opacity: 0.1;
+    pointer-events: none;
+}
+
+.video {
+    position: absolute;
+    bottom: 10px;
+    right: 500px;
+}
+
+.videoframe {
+    position: absolute;
+    bottom: 10px;
+    right: 500px;
+    pointer-events: none;
+}
+
+.rightbutterfly {
+    position: absolute;
+    bottom: -190px;
+    right: 250px;
+    filter: brightness(0.5) contrast(200%) drop-shadow(0px 0px 5px orangered);
+    pointer-events: none;
+}
+
+/*
+.▄▄ ·  ▄▄· ▄▄▄        ▄▄▌  ▄▄▌  ▄▄▄▄·  ▄▄▄· ▄▄▄  
+▐█ ▀. ▐█ ▌▪▀▄ █·▪     ██•  ██•  ▐█ ▀█▪▐█ ▀█ ▀▄ █·
+▄▀▀▀█▄██ ▄▄▐▀▀▄  ▄█▀▄ ██▪  ██▪  ▐█▀▀█▄▄█▀▀█ ▐▀▀▄ 
+▐█▄▪▐█▐███▌▐█•█▌▐█▌.▐▌▐█▌▐▌▐█▌▐▌██▄▪▐█▐█ ▪▐▌▐█•█▌
+ ▀▀▀▀ ·▀▀▀ .▀  ▀ ▀█▄▀▪.▀▀▀ .▀▀▀ ·▀▀▀▀  ▀  ▀ .▀  ▀
+*/
+
+::-webkit-scrollbar {
+    width: 2px;
+}
+::-webkit-scrollbar-thumb {
+    background: #ff121283;
+}
+::-webkit-scrollbar-track {
+    background: #000000;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #ff6702;
 }
