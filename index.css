@@ -988,8 +988,8 @@ button{
     position: absolute;
     flex-direction: column;
     z-index: 1000;
-    top: 70px;
-    right: 60px;
+    top: 67px;
+    left: 1609px;
     width: 200px;
     height: 150px;
     background-color: rgba(0, 0, 0, 0.69);
