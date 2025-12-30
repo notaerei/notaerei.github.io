@@ -24,35 +24,11 @@
 		<div class="weboverlaybase">
 			<img src="images/container border index.png">
 		</div>
-		<style>
-			.marquee {
-			 height: 20px;	
-			 overflow: hidden;
-			 position: relative;
-			 display: inline-flex;
-			 width: 333px; !important
-			 font-family: 'zpix';
-			 background: rgba(0, 0, 0, 0.50);
-			}
-			.marquee p {
-			 position: relative;
-			 margin: 0;
-			 line-height: 20px;
-			 text-align: center;
-			 padding: 2px;
-			 color: #fa1dd9;
-			 display: inline-block;
-			 width: 100%;
-			 white-space: nowrap;
-			 animation: marquee 10s linear infinite;
-			 padding-right: 50px;
-			}
-			</style>
-		<div class="marquee">
-			<marquee scrollamount="5">
-                <p class="p">use code NEWSITE for 10% off your commission, print, or piloting order !</p>
-		</marquee>
-		</div>	
+		<div class="marqueescroll" style="height: 20px; width: 250px; overflow: hidden;">
+  			<div>
+    			<p class="p" style="color: #fa1dd9; margin-top: -5px;">use code NEWSITE for 10% off your commission, print, or piloting order! • </p>
+  			</div>
+		</div>
 <!--
 ▄ .▄▄▄▄ . ▄▄▄· ·▄▄▄▄  ▄▄▄ .▄▄▄  
 ██▪▐█▀▄.▀·▐█ ▀█ ██▪ ██ ▀▄.▀·▀▄ █·
@@ -84,7 +60,7 @@
 		<div class="tooltip"><span class="tooltiptext" style="bottom: -50%">my spotify profile</span><a href="https://open.spotify.com/artist/2IGlCSTb53B8QMPBGwxMiV"><img src="images/social media icons/spotify.png" alt="my spotify page" title="my spotify page" class="socmedbutton"></a></div>
 	</div>
 	<div class="sitebuttons" id="sitebuttons">
-		<p class="p" style="text-align: right; display: block; margin-left: auto; margin-right: auto; font-size: 10px;"><a href="https://aerei.carrd.co"><img src="../images/aerei button.gif"></a> <a href="https://aerei.carrd.co"><img src="../images/aerei stamp.gif"></a> <br><br><i>add my button(s) to your site!</i></p></div>
+		<p class="p" style="text-align: right; display: block; margin-left: auto; margin-right: auto; font-size: 13px;"><a href="https://aerei.carrd.co"><img src="../images/aerei button.gif"></a> <a href="https://aerei.carrd.co"><img src="../images/aerei stamp.gif"></a> <br><br><i>add my button(s) to your site!</i></p></div>
 	</div>
 
 <!--
@@ -125,32 +101,40 @@
 </div>
 
 <div id="right" class="columns">
-	<p class="p" style="text-align: center"><b>hello and welcome to my web!</b>  <img src="https://pixelsafari.neocities.org/favicon/nature/star/star133.gif">i'm ari and i am a filipino-american digital artist and twitch affiliate with a B.S. in kinesiology.  i enjoy making online content in my very little free time. thank you for visiting my website!</p>
-	<p><img style="border: 1px solid #FA1DD9; float: left; margin: 15px;" src="../gallery/2023/cat hat.png" width="100px" height="100px">
+	<p class="p" style="text-align: center"><b>hello and welcome to my web!</b>  <img src="https://pixelsafari.neocities.org/favicon/nature/star/star133.gif" style="width: 10px; height: 10px;"> i'm ari and i am a filipino-american digital artist and twitch affiliate with a B.S. in kinesiology.  i enjoy making online content in my very little free time. thank you for visiting my website!</p>
+	<p><img style="border: 1px solid #FA1DD9; float: left; margin: 15px;" src="../gallery/2023/cat hat.png" width="50px" height="50px">
 		<br>
 		<style>
 			#statuscafe {
 				 padding: .5em;
 				 background-color: rgba(27, 3, 34, 0.486);
 				 border: 1px solid #FA1DD9;
-				 font-size: 12px;
+				 font-size: 13px;
+				 margin-top: -30px;
 			}
 			#statuscafe-username {
 				 margin-bottom: .5em;
 				 color:rgb(255, 0, 140);
-				 font-size: 16px;
+				 font-size: 13px;
 				 font-weight: 1px;
-				 font-family: 'sweetheart';
+				 font-family: 'rosetinted';
+				 padding: 2px;
+    			line-height: 15px;
 			}
 			#statuscafe-username a {
-				font-size: 16px;
+				font-size: 13px;
 				color:rgb(255, 0, 140);
+				font-family: 'rosetinted';
+				padding: 2px;
+    			line-height: 15px;
 			}
 			#statuscafe-content {
 				 margin: 0 1em 0.5em 1em;
 				 font-size: 13px;
 				 color: #e879e6;
-				 font-family: 'zpix';
+				 font-family: 'rosetinted';
+				 padding: 2px;
+    			line-height: 15px;
 			}
 		</style>
 		<div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=aerei" defer></script>
@@ -187,9 +171,9 @@
 
 <div class="note-container" id="note-container">
    <div class="note-header" id="note-header">the webmaster's note . . .</div>
-	<p class="p" style="margin-top: -10px; text-align: center; font-size: 9px;"><i>this site is best viewed on chromium desktop browsers on a 1920 x 1080 display!</i> if you are viewing this site on any device that doesn't support this, please note the experience will be subpar.
-	<p class="p" style="margin-top: -10px; text-align: center; font-size: 9px;">please <a href="contact.html" class="text-link" style="font-size: 9px;">contact me</a> if anything on this site seems to be absolutely broken to the point of distress.  <b>i am not the best at coding.  like, at all.</b>
-	<br><br> last update: <a href="https://github.com/notaerei/notaerei.github.io/wiki/update-log" class="text-link" style="font-size: 9px;" title="visit my github update log!">11/11/2025</a>.</p>
+	<p class="p" style="margin-top: -10px; text-align: center;"><i>this site is best viewed on chromium desktop browsers on a 1920 x 1080 display!</i>  if you are viewing this site on any device that doesn't support this, please note the experience will be subpar.
+	<p class="p" style="margin-top: -10px; text-align: center; font-size: 10px;">please <a href="contact.html" class="text-link" style="font-size: 10px;">contact me</a> if anything on this site seems to be absolutely broken.  <b>i am not the best at coding.  like, at all.</b>
+	<br><br> last update: <a href="https://github.com/notaerei/notaerei.github.io/wiki/update-log" class="text-link" style="font-size: 9px;" title="visit my github update log!">12/29/2025</a>.</p>
 </div>
 
 <!--
@@ -259,12 +243,12 @@
 -->
  <div class="webring-container">
 	<div class="webring-header" id="webring-header">caught you in my interweb <i>!</i></div>
-		<p class="p" style="text-align: center; display: block; margin-left: auto; margin-right: auto; margin-top: -5px; font-size: 9px;">want to join my webring? <a href="contact.html" class="text-link" style="font-size: 9px;">contact me</a>! <br><br> <i>sorted alphabetically.  </i><br>
-			<div class="tooltip" style="padding-left: 55px"><span class="tooltiptext" style="left: 30%"><b>[ insect.christmas ]</b> <br> astrid is an artist i really admire and look up to!</span><a href="https://insect.christmas"><img src="../images/outerweb/insectchristmas.gif" style="filter: sepia(1) saturate(1000%) hue-rotate(280deg) brightness(1.1) contrast(10)"></a></div><br>
-			<div class="tooltip" style="padding-left: 55px"><span class="tooltiptext" style="left: 30%">this is a placeholder :P join my webring! your button here!</span><a href="https://insect.christmas"><img src="../images/aerei button.gif" style="filter: sepia(1) saturate(1000%) hue-rotate(280deg) brightness(1.1) contrast(10)"></a></div><br>
-			<div class="tooltip" style="padding-left: 55px"><span class="tooltiptext" style="left: 30%">this is another placeholder! hooray!</span><a href="https://insect.christmas"><img src="../images/aerei button.gif" style="filter: sepia(1) saturate(1000%) hue-rotate(280deg) brightness(1.1) contrast(10)"></a></div><br>
-			<div class="tooltip" style="padding-left: 55px"><span class="tooltiptext" style="left: 30%">ummm poo poo pee pee butt haha LOL!  butt!  behind!</span><a href="https://insect.christmas"><img src="../images/aerei button.gif" style="filter: sepia(1) saturate(1000%) hue-rotate(280deg) brightness(1.1) contrast(10)"></a></div><br>
-			<div class="tooltip" style="padding-left: 55px"><span class="tooltiptext" style="left: 30%">do you ever get that feeling of deja vu?</span><a href="https://insect.christmas"><img src="../images/aerei button.gif" style="filter: sepia(1) saturate(1000%) hue-rotate(280deg) brightness(1.1) contrast(10)"></a></div><br>
+		<p class="p" style="text-align: center; display: block; margin-left: auto; margin-right: auto; margin-top: -5px;">want to join my webring? <br> <a href="contact.html" class="text-link">contact me</a>!
+			<div class="marqueescroll" style="width: 195px; z-index: 1000; text-align: center">
+				<div style="margin-top: 7px;">
+					<div class="tooltip""><span class="tooltiptext" style="width: 120px"><b>[ insect.christmas ]</b> <br> astrid is an artist i really <br> admire and look up to!</span><a href="https://insect.christmas"><img src="../images/outerweb/insectchristmas.gif" style="filter: sepia(1) saturate(1000%) hue-rotate(280deg) brightness(1.1) contrast(10)"></a></div>
+				</div>
+			</div>
  </div>
 
 <!--
@@ -285,7 +269,7 @@
 	<script src="../scripts/musicplayer.js"></script>
 	<audio id="audioPlayer"></audio>
 	<div class="controls">
-		 <div class="musicplayerbutton" id="playPause">play</div>
+		 <div class="musicplayerbutton" id="playPause"">play</div>
 		 <div class="musicplayerbutton" id="playRandom">next</div>
 		 <div id="customProgressBar">
 			  <div id="customProgressFill"></div>
@@ -331,7 +315,8 @@
 .▀▀▀  ▀█▄▀▪ ▀  ▀ ▀▀▀▀▀• ▀▀▀▀▀ █▪·▀▀▀▀ 	
 -->
 
-<script src="../scripts/loading.js"></script>
+	<script src="../scripts/loading.js"></script>
+	<script type="text/javascript" src="scripts/marquee.js"></script>
 
-</body>
+	</body>
 </html>

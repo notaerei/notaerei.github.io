@@ -18,31 +18,10 @@
 		<div class="weboverlaybase">
 			<img src="images/container border.png">
 		</div>
-		<style>
-			.marquee {
-			 height: 20px;	
-			 overflow: hidden;
-			 position: relative;
-			 display: inline-flex;
-			 width: 333px; !important
-			 font-family: 'zpix';
-			 background: rgba(0, 0, 0, 0.90);
-			}
-			.marquee p {
-			 position: relative;
-			 margin: 0;
-			 line-height: 20px;
-			 text-align: center;
-			 padding: 2px;
-			 color: #fa1dd9;
-			 display: inline-block;
-			 width: 100%;
-			}
-			</style>
-		<div class="marquee">
-			<marquee scrollamount="5">
-                <p class="p">use code NEWSITE for 10% off your commission, print, or piloting order !</p>
-		</marquee>
+		<div class="marqueescroll" style="height: 20px; width: 250px; overflow: hidden;">
+  			<div>
+    			<p class="p" style="color: #fa1dd9; margin-top: -5px;">use code NEWSITE for 10% off your commission, print, or piloting order! • </p>
+  			</div>
 		</div>
 			
 <!--
@@ -75,7 +54,7 @@
 			<div class="tooltip"><span class="tooltiptext" style="bottom: -50%">my spotify profile</span><a href="https://open.spotify.com/artist/2IGlCSTb53B8QMPBGwxMiV"><img src="images/social media icons/spotify.png" alt="my spotify page" title="my spotify page" class="socmedbutton"></a></div>
 		</div>
 		<div class="sitebuttons" id="sitebuttons">
-		<p class="p" style="text-align: right; display: block; margin-left: auto; margin-right: auto; font-size: 10px;"><a href="https://aerei.carrd.co"><img src="../images/aerei button.gif"></a> <a href="https://aerei.carrd.co"><img src="../images/aerei stamp.gif"></a> <br><br><i>add my button(s) to your site!</i></p></div>
+		<p class="p" style="text-align: right; display: block; margin-left: auto; margin-right: auto; font-size: 13px;"><a href="https://aerei.carrd.co"><img src="../images/aerei button.gif"></a> <a href="https://aerei.carrd.co"><img src="../images/aerei stamp.gif"></a> <br><br><i>add my button(s) to your site!</i></p></div>
 	</div>
 
 <!--
@@ -94,115 +73,115 @@
     <div class="containercolumn">
         <h3 class="h3">baseline prices . . .</h3>
             <p class="p">see price conversions <a href="https://www.notion.so/aerei/list-of-currencies-accepted-for-commissions-891d07cd732c4abb90ea3a088ee3c4ef?pvs=4" class="text-link">here</a>, which includes other alternative currencies that i accept such as robux, royale high diamonds, everskies stars, overwatch coins, and more!
-				<table id="usd">
-					<tr>
+				<table id="usd" class="table">
+					<tr class="tr">
 						<th>
-							<p class="p">bug-eyed
+							<p class="tablecell">bug-eyed
 						</th>
 						<th>
-							<p class="p">flat colour
+							<p class="tablecell">flat colour
 						</th>
 						<th>
-							<p class="p">full colour
-						</th>
-					</tr>
-					<tr>
-						<td>
-							<p class="p"><b>headshot
-						</td>
-						<td>
-							<p class="p">$20.00
-						</td>
-						<td>
-							<p class="p">$25.00
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<p class="p"><b>bust & up
-						</td>
-						<td>
-							<p class="p">$22.00
-						</td>
-						<td>
-							<p class="p">$27.00
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<p class="p"><b>thigh & up
-						</td>
-						<td>
-							<p class="p">$27.00
-						</td>
-						<td>
-							<p class="p">$32.00
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<p class="p"><b>full body
-						</td>
-						<td>
-							<p class="p">$37.00
-						</td>
-						<td>
-							<p class="p">$42.00
-						</td>
-					</tr>
-					<tr>
-						<th>
-							<p class="p">semi-real
-						</th>
-						<th>
-							<p class="p">flat colour
-						</th>
-						<th>
-							<p class="p">full colour
+							<p class="tablecell">full colour
 						</th>
 					</tr>
 					<tr>
 						<td>
-							<p class="p"><b>headshot
+							<p class="tablecell"><b>headshot
 						</td>
 						<td>
-							<p class="p">$25.50
+							<p class="tablecell">$20.00
 						</td>
 						<td>
-							<p class="p">$30.50
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<p class="p"><b>bust & up
-						</td>
-						<td>
-							<p class="p">$27.50
-						</td>
-						<td>
-							<p class="p">$32.50
+							<p class="tablecell">$25.00
 						</td>
 					</tr>
 					<tr>
 						<td>
-							<p class="p"><b>thigh & up
+							<p class="tablecell"><b>bust & up
 						</td>
 						<td>
-							<p class="p">$32.50
+							<p class="tablecell">$22.00
 						</td>
 						<td>
-							<p class="p">$37.50
+							<p class="tablecell">$27.00
 						</td>
 					</tr>
 					<tr>
 						<td>
-							<p class="p"><b>full body
+							<p class="tablecell"><b>thigh & up
 						</td>
 						<td>
-							<p class="p">$42.50
+							<p class="tablecell">$27.00
 						</td>
 						<td>
-							<p class="p">$47.50
+							<p class="tablecell">$32.00
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p class="tablecell"><b>full body
+						</td>
+						<td>
+							<p class="tablecell">$37.00
+						</td>
+						<td>
+							<p class="tablecell">$42.00
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<p class="tablecell">semi-real
+						</th>
+						<th>
+							<p class="tablecell">flat colour
+						</th>
+						<th>
+							<p class="tablecell">full colour
+						</th>
+					</tr>
+					<tr>
+						<td>
+							<p class="tablecell"><b>headshot
+						</td>
+						<td>
+							<p class="tablecell">$25.50
+						</td>
+						<td>
+							<p class="tablecell">$30.50
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p class="tablecell"><b>bust & up
+						</td>
+						<td>
+							<p class="tablecell">$27.50
+						</td>
+						<td>
+							<p class="tablecell">$32.50
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p class="tablecell"><b>thigh & up
+						</td>
+						<td>
+							<p class="tablecell">$32.50
+						</td>
+						<td>
+							<p class="tablecell">$37.50
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p class="tablecell"><b>full body
+						</td>
+						<td>
+							<p class="tablecell">$42.50
+						</td>
+						<td>
+							<p class="tablecell">$47.50
 						</td>
 					</tr>
 				</table>
@@ -264,34 +243,34 @@
                <table>
 					<tr>
 						<th>
-							<p class="p">stars
+							<p class="tablecell">stars
 						</th>
                   		<th>
-							<p class="p">discount
+							<p class="tablecell">discount
 						</th>
 					</tr>
                		<tr>
                   		<td>
-							<p class="p">10 ★
+							<p class="tablecell">10 ★
 						</td>
 						<td>
-							<p class="p">5% off
+							<p class="tablecell">5% off
 						</td>
 					</tr>
                		<tr>
                   		<td>
-							<p class="p">50 ★
+							<p class="tablecell">50 ★
 						</td>
 						<td>
-							<p class="p">10% off
+							<p class="tablecell">10% off
 						</td>
 					</tr>
                		<tr>
                   		<td>
-							<p class="p">150 ★
+							<p class="tablecell">150 ★
 						</td>
 						<td>
-							<p class="p">20% off
+							<p class="tablecell">20% off
 						</td>
 					</tr>
             	</table>
@@ -356,5 +335,16 @@
 -->
 	<script src="../scripts/cursorsound.js" defer></script>
 
-</body>
+<!--
+▄▄▌         ▄▄▄· ·▄▄▄▄  ▪   ▐ ▄  ▄▄ • 
+██•  ▪     ▐█ ▀█ ██▪ ██ ██ •█▌▐█▐█ ▀ ▪
+██▪   ▄█▀▄ ▄█▀▀█ ▐█· ▐█▌▐█·▐█▐▐▌▄█ ▀█▄
+▐█▌▐▌▐█▌.▐▌▐█ ▪▐▌██. ██ ▐█▌██▐█▌▐█▄▪▐█
+.▀▀▀  ▀█▄▀▪ ▀  ▀ ▀▀▀▀▀• ▀▀▀▀▀ █▪·▀▀▀▀ 	
+-->
+
+	<script src="../scripts/loading.js"></script>
+	<script type="text/javascript" src="scripts/marquee.js"></script>
+
+	</body>
 </html>
