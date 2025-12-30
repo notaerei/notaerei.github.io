@@ -1,5 +1,10 @@
 /* work in progress; see https://iframe.chat/playground/*/
 
+@font-face {
+    font-family: "rosetinted";
+    src: url('../fonts/rosetinted.ttf') format('truetype')
+}
+
 @keyframes glow {
    from {
      border-color: #FA1DD9;
@@ -14,7 +19,7 @@
   body {
     background-color: #000;
     color: rgba(0, 0, 0, 0.69);
-    font-family: zpix;
+    font-family: 'rosetinted';
   }
   body:after {
     content: " ";
@@ -35,7 +40,7 @@
    color: rgba(155, 125, 149, 1);
    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.69);
    border-radius: 10px;
-   font-family: 'zpix';
+   font-family: 'rosetinted';
    max-width: calc(100% - 14px);
    position: relative;
   }
@@ -81,7 +86,7 @@
   }
   #input {
     border: 1px solid #FA1DD9;
-    font-family: 'zpix';
+    font-family: 'rosetinted';
     font-size: 13px;
     padding: 5px;
     margin-bottom: 5px;
@@ -95,7 +100,7 @@
   #timestamp {
    color: #FA1DD9;
    font-style: italic;
-   font-family: zpix;
+   font-family: rosetinted;
    font-size: 9px;
    text-align: center !important;
    width: calc(100% - 20px);
@@ -104,7 +109,7 @@
   }
   #top_banner {
    display: none;
-   font-family: zpix;
+   font-family: 'rosetinted';
    color: #FA1DD9;
    background: #000;
   }
