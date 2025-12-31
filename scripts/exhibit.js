@@ -22,9 +22,9 @@ const _GALLERY = {
 
   grid_card_layout: ['image','title'],
   
-  view_card_layout: ['image','title','tags','download','description'],
+  view_card_layout: ['image','title','publish','tags','reference','description','download'],
   
-  // Language:
+  // language:
   
   Find_tags: 'Find tag(s): ',
   Search_mode: 'Search mode: ',
@@ -43,8 +43,8 @@ const _GALLERY = {
   Prev_result: '← see previous piece',
   
   Permalink: 'View',
-  Download: 'Download',
-  No_description: '<p><i>No description</i>.</p>',
+  Download: 'download',
+  No_description: '<p><i>no description available!</i>.</p>',
   
   
   // codestuffing, do not eat:
@@ -267,7 +267,7 @@ function createNav(bool) {
     
     frm.append(inp);
     
-    const sel = document.createElement('select');
+    const sel = document.createElement('select class');
     sel.innerHTML = str;
     
     sel.oninput = $ => {
@@ -323,12 +323,7 @@ _GALLERY.gallery.append(
 
 createGrid(search);
 
-} // END grid view
-
-
-
-
-
+}
 
 //=====================================//
 /*                 VIEW                */
@@ -382,15 +377,9 @@ _GALLERY.gallery.append(
 
 }
 
-
-
-
-
-
 //=====================================//
 /*              FUNCTIONS              */
 //=====================================//
-
 
 function getQueries() {
   const queryarr = location.search.slice(1).split('&');
@@ -439,14 +428,12 @@ function parse() {
     
     const t = li.trim();
     
-    // empty line - expect to make a new obj
     if(t === '') {
       makeNew = true;
       captureCaption = '';
       return;
     }
     
-    // first nonempty line = image source
     if (makeNew) {
       makeNew = false;
       _GALLERY.archive.push( {
@@ -459,8 +446,6 @@ function parse() {
       } );
       return;
     }
-    
-    // parse lines for most recent image
     
     const img = _GALLERY.archive[_GALLERY.archive.length-1];
     
@@ -476,7 +461,6 @@ function parse() {
       return;
     }
     
-    // key: value
     const match = /^(\w+)\s*:\s*(.*?)$/.exec(t);
     if (match) {
       const [key,val] = [match[1].trim(),match[2].trim()];
@@ -484,6 +468,20 @@ function parse() {
       if(key==='caption'||key==='description'||key==='details') {
         captureCaption = key;
         img[captureCaption] = '<p>'+val+'</p>';
+        return;
+      } else 
+        captureCaption = '';
+
+      if(key==='caption'||key==='reference'||key==='details') {
+        captureCaption = key;
+        img[captureCaption] = '<p class=referencetext>'+val+'</p>';
+        return;
+      } else 
+        captureCaption = '';
+      
+      if(key==='caption'||key==='publish'||key==='details') {
+        captureCaption = key;
+        img[captureCaption] = '<p class=publishtext><i>'+val+'</i></p>';
         return;
       } else 
         captureCaption = '';
@@ -498,13 +496,10 @@ function parse() {
         return;
       }
       
-      // otherwise
-      
       img[key] = val;
       return;
     }
-    
-    // attribute=content
+
     const matchA = /^(\w+)\s*=\s*(.*?)$/.exec(t);
     if(matchA) {
       const [att,con] = [matchA[1].trim(),matchA[2].trim()];
@@ -514,7 +509,6 @@ function parse() {
       return;
     }
     
-    // new paragraph per line when capturing caption
     const blockre = /^<\/?(?:body|article|address|aside|footer|header|h\d|hgroup|main|nav|section|blockquote|dd|div|dl|dt|figcaption|hr|li|menu|nav|ol|p|pre|el|area|map|table|col|colgroup|tbody|td|tfoot|th|thead|tr|fieldset|section|script|noscript|form|details|summary|dialog|figure)/i;
     if (captureCaption!=='') {
       img[captureCaption] += blockre.test(t) ? t : '<p>' + t ;
@@ -536,6 +530,8 @@ function getCard(obj) {
     return obj.card;
   
   const card = document.createElement('article');
+  const publish = document.createElement('div');
+  const reference = document.createElement('div');
   const description = document.createElement('div');
   const taglist = document.createElement('ul');
   const ref = document.createElement('a');
@@ -612,6 +608,12 @@ function getCard(obj) {
   
   description.classList.add('caption');
   description.innerHTML  = obj.caption || obj.description || obj.details || obj.detail || _GALLERY.No_description;
+
+  reference.classList.add('reference');
+  reference.innerHTML  = obj.reference || obj.description || obj.details || obj.detail || _GALLERY.No_description;
+
+  publish.classList.add('publish');
+  publish.innerHTML  = obj.publish || obj.description || obj.details || obj.detail || _GALLERY.No_description;
   
   if (obj.tags) {
     obj.tags.forEach(t => {
@@ -636,8 +638,14 @@ function determineOrder (arr) {
       case 'title':
         rarr.push(title);
         break;
+      case 'publish':
+        rarr.push(publish);
+        break;
       case 'tags':
         rarr.push(taglist);
+        break;
+      case 'reference':
+        rarr.push(reference);
         break;
       case 'download':
         _GALLERY.do_grid?
@@ -674,7 +682,7 @@ function filterArchive() {
   let filter = [];
   let search = [];
 
-  if (avoid!==null) { // avoid is always OR
+  if (avoid!==null) {
 
     _GALLERY.archive.forEach( o => {
       for (let i=0; i<o.tags.length; i++) {
@@ -725,32 +733,73 @@ function createRegex(arr) {
 function makeSearchForm() {
   const searchForm = document.createElement('form');
   searchForm.classList.add('search-form');
+
+  function collect(field) {
+    return [...new Set(
+      _GALLERY.archive
+        .map(o => o[field])
+        .filter(Boolean)
+    )].sort();
+  }
+
+  const years  = collect('year');
+  const styles = collect('style');
+  const colors = collect('color');
+  const areas  = collect('area');
+
+  function makeOptions(list) {
+    return ['<option value="">any . . .</option>']
+      .concat(list.map(v => `<option value="${v}">${v}</option>`))
+      .join('');
+  }
+
   searchForm.innerHTML = `
-    <label class=find-lab><span>${_GALLERY.Find_tags}</span><input type=text name=find value="${_GALLERY.find.join(',')}"></label>
-    <label class=search-mode-lab><span>${_GALLERY.Search_mode}</span><select value=${_GALLERY.s_mode} name=search_mode>
-      <option ${_GALLERY.s_mode==='AND' ? 'selected' : ''} value=AND>${_GALLERY.Search_AND}</option>
-      <option ${_GALLERY.s_mode==='OR' ? 'selected' : ''} value=OR>${_GALLERY.Search_OR}</option>
-    </select></label>
-    <label class=avoid-lab><span>${_GALLERY.Avoid_tags}</span><input type=text name=avoid value="${_GALLERY.avoid.join(',')}"></label>
-    <input type=submit>
+    <label>
+      <span>year : </span>
+      <select name="year">
+        ${makeOptions(years)}
+      </select>
+    </label>
+
+    <label>
+      <span>style : </span>
+      <select name="style">
+        ${makeOptions(styles)}
+      </select>
+    </label>
+
+    <label>
+      <span>colour : </span>
+      <select name="color">
+        ${makeOptions(colors)}
+      </select>
+    </label>
+
+    <label>
+      <span>area : </span>
+      <select name="area">
+        ${makeOptions(areas)}
+      </select>
+    </label>
+
+    <input type="hidden" name="find"><br>
+    <input type="submit" name="submit" class="button">
   `;
+
+  searchForm.addEventListener('submit', () => {
+    const values = ['year','style','color','area']
+      .map(name => searchForm.querySelector(`[name="${name}"]`).value)
+      .filter(Boolean);
+
+    searchForm.querySelector('[name="find"]').value = values.join(',');
+  });
+
   return searchForm;
 }
 
-const hoverStyle = document.createElement('style');
-hoverStyle.textContent = `
-  .card {
-    transform: rotate(var(--initial-rotation));
-  }
-
-  .card:hover {
-    transform: scale(1.05) rotate(var(--initial-rotation));
-  }
-`;
-document.head.appendChild(hoverStyle);
-
-document.querySelectorAll('.card').forEach(card => {
-  const randomDeg = (Math.random() * 10 - 5).toFixed(2);
-  card.style.setProperty('--initial-rotation', `${randomDeg}deg`);
-});
-
+// const hoverStyle = document.createElement('style');
+// hoverStyle.textContent = `
+//  .card:hover {
+//    transform: scale(1.05) rotate(var(--initial-rotation));
+//  }
+//`;

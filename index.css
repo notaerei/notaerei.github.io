@@ -37,11 +37,6 @@ img {
     src: url('../fonts/rosetinted.ttf') format('truetype')
 }
 
-@font-face {
-    font-family: "rosetinted";
-    src: url('../fonts/rosetinted.ttf') format('truetype')
-}
-
 ::selection {
    background: #FF6BFF;
    color: white;

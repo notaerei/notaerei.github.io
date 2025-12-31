@@ -1,8 +1,8 @@
 /* work in progress; see https://iframe.chat/playground/*/
 
 @font-face {
-    font-family: "rosetinted";
-    src: url('../fonts/rosetinted.ttf') format('truetype')
+    font-family: "zpix";
+    src: url('../fonts/zpix.ttf') format('truetype')
 }
 
 @keyframes glow {
@@ -19,7 +19,7 @@
   body {
     background-color: #000;
     color: rgba(0, 0, 0, 0.69);
-    font-family: 'rosetinted';
+    font-family: 'zpix';
   }
   body:after {
     content: " ";
@@ -40,7 +40,7 @@
    color: rgba(155, 125, 149, 1);
    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.69);
    border-radius: 10px;
-   font-family: 'rosetinted';
+   font-family: 'zpix';
    max-width: calc(100% - 14px);
    position: relative;
   }
@@ -86,7 +86,7 @@
   }
   #input {
     border: 1px solid #FA1DD9;
-    font-family: 'rosetinted';
+    font-family: 'zpix';
     font-size: 13px;
     padding: 5px;
     margin-bottom: 5px;
@@ -100,7 +100,7 @@
   #timestamp {
    color: #FA1DD9;
    font-style: italic;
-   font-family: rosetinted;
+   font-family: zpix;
    font-size: 9px;
    text-align: center !important;
    width: calc(100% - 20px);
@@ -109,7 +109,7 @@
   }
   #top_banner {
    display: none;
-   font-family: 'rosetinted';
+   font-family: 'zpix';
    color: #FA1DD9;
    background: #000;
   }
@@ -302,7 +302,7 @@
     height: unset;
   }
   #is_typing:before {
-    content: "Someone's typing";
+    content: "someone is typing";
   }
   #is_typing > span {
     height: 2px;
