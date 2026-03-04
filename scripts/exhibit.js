@@ -8,7 +8,7 @@ const _GALLERY = {
   masonry: 1,
   masonry_direction: 'both',
   
-  images_per_page: 24,  
+  images_per_page: 33,
   
   max_width: '300px',
   max_height: '300px',
@@ -16,11 +16,11 @@ const _GALLERY = {
   min_width: '100px',
   min_height: '100px',
   
-  grid_gap: 40,
+  grid_gap: 10,
   
   max_pagination_links: 9,
 
-  grid_card_layout: ['image','title'],
+  grid_card_layout: ['image','title',],
   
   view_card_layout: ['image','title','publish','tags','reference','description','download'],
   
@@ -33,16 +33,16 @@ const _GALLERY = {
   Avoid_tags: 'Avoid tag(s): ',
   
   Showing_results: ['viewing ',' pieces of '],
-  See_all_tags: 'See all tags',
+  See_all_tags: 'return to main hall',
   Prev_page: '← step into previous hall',
-  Page: 'Page: ',
+  Page: 'hall: ',
   Next_page: 'step into next hall →',
   
   Next_result: 'see next piece →',
   Return_to_gallery: 'return to main hall',
   Prev_result: '← see previous piece',
   
-  Permalink: 'View',
+  Permalink: 'view',
   Download: 'download',
   No_description: '<p><i>no description available!</i>.</p>',
   
@@ -753,14 +753,15 @@ function makeSearchForm() {
       .join('');
   }
 
-  searchForm.innerHTML = `
-    <label>
+  searchForm.innerHTML = // hidden for now
+  `
+    <!--<label>
       <span>year : </span>
       <select name="year">
         ${makeOptions(years)}
       </select>
     </label>
-
+    <div class="searchcaption"><p>search whole collection</p></div>
     <label>
       <span>style : </span>
       <select name="style">
@@ -782,8 +783,9 @@ function makeSearchForm() {
       </select>
     </label>
 
-    <input type="hidden" name="find"><br>
-    <input type="submit" name="submit" class="button">
+    <div class="searchcontainer">
+      <input type="submit" name="submit" class="button" value="search!">
+    </div>-->
   `;
 
   searchForm.addEventListener('submit', () => {
