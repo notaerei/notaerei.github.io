@@ -391,7 +391,7 @@ th, td, tr {
 }
 
 th {
-    background: rgba(255, 0, 197, 0.38);
+    background: #ff00c361;
 }
 
 tr:hover {
@@ -657,7 +657,7 @@ button {
 }
 
 button:hover {
-    background-color: rgba(255, 0, 197, 0.38);
+    background-color: #ff00c561;
 }
 
 input::file-selector-button {

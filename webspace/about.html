@@ -1,0 +1,334 @@
+<!-- original code credit: https://joejoefashosho.neocities.org/neocities_myspace -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" href="https://64.media.tumblr.com/tumblr_lv6pceasDY1qdlkyg.gif">
+		<link rel="STYLESHEET" type="text/css" href="ws.css">
+		<script>
+
+// sidebar information
+			first_name = "character";
+			last_name = "name";
+			status = "status message";
+			profile_picture = "../../../images/placeholder.png";
+
+// music player
+			music_player = true;
+			song_name = "Sugar We're Going Down";
+			artist_name = "Fall Out Boy";
+			mp3_file = "https://dropbysayhi.com/media/music/myspace_songs/sugar_were_going_down.mp3";
+
+// general information
+			alias = "alternative names";
+			pronouns = "pro/noun";
+			birthday = "00/00/0000";
+			identity = "identity";
+			species = "species";
+			biometrics = "0 ft. 0 in. 000 lbs.";
+			affiliation = "this group and that group";
+
+// details
+			relationship_status = "relationship status";
+			hometown = "location";
+			occupation = "occupation";
+			appearance = "candy canes dragée biscuit jelly jelly beans. toffee pastry tiramisu shortbread powder croissant chupa chups."
+			personality = "candy canes dragée biscuit jelly jelly beans. toffee pastry tiramisu shortbread powder croissant chupa chups.";
+			abilities = "candy canes dragée biscuit jelly jelly beans. toffee pastry tiramisu shortbread powder croissant chupa chups.";
+
+// friend section
+			number_of_friends = 0;
+			friend1_name="Tom";
+			friend1_pic="../img/tom.jpg";
+			friend1_url="http://joejoefashosho.neocities.org/myspace/tom";
+
+			friend2_name="Joe";
+			friend2_pic="../img/joejoe.jpg";
+			friend2_url="http://joejoefashosho.neocities.org/myspace";
+
+			friend3_name="Andi";
+			friend3_pic="../img/andi.jpg";
+			friend3_url="";
+
+			friend4_name="abraham";
+			friend4_pic="../img/abraham.jpg";
+			friend4_url="";
+
+			friend5_name="tanner";
+			friend5_pic="../img/tanner.jpg";
+			friend5_url="";
+
+			friend6_name="Tams";
+			friend6_pic="../img/tams.jpg";
+			friend6_url="";
+
+			friend7_name="J-e-n-n-i";
+			friend7_pic="../img/jenni.jpg";
+			friend7_url="";
+
+			friend8_name="MySpace Records";
+			friend8_pic="../img/myspace_records2.jpg";
+			friend8_url="";
+
+// comment section
+			commenter = [];
+			commenter_pic = [];
+			comment_date_time = [];
+			comment = [];
+			commenter_url = [];
+
+			number_of_comments= 2;
+			total_number_of_comments= 69;
+
+			commenter[1] = "Tom";
+			commenter_pic[1] = "../img/tom.jpg";
+			comment_date_time[1] = "4/20/2020 4:20 AM";
+			comment[1] = "I thought I deleted MySpace!!!";
+			commenter_url[1] = "http://joejoefashosho.neocities.org/myspace/tom"
+
+			commenter[2] = "Tom";
+			commenter_pic[2] = "../img/tom.jpg";
+			comment_date_time[2] = "4/19/2020 4:20 AM";
+			comment[2] = "Hey! What the heck?!";
+			commenter_url[2] = "http://joejoefashosho.neocities.org/myspace/tom"
+		</script>
+
+<!--about me customization-->
+		<div id="aboutMeSection">
+			<!--themes can be copied and pasted here-->
+		</div>
+
+<!--site scripts-->
+		<script>
+			// music player
+			songPlaying = true;
+			function playButton(){
+				if(songPlaying == false){
+					document.getElementById("songFile").play();
+					songPlaying = true;
+					document.getElementById("musicPlayer").style.backgroundImage = "url('../img/playersmall.gif')";
+				}
+				else{
+					document.getElementById("songFile").pause();
+					songPlaying = false;
+					document.getElementById("musicPlayer").style.backgroundImage = "url('../img/playersmallpaused.gif')";
+				}
+			}
+			
+			// comment section
+			function makeCommentSection() {
+				comment_section = '<tr><td><b>Displaying <span class="redtext">' + number_of_comments + '</span> of <span class="redtext">';
+				comment_section = comment_section + total_number_of_comments + '</span> comments (<a href="#">View/Edit All Comments</a>)</td></tr>';
+				for(i=1; i<=number_of_comments; i++){
+					comment_section = comment_section + '<tr><td bordercolor="ff9933" bgcolor="ffcccc"><table width="100%" border="1" cellspacing="0" cellpadding="3"'; 
+					comment_section = comment_section + ' bordercolor="FFffff"><tr><td align="center" valign="top" width="150" bgcolor="FF9933" style="word-wrap:break-word"><a href="'+commenter_url[i]+'">';
+					comment_section = comment_section + commenter[i] + '</a><br><br><a href="'+commenter_url[i]+'"><img style="max-width:90px; max-height:180px;" src="' + commenter_pic[i] + '"  border="0"></a><br><br><br></td>';
+					comment_section = comment_section + '<td bgcolor="F9D6B4" align="left" valign="top" width="260" style="word-wrap:break-word"><span  class="blacktext10">';
+					comment_section = comment_section + comment_date_time[i] + '</span><br><br>' + comment[i] + '</td></tr></table></td></tr>';
+					//comment_section = comment[i];
+				}
+				return comment_section;
+			}
+
+			function initializeProfile() {
+				// tab title
+				document.getElementById("pageTitle").innerHTML = "webSpace — a space with no ends."
+
+				// about me section
+				document.getElementById("aboutMe").innerHTML = document.getElementById("aboutMeSection").innerHTML;
+				document.getElementById("aboutMeSection").innerHTML = "";
+				
+				// sidebar information
+				document.getElementById("profileName").innerHTML = first_name + " " + last_name;
+				document.getElementById("Status").innerHTML = '"' + status + '"';
+				document.getElementById("profilePicture").src = profile_picture;
+				
+				// site headings
+				document.getElementById("generalHeading").innerHTML = first_name +"'s General Information";
+				document.getElementById("detailsHeading").innerHTML = first_name +"'s Details";
+				document.getElementById("descriptionHeading").innerHTML = first_name +"'s Description";
+				document.getElementById("recordsHeading").innerHTML = first_name +"'s Records";
+				document.getElementById("friendSpace").innerHTML = first_name +"'s Friend Space";
+				document.getElementById("friendSpaceName").innerHTML = first_name +' has <span class="redbtext">' + number_of_friends + '</span> Friends.';
+				document.getElementById("viewAllFriends").innerHTML = "View All of " + first_name + "'s Friends";
+
+				// general information
+				document.getElementById("generalAliases").innerHTML = alias;
+				document.getElementById("generalPronouns").innerHTML = pronouns;
+				document.getElementById("generalBirthday").innerHTML = birthday;
+				document.getElementById("generalIdentity").innerHTML = identity;
+				document.getElementById("generalBiometrics").innerHTML = biometrics;
+				document.getElementById("generalSpecies").innerHTML = species;
+				document.getElementById("generalAffiliation").innerHTML = affiliation;
+				
+				// details
+				document.getElementById("ProfileRelationshipStatus").innerHTML = relationship_status;
+				document.getElementById("ProfileHometown").innerHTML = hometown;
+				document.getElementById("ProfileOccupation").innerHTML = occupation;
+				document.getElementById("appearance").innerHTML = appearance;
+				document.getElementById("personality").innerHTML = personality;
+				document.getElementById("abilities").innerHTML = abilities;
+
+				// friend section
+				document.getElementById("friend1").innerHTML = friend1_name;
+					document.getElementById("friend1Pic").src = friend1_pic;
+					document.getElementById("friend1").href = friend1_url;
+					document.getElementById("friend1URL").href = friend1_url;
+				document.getElementById("friend2").innerHTML = friend2_name;
+					document.getElementById("friend2Pic").src = friend2_pic;
+					document.getElementById("friend2").href = friend2_url;
+					document.getElementById("friend2URL").href = friend2_url;
+				document.getElementById("friend3").innerHTML = friend3_name;
+					document.getElementById("friend3Pic").src = friend3_pic;
+					document.getElementById("friend3").href = friend3_url;
+					document.getElementById("friend3URL").href = friend3_url;
+				document.getElementById("friend4").innerHTML = friend4_name;
+					document.getElementById("friend4Pic").src = friend4_pic;
+					document.getElementById("friend4").href = friend4_url;
+					document.getElementById("friend4URL").href = friend4_url;
+				document.getElementById("friend5").innerHTML = friend5_name;
+					document.getElementById("friend5Pic").src = friend5_pic;
+					document.getElementById("friend5").href = friend5_url;
+					document.getElementById("friend5URL").href = friend5_url;
+				document.getElementById("friend6").innerHTML = friend6_name;
+					document.getElementById("friend6Pic").src = friend6_pic;
+					document.getElementById("friend6").href = friend6_url;
+					document.getElementById("friend6URL").href = friend6_url;
+				document.getElementById("friend7").innerHTML = friend7_name;
+					document.getElementById("friend7Pic").src = friend7_pic;
+					document.getElementById("friend7").href = friend7_url;
+					document.getElementById("friend7URL").href = friend7_url;
+				document.getElementById("friend8").innerHTML = friend8_name;
+					document.getElementById("friend8Pic").src = friend8_pic;
+					document.getElementById("friend8").href = friend8_url;
+					document.getElementById("friend8URL").href = friend8_url;
+				
+				// comment section
+				document.getElementById("commentHeader").innerHTML = first_name + "'s Friends Comments";
+				document.getElementById("commentSection").innerHTML = makeCommentSection();
+
+				// music player
+				if( music_player == true){
+					document.getElementById("musicPlayer").style.display = "block";
+				}
+				document.getElementById("song").innerHTML = song_name + "<br />" + artist_name.toUpperCase();
+				document.getElementById("songFile").src = mp3_file;
+			}
+		</script>
+		<title id="pageTitle">webSpace.com</title>
+	</head>
+
+<body onload="initializeProfile()" alink="4e607b" link="4e607b" vlink="4e607b" bottommargin="0" leftmargin="0" rightmargin="0" topmargin="0">
+
+	<!--top header-->
+	<div align="center">
+		<table width="800" border="0" align="center" cellpadding="5" cellspacing="0" bgcolor="340B47">
+			<form action="#" method="post">
+				<tr>
+					<td>&nbsp;
+						<a class="navbar" href="home.html"><font color="FFFFFF"><b>webSpace.com</font></a></b>&nbsp;<font color="FFFFFF">|</font>&nbsp;	
+						<a class="navbar" href="home.html"><font color="FFFFFF">Home</font></a></td>
+					<td align="right">
+						<a class="man" href="../index.html"><font color="FFFFFF">X</font></a>&nbsp;</td></tr>
+				</form>
+		</table>
+	</div>
+
+	<!--navi bar-->
+	<div align="center">
+		<table border="0" cellspacing="0" cellpadding="0" width="800">
+			<tr>
+				<td width="800" height="26" bgcolor="#4E003B">
+					<table width="800" height="26" border="0" cellspacing="0" cellpadding="0">
+						<tr valign="middle"><td align="center"><font face="Arial, Helvetica, sans-serif" color="#000000">
+							<a class="navbar" href="browse.html">Browse</a>&nbsp;|&nbsp;
+							<a class="navbar" href="about.html">About</a>&nbsp;|&nbsp;
+							<a class="navbar" href="../contact.html">Contact</a>&nbsp;
+					</font></td></tr></table></td></tr>
+		</table>
+	</div>
+
+	<!--main site container-->
+	<table width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+		<tr>
+			<td width="20" bgcolor="FFFFFF"></td>
+			<td width="780" align="center" bgcolor="FFFFFF">
+				<table cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td width="275" height="33" align="center" valign="top" bgcolor="FFFFFF"><br>							
+							<table border="0" cellspacing="0" cellpadding="0" width="300" height=100>
+								<tr>
+									<td width="300" bgcolor="FFFFFF" class="text" colspan="3" align="left" valign="bottom" style="word-wrap:break-word">
+
+	<!--page warnings-->
+	<table bordercolor="000000" height="75" cellspacing="0" cellpadding="0" width="435" border="1">
+		<tbody>
+			<tr>
+				<td valign="center" align="middle" width="435" style="word-wrap:break-word"><span class="blacktext12" id="extendedNetwork">
+					<br>UNDER CONSTRUCTION</span><br> this site is a <i>work in progress</i>.
+					<br>information may not be up to date or accurate.<br><br></td>
+			</tr>
+		</tbody>
+	</table><br>
+
+	<!--blurb-->
+	<table bordercolor="000000" cellspacing="3" cellpadding="0" width="435" align="center" bgcolor="ffffff" border="0">
+			<tr valign="top">
+				<td width="435" style="word-wrap:break-word">
+					<h2>about webSpace & FAQ</h2>
+               <subtitle>webSpace — a space with no ends.</subtitle>
+               <h3>what is webSpace?</h3>
+               <p>webSpace is a collection of my notes on several figures of interest found across the web.  in other words, webSpace is a database of all my characters from multiple different projects and universes created by me.</p>
+               <h3>what are your rules for using your characters in art?</h3>
+               <p>an overarching rule is that if you are posting art (illustration, literature, edits, collages, etc.) of any of my characters online, you <b>MUST</b> credit me for the design.  this can be done by simply linking to <a href="https://aerei.carrd.co">my carrd</a>, or any of my socials, somewhere within your post.</p>
+               <h4>concepts that are allowed and welcomed:</h4>
+               <ul>
+                  <li>using outfits that are different than what is provided in the original reference</li>
+                  <li>portraying platonic interactions with any other characters</li>
+                  <li>changing species</li>
+               </ul>
+               <h4>concepts that need my approval first:</h4>
+               <p>you are free to <a href="../contact.html">contact me</a> if you want to check if something is okay!</p>
+               <ul>
+                  <li>nsfw portrayal for characters older than 18</li>
+                  <li>portraying intimate or romantic interactions between any of my characters that aren't already canonically paired together</li>
+                  <li>genderbending for characters that aren't genderfluid</li>
+                  <li>extreme or excessive gore</li>
+               </ul>
+               <h4>concepts that are absolutely not allowed:</h4>
+               <ul>
+                  <li>nsfw portrayal for characters younger than 18</li>
+                  <li>portraying intimate or romantic interactions between my characters that are within the same family</li>
+                  <li>drastically changing skin colour or body type</li>
+                  <li>drastically aging my characters up or down</li>
+                  <li>associating my characters with hate speech or discriminatory imagery</li>
+               </ul>
+					<br>
+				</td>
+			</tr>
+	</table><br></td></tr></table></td></tr></table></td></tr></table>
+
+<!--footer-->
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+		<tr valign="top">
+			<td>
+				<div align="center">
+					<div align=center>
+						<b><font face="Arial, Helvetica, sans-serif"><font color="#990000"><br>
+						<div align="center">
+							<font size="1" color="white">
+								&copy;2003-2026 webSpace.com All Rights Reserved.
+							</font>
+						</div></a>
+					</div>
+			</td>
+		</tr>
+	</table>
+
+<style type="text/css">
+	body, html {visibility:visible !important; display:block !important}
+</style>
+</body>
+</html>
