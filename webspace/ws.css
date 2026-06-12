@@ -1,14 +1,18 @@
 body {
     background: black;
     font-family: 'MS Gothic';
-    background-color: #000000;
+    background-color: black;
 }
 
 .MS Gothic12 {
 	font-family: MS Gothic;
 	font-size: 12px;
 	font-weight: normal;
-	color: #000000;
+	color: #ceadde;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	color: #E879CC;
 }
 
 .button {
@@ -35,200 +39,200 @@ body {
 
 
 body, td, li, p, div, textarea 
-{font-family:MS Gothic,arial,sans-serif,helvetica; font-size:9pt; color:#000000; font-weight:none;}
+{font-family:MS Gothic; font-size:9pt; color:#ffffff; font-weight:none;}
 
 
 
-.text{font-family:MS Gothic,arial,sans-serif,helvetica; font-size:9pt; 
-color:#000000; font-weight:none;}
+.text{font-family:MS Gothic; font-size:9pt; 
+color:#ffffff; font-weight:none;}
 
-.spacetext{font-family:arial,MS Gothic,arial,sans-serif,helvetica; 
-line-height: 19pt;font-size:10pt; color:#000000; font-weight:none;}
+.spacetext{font-family:arial,MS Gothic; 
+line-height: 19pt;font-size:10pt; color:#ffffff; font-weight:none;}
 
-.redtext{font-family:MS Gothic,arial,sans-serif,helvetica; 
-font-size:10pt; color:#ff1bc6; font-weight:none;}
+.redtext{font-family:MS Gothic; 
+font-size:10pt; color:#ffffff; font-weight:none;}
 
-.redtext8{font-family:MS Gothic,arial,sans-serif,helvetica; 
-font-size:9pt; color:#ff1bc6; font-weight:none;}
+.redtext8{font-family:MS Gothic; 
+font-size:9pt; color:#ffffff; font-weight:none;}
 
-.redbtext{font-family:MS Gothic,arial,sans-serif,helvetica; 
-font-size:10pt; color:#ff1bc6; font-weight:none;}
+.redbtext{font-family:MS Gothic; 
+font-size:10pt; color:#ffffff; font-weight:none;}
 
-.redtext12b{font-family:MS Gothic,arial,sans-serif,helvetica; 
-font-size:12pt; color:#ff1bc6; font-weight:bold;}
+.redtext12b{font-family:MS Gothic; 
+font-size:12pt; color:#ffffff; font-weight:bold;}
 
 
-.bluebtext{font-family:MS Gothic,arial,sans-serif,helvetica; 
+.bluebtext{font-family:MS Gothic; 
 font-size:10pt; color:#630c56; font-weight:none;}
 
-.redbtext{font-family:MS Gothic,arial,sans-serif,helvetica; 
-font-size:10pt; color:#ff1bc6; font-weight:none;}
+.redbtext{font-family:MS Gothic; 
+font-size:10pt; color:#ffffff; font-weight:none;}
 
-.utext{font-family:MS Gothic,arial,sans-serif,helvetica; 
-text-decoration:underline; font-size:9pt; color:#000000; font-weight:none;}
+.utext{font-family:MS Gothic; 
+text-decoration:underline; font-size:9pt; color:#ffffff; font-weight:none;}
 
-.orangetext{font-family:MS Gothic,arial,sans-serif,helvetica; 
+.orangetext{font-family:MS Gothic; 
 font-size:10pt; color:#e879e6; font-weight:bold;}
 
-.orangetext2{font-family:MS Gothic,arial,sans-serif,helvetica; 
+.orangetext2{font-family:MS Gothic; 
 font-size:9pt; color:#e879e6; font-weight:bold;}
 
-.orangetext15{font-family:MS Gothic,arial,sans-serif,helvetica; 
+.orangetext15{font-family:MS Gothic; 
 font-size:9pt; color:#e879e6; font-weight:bold;}
 
-.lightbluetext8{font-family:MS Gothic,arial,sans-serif,helvetica; 
+.lightbluetext8{font-family:MS Gothic; 
 font-size:9pt; color:#630c56; font-weight:bold;}
 
-.bluetext8{font-family:MS Gothic,arial,sans-serif,helvetica; 
+.bluetext8{font-family:MS Gothic; 
 font-size:9pt; color:#630c56; font-weight:bold;}
 
-.whitetext7{font-family:MS Gothic,arial,sans-serif,helvetica;
+.whitetext7{font-family:MS Gothic;
 font-size:7pt; color:#ffffff;font-weight:bold;}
 
-.whitetext12{font-family:MS Gothic,arial,sans-serif,helvetica; 
+.whitetext12{font-family:MS Gothic; 
 font-size:9pt; color:#ffffff; font-weight:bold;}
 
-.whitetext15{font-family:MS Gothic,arial,sans-serif,helvetica; 
+.whitetext15{font-family:MS Gothic; 
 font-size:15pt; color:#ffffff; font-weight:bold;}
 
-.blacktext15{font-family:MS Gothic,arial,sans-serif,helvetica; 
-font-size:15pt; color:#000000; font-weight:none;}
+.blacktext15{font-family:MS Gothic; 
+font-size:15pt; color:#ffffff; font-weight:none;}
 
-.blacktext13{font-family:MS Gothic,arial,sans-serif,helvetica; 
-font-size:13pt; color:#000000; font-weight:none;}
+.blacktext13{font-family:MS Gothic; 
+font-size:13pt; color:#ffffff; font-weight:none;}
 
-.blacktext12{font-family:MS Gothic,arial,sans-serif,helvetica; 
-font-size:12pt; color:#000000; font-weight:bold;}
+.blacktext12{font-family:MS Gothic; 
+font-size:10pt; color:#ffffff; font-weight:bold;}
 
-.nametext{font-family:MS Gothic,arial,sans-serif,helvetica; 
-font-size:12pt; color:#000000; font-weight:bold;}
+.nametext{font-family:MS Gothic; 
+font-size:12pt; color:#ffffff; font-weight:bold;}
 
-.blacktext12nb{font-family:MS Gothic,arial,sans-serif,helvetica; 
-font-size:12pt; color:#000000; font-weight:none;}
+.blacktext12nb{font-family:MS Gothic; 
+font-size:12pt; color:#ffffff; font-weight:none;}
 
-.blacktext10{font-family:MS Gothic,arial,sans-serif,helvetica; 
-font-size:10pt; color:#000000; font-weight:bold;}
+.blacktext10{font-family:MS Gothic; 
+font-size:10pt; color:#ffffff; font-weight:bold;}
 
-.blacktext10nb{font-family:MS Gothic,arial,sans-serif,helvetica; 
-font-size:10pt; color:#000000; font-weight:none;}
+.blacktext10nb{font-family:MS Gothic; 
+font-size:10pt; color:#ffffff; font-weight:none;}
 
-.blacktext7{font-family:MS Gothic,arial,sans-serif,helvetica; 
-font-size:7pt; color:#000000; font-weight:none;}
+.blacktext7{font-family:MS Gothic; 
+font-size:7pt; color:#ffffff; font-weight:none;}
 
-.footer{font-family:MS Gothic,arial,sans-serif,helvetica; font-size:9pt; 
-color:#000000; font-weight:bold;}
+.footer{font-family:MS Gothic; font-size:9pt; 
+color:#ffffff; font-weight:bold;}
 
-.skip{font-family:MS Gothic,arial,sans-serif,helvetica; font-size:9pt; 
-color:#000000; font-weight:none;text-align:right;}
+.skip{font-family:MS Gothic; font-size:9pt; 
+color:#ffffff; font-weight:none;text-align:right;}
 
-.blacktext14bu{font-family:MS Gothic,arial,sans-serif,helvetica; 
-font-size:14pt; color:#000000; font-weight:none;text-decoration:underline;}
-
-
+.blacktext14bu{font-family:MS Gothic; 
+font-size:14pt; color:#ffffff; font-weight:none;text-decoration:underline;}
 
 
 
-a{font-family:MS Gothic,arial,sans-serif,helvetica; font-size:9pt; 
+
+
+a{font-family:MS Gothic; font-size:9pt; 
 text-decoration:underline; font-weight:bold;}
-	a:link{color:#E4BBFD;}
-	a:active{color:#E4BBFD;}
-	a:visited{color:#E4BBFD;}
-	a:hover{color:#ff1bc6;}
+	a:link{color:#a98fff;}
+	a:active{color:#a98fff;}
+	a:visited{color:#a98fff;}
+	a:hover{color:#ffffff;}
 
-a.readmail{font-family:MS Gothic,arial,sans-serif,helvetica; font-size:9pt; 
+a.readmail{font-family:MS Gothic; font-size:9pt; 
 text-decoration:underline; font-weight:normal;}
 	a.readmail:link{
 	color: Purple;
 }
-	a.readmail:active{color:#E4BBFD;}
-	a.readmail:visited{color:#E4BBFD;}
-	a.readmail:hover{color:#ff1bc6;}
+	a.readmail:active{color:#a98fff;}
+	a.readmail:visited{color:#a98fff;}
+	a.readmail:hover{color:#ffffff;}
 
-a.redlink{font-family:MS Gothic,arial,sans-serif,helvetica; 
+a.redlink{font-family:MS Gothic; 
 font-size:9pt; text-decoration:underline; font-weight:bold;}
-	a.redlink:link{color:#E4BBFD;}
-	a.redlink:active{color:#E4BBFD;}
-	a.redlink:visited{color:#E4BBFD;}
-	a.redlink:hover{color:#ff1bc6;}	
+	a.redlink:link{color:#a98fff;}
+	a.redlink:active{color:#a98fff;}
+	a.redlink:visited{color:#a98fff;}
+	a.redlink:hover{color:#ffffff;}	
 
-a.blink{font-family:MS Gothic,arial,sans-serif,helvetica; font-size:9pt; 
+a.blink{font-family:MS Gothic; font-size:9pt; 
 text-decoration:underline; font-weight:none;}
-	a.blink:link{color:#000000;}
-	a.blink:active{color:#000000;}
-	a.blink:visited{color:#000000;}
-	a.blink:hover{color:#ff1bc6;}		
+	a.blink:link{color:#ffffff;}
+	a.blink:active{color:#ffffff;}
+	a.blink:visited{color:#ffffff;}
+	a.blink:hover{color:#ffffff;}		
 	
-a.white{font-family:MS Gothic,arial,sans-serif,helvetica; font-size:9pt; 
+a.white{font-family:MS Gothic; font-size:9pt; 
 text-decoration:underline;}
 	a.white:link{color:#ffffff;}
-	a.white:active{color:#ff1bc6;}
+	a.white:active{color:#ffffff;}
 	a.white:visited{color:#ffffff;}
-	a.white:hover{color:#ff1bc6;}
+	a.white:hover{color:#ffffff;}
 	
-a.white7{font-family:MS Gothic,arial,sans-serif,helvetica; font-size:7pt; 
+a.white7{font-family:MS Gothic; font-size:7pt; 
 text-decoration:underline;}
 	a.white7:link{color:#ffffff;}
-	a.white7:active{color:#ff1bc6;}
+	a.white7:active{color:#ffffff;}
 	a.white7:visited{color:#ffffff;}
-	a.white7:hover{color:#ff1bc6;}	
+	a.white7:hover{color:#ffffff;}	
 	
-a.black7{font-family:MS Gothic,arial,sans-serif,helvetica; font-size:7pt; 
+a.black7{font-family:MS Gothic; font-size:7pt; 
 text-decoration:underline;}
 	a.black7:link{color: Black;}
-	a.black7:active{color:#ff1bc6;}
+	a.black7:active{color:#ffffff;}
 	a.black7:visited{color:Black;}
-	a.black7:hover{color:#ff1bc6;}		
+	a.black7:hover{color:#ffffff;}		
 
-a.navbar{font-family:MS Gothic,arial,sans-serif,helvetica; font-size:9pt; 
+a.navbar{font-family:MS Gothic; font-size:9pt; 
 text-decoration:underline; font-weight:normal;}
     a.navbar:link{color:#ffffff;}
 	a.navbar:active{color:#ffffff;}
 	a.navbar:visited{color:#ffffff;}
-	a.navbar:hover{color:#ff1bc6;}
+	a.navbar:hover{color:#ffffff;}
 
-a.skip{font-family:MS Gothic,arial,sans-serif,helvetica; font-size:9pt; 
+a.skip{font-family:MS Gothic; font-size:9pt; 
 text-decoration:underline; font-weight:bold;text-align:right;}
-	a.skip:link{color:#E4BBFD;}
-	a.skip:active{color:#E4BBFD;}
-	a.skip:visited{color:#E4BBFD;}
-	a.skip:hover{color:#ff1bc6;}
+	a.skip:link{color:#a98fff;}
+	a.skip:active{color:#a98fff;}
+	a.skip:visited{color:#a98fff;}
+	a.skip:hover{color:#ffffff;}
 
-a.redlink7{font-family:MS Gothic,arial,sans-serif,helvetica; 
+a.redlink7{font-family:MS Gothic; 
 font-size:7pt; text-decoration:underline; font-weight:bold;}
-	a.redlink7:link{color:#E4BBFD;}
-	a.redlink7:active{color:#E4BBFD;}
-	a.redlink7:visited{color:#E4BBFD;}
-	a.redlink7:hover{color:#ff1bc6;}	
+	a.redlink7:link{color:#a98fff;}
+	a.redlink7:active{color:#a98fff;}
+	a.redlink7:visited{color:#a98fff;}
+	a.redlink7:hover{color:#ffffff;}	
 
-a.graylink7{font-family:MS Gothic,arial,sans-serif,helvetica; 
+a.graylink7{font-family:MS Gothic; 
 font-size:7pt; text-decoration:underline; font-weight:bold;}
 	a.graylink7:link{color: Gray;}
 	a.graylink7:active{color:Gray;}
 	a.graylink7:visited{color:Gray;}
 	a.graylink7:hover{color:Gray;}
 	
-a.graylink7light{font-family:MS Gothic,arial,sans-serif,helvetica; 
+a.graylink7light{font-family:MS Gothic; 
 font-size:7pt; text-decoration:underline;font-weight:normal; }
 	a.graylink7light:link{color: Gray;}
 	a.graylink7light:active{color:Gray;}
 	a.graylink7light:visited{color:Gray;}
 	a.graylink7light:hover{color:Gray;}
 
-a.bluelink{font-family:MS Gothic,arial,sans-serif,helvetica; 
+a.bluelink{font-family:MS Gothic; 
 font-size:9pt; text-decoration:underline; font-weight:bold;}
-	a.bluelink:link{color: #E4BBFD}
-	a.bluelink:active{color: #ff1bc6}
-	a.bluelink:visited{color:#E4BBFD}
-	a.bluelink:hover{color:#ff1bc6;}
+	a.bluelink:link{color: #a98fff}
+	a.bluelink:active{color: #ffffff}
+	a.bluelink:visited{color:#a98fff}
+	a.bluelink:hover{color:#ffffff;}
 
-a.searchlinkBig{font-family:MS Gothic,arial,sans-serif,helvetica; 
+a.searchlinkBig{font-family:MS Gothic; 
 font-size:10pt; text-decoration:underline; font-weight:bold;}
-	a.searchlinkBig:link{color:#E4BBFD}
-	a.searchlinkBig:active{color: #ff1bc6}
-	a.searchlinkBig:visited{color:#E4BBFD}
-	a.searchlinkBig:hover{color: #ff1bc6}
+	a.searchlinkBig:link{color:#a98fff}
+	a.searchlinkBig:active{color: #ffffff}
+	a.searchlinkBig:visited{color:#a98fff}
+	a.searchlinkBig:hover{color: #ffffff}
 	
-a.searchlinkSmall{font-family:MS Gothic,arial,sans-serif,helvetica; 
+a.searchlinkSmall{font-family:MS Gothic; 
 font-size:9pt; text-decoration:underline; font-weight:normal;}
 	a.searchlinkSmall:link{color:black}
 	a.searchlinkSmall:active{color:ff1bc6}
@@ -239,8 +243,8 @@ font-size:9pt; text-decoration:underline; font-weight:normal;}
 /* TEXT FORMATTING */
 
 /* DEFAULT FONT, SIZE 8, BLACK */
-.btext, .itext{font-family:MS Gothic,arial,sans-serif,helvetica; 
-font-size:9pt; color:#000000;}
+.btext, .itext{font-family:MS Gothic; 
+font-size:9pt; color:#ffffff;}
 	.btext{font-weight:bold;}
 	.itext{font-style:italic;}
 
@@ -248,8 +252,8 @@ font-size:9pt; color:#000000;}
 .bwtext, .rtext, .rbtext, 
 .subhead{font-family:MS Gothic,helvetica,arial,sans-serif; font-size:9pt; font-weight:bold;}
 	.bwtext{font-weight:bold; color:#ffffff;}
-	.rtext{color:#ff1bc6;}
-	.rbtext{color:#ff1bc6; font-weight:bold;}
+	.rtext{color:#ffffff;}
+	.rbtext{color:#ffffff; font-weight:bold;}
 	.subhead{color:#252872;}
 
 
@@ -258,14 +262,14 @@ font-size:9pt; color:#000000;}
 .swtext{font-family:MS Gothic,helvetica,arial,sans-serif; font-size:9pt;}
 	.stext{color:#555555;}
 	.swtext{color:#ffffff;}
-	.sbtext{font-weight:bold; color:#000000;}
+	.sbtext{font-weight:bold; color:#ffffff;}
 
 
 /* DEFAULT FONT, SIZE 11 */
 .head11, .text11{font-family:MS Gothic,helvetica,arial,sans-serif; 
 font-size:11pt;}
-	.head11{font-weight:bold; color:#E4BBFD;}
-	.text11{color:#000000;}
+	.head11{font-weight:bold; color:#a98fff;}
+	.text11{color:#ffffff;}
 
 	
 /* TABLE COLORS */
@@ -285,14 +289,14 @@ td.blue_light{background-color:#cccccc;}
   font-family: MS Gothic, arial, helvetica, san-serif;
   font-size: 12px;
   line-height: 130%;
-  color: #ff1bc6;
+  color: #ffffff;
 }
 
 .warning{
   font-family: MS Gothic, arial, helvetica, san-serif;
   font-size: 14px;
   line-height: 130%;
-  color: #ff1bc6;
+  color: #ffffff;
   text-decoration: bold;
 }
 
@@ -323,10 +327,10 @@ table.red_border, tr.red_border, td.red_border{
 
 table.black_border, tr.black_border, td.black_border{
     border-style:solid;
-    border-top-color:#000000;
-    border-bottom-color:#000000;
-    border-left-color:#000000;
-    border-right-color:#000000;
+    border-top-color:#ffffff;
+    border-bottom-color:#ffffff;
+    border-left-color:#ffffff;
+    border-right-color:#ffffff;
     border-width:2px;
     border-top-width:2px;
     border-left-width:2px;
@@ -338,7 +342,7 @@ table.white, tr.white, td.white{
 
 table.blue_header, tr.blue_header, td.blue_header{
     background-color:#cc66a5;
-    font-family:MS Gothic,arial,sans-serif,helvetica; 
+    font-family:MS Gothic; 
     font-size:9pt; 
     color:#ffffff; 
     font-weight:bold;
@@ -348,7 +352,7 @@ table.blue_header, tr.blue_header, td.blue_header{
 
 table.red_header, tr.red_header, td.red_header{
     background-color:#cc66a5;
-    font-family:MS Gothic,arial,sans-serif,helvetica; 
+    font-family:MS Gothic; 
     font-size:9pt; 
     color:#ffffff; 
     font-weight:bold;
@@ -358,7 +362,7 @@ table.red_header, tr.red_header, td.red_header{
 
 table.blue_white, tr.blue_white, td.blue_white{
     background-color:#ffffff;
-    font-family:MS Gothic,arial,sans-serif,helvetica; 
+    font-family:MS Gothic; 
     font-size:9pt; 
     color:#ffffff; 
     font-weight:none;
@@ -370,7 +374,7 @@ table.blue_white, tr.blue_white, td.blue_white{
 
 table.blue_dark_bold, tr.blue_dark_bold, td.blue_dark_bold{
     background-color:#B1D0F0;
-    font-family:MS Gothic,arial,sans-serif,helvetica; 
+    font-family:MS Gothic; 
     font-size:9pt; 
     color:#336699; 
     font-weight:bold;
@@ -383,9 +387,9 @@ table.blue_dark_bold, tr.blue_dark_bold, td.blue_dark_bold{
 table.blue_dark_nobold_black, tr.blue_dark_nobold_black, 
 td.blue_dark_nobold_black{
     background-color:#B1D0F0;
-    font-family:MS Gothic,arial,sans-serif,helvetica; 
+    font-family:MS Gothic; 
     font-size:9pt; 
-    color:#000000; 
+    color:#ffffff; 
     font-weight:none;
     margin-left: auto;
     margin-right: auto;
@@ -395,9 +399,9 @@ td.blue_dark_nobold_black{
 
 table.blue_light_nobold, tr.blue_light_nobold, td.blue_light_nobold{
     background-color:#D5E8FB;
-    font-family:MS Gothic,arial,sans-serif,helvetica;
+    font-family:MS Gothic;
     font-size:9pt;
-    color:#000000;
+    color:#ffffff;
     font-weight:none;
     margin-left: auto;
     margin-right: auto;
@@ -407,7 +411,7 @@ table.blue_light_nobold, tr.blue_light_nobold, td.blue_light_nobold{
 
 table.blue_light_bold, tr.blue_light_bold, td.blue_light_bold{
     background-color:#D5E8FB;
-    font-family:MS Gothic,arial,sans-serif,helvetica;
+    font-family:MS Gothic;
     font-size:9pt;
     color:#336699;
     font-weight:bold;
@@ -416,38 +420,38 @@ table.blue_light_bold, tr.blue_light_bold, td.blue_light_bold{
     text-align: left;
     vertical-align: top;
 }   
-a.blue_white{font-family:MS Gothic,arial,sans-serif,helvetica; 
+a.blue_white{font-family:MS Gothic; 
 font-size:9pt; text-decoration:underline;}
-    a.blue_white:link{color:#E4BBFD;}
-    a.blue_white:active{color:#E4BBFD;}
-    a.blue_white:visited{color:#E4BBFD;}
-    a.blue_white:hover{color:#ff1bc6;}
+    a.blue_white:link{color:#a98fff;}
+    a.blue_white:active{color:#a98fff;}
+    a.blue_white:visited{color:#a98fff;}
+    a.blue_white:hover{color:#ffffff;}
 
-a.rob{font-family:MS Gothic,arial,sans-serif,helvetica; font-size:10pt; font-weight:bold;}
-	a:link{color:#E4BBFD; text-decoration:none;}
-	a:active{color:#ff1bc6; text-decoration:underline;}
-	a:visited{color:#E4BBFD; text-decoration:none;}
-	a:hover{color:#ff1bc6; text-decoration:underline;}
+a.rob{font-family:MS Gothic; font-size:10pt; font-weight:bold;}
+	a:link{color:#a98fff; text-decoration:none;}
+	a:active{color:#ffffff; text-decoration:underline;}
+	a:visited{color:#a98fff; text-decoration:none;}
+	a:hover{color:#ffffff; text-decoration:underline;}
 }
 
-a.bert{font-family:MS Gothic,arial,sans-serif,helvetica; font-size:9pt; font-weight:bold;}
-	a:link{color:#E4BBFD; text-decoration:none;}
-	a:active{color:#ff1bc6; text-decoration:underline;}
-	a:visited{color:#E4BBFD; text-decoration:none;}
-	a:hover{color:#ff1bc6; text-decoration:underline;}
+a.bert{font-family:MS Gothic; font-size:9pt; font-weight:bold;}
+	a:link{color:#a98fff; text-decoration:none;}
+	a:active{color:#ffffff; text-decoration:underline;}
+	a:visited{color:#a98fff; text-decoration:none;}
+	a:hover{color:#ffffff; text-decoration:underline;}
 }
 
-a.spiel{font-family:MS Gothic,arial,sans-serif,helvetica; font-size:10pt; font-weight:normal;}
-	a:link{color:#E4BBFD; text-decoration:none;}
-	a:active{color:#ff1bc6; text-decoration:underline;}
-	a:visited{color:#E4BBFD; text-decoration:none;}
-	a:hover{color:#ff1bc6; text-decoration:underline;}
+a.spiel{font-family:MS Gothic; font-size:10pt; font-weight:normal;}
+	a:link{color:#a98fff; text-decoration:none;}
+	a:active{color:#ffffff; text-decoration:underline;}
+	a:visited{color:#a98fff; text-decoration:none;}
+	a:hover{color:#ffffff; text-decoration:underline;}
 }
 
-a.man{font-family:MS Gothic,arial,sans-serif,helvetica; font-size:9pt; font-weight:normal;}
-	a:link{color:#E4BBFD; text-decoration:none;}
-	a:active{color:#ff1bc6; text-decoration:underline;}
-	a:visited{color:#E4BBFD; text-decoration:none;}
-	a:hover{color:#ff1bc6; text-decoration:underline;}
+a.man{font-family:MS Gothic; font-size:9pt; font-weight:normal;}
+	a:link{color:#a98fff; text-decoration:none;}
+	a:active{color:#ffffff; text-decoration:underline;}
+	a:visited{color:#a98fff; text-decoration:none;}
+	a:hover{color:#ffffff; text-decoration:underline;}
 
 }
