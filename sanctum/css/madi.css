@@ -1,0 +1,387 @@
+/*
+ ▄▄▄· ▄▄▄·  ▄▄ • ▄▄▄ .    ▄▄▌   ▄▄▄·  ▄· ▄▌      ▄• ▄▌▄▄▄▄▄
+▐█ ▄█▐█ ▀█ ▐█ ▀ ▪▀▄.▀·    ██•  ▐█ ▀█ ▐█▪██▌▪     █▪██▌•██  
+ ██▀·▄█▀▀█ ▄█ ▀█▄▐▀▀▪▄    ██▪  ▄█▀▀█ ▐█▌▐█▪ ▄█▀▄ █▌▐█▌ ▐█.▪
+▐█▪·•▐█ ▪▐▌▐█▄▪▐█▐█▄▄▌    ▐█▌▐▌▐█ ▪▐▌ ▐█▀·.▐█▌.▐▌▐█▄█▌ ▐█▌·
+.▀    ▀  ▀ ·▀▀▀▀  ▀▀▀     .▀▀▀  ▀  ▀   ▀ •  ▀█▄▀▪ ▀▀▀  ▀▀▀ 
+*/
+
+@font-face {
+    font-family: "tadinyo";
+    src: url('/fonts/tadinyo.otf')
+}
+
+@font-face {
+    font-family: "glitch";
+    src: url('/fonts/glitch.ttf') format('truetype')
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-image: radial-gradient(circle, rgba(73, 3, 3, 0) 60%, rgb(12, 1, 1) 100%), url("https://bettysgraphics.neocities.org/images/backgrounds/pattern%20592.gif") /*cr: https://bettysgraphics.neocities.org/backgrounds*/, linear-gradient(0deg, hsl(0, 60%, 53%) 0%, hsl(352, 60%, 24%) 52%, hsl(0, 6%, 10%) 100%);
+    background-repeat: no-repeat, repeat, no-repeat;
+    background-size: 1920px 1080px, auto, 1920px 1080px;
+    font-family: 'MS Gothic';
+    background-color: #000000;
+    text-shadow: 0.5px 0.5px 1px rgb(67, 27, 116);
+    margin-top: 20px;
+}
+
+.blinkiestop {
+   position: absolute;
+   top: 10px;
+   left: 475px;
+}
+
+.madipfp {
+    position: absolute;
+    left: 400px;
+    top: 220px;
+    filter: contrast(200%) drop-shadow(0px 0px 5px orangered);
+    radius: 50%;
+    border-radius: 100px;
+    border: solid 1px #c8ff00;
+}
+
+.madipfp:hover {
+    transform: scale(1.05);
+    transform-origin: 50% 50%;
+    filter: contrast(300%) drop-shadow(0px 0px 10px #ae00ff);
+}
+
+.madisocmed {
+   position: absolute;
+   display: flex;
+   flex-direction: column;
+   top: 340px;
+   left: 450px;
+   filter: contrast(200%) drop-shadow(0px 0px 5px orangered);
+   radius: 50%;
+   border-radius: 100px;
+}
+
+.madisocmed:hover {
+    transform-origin: 50% 50%;
+    filter: contrast(300%) drop-shadow(0px 0px 10px #a6ff00);
+}
+
+.madipose {
+   position: absolute;
+    top: 400px;
+    left: 200px;
+    filter: drop-shadow(0px 0px 20px #000000);
+    z-index: -1000;
+    rotate: -1deg;
+    pointer-events: none;
+}
+
+.title {
+    position: absolute;
+    display: inline;
+    left: 430px;
+    rotate: -10deg;
+    filter: brightness(0.9) contrast(600%) drop-shadow(0px 0px 5px rgb(255, 0, 0)) sepia(1);
+    transition: transform .2s;
+    z-index: 1000;
+}
+
+.title:hover {
+    transform: scale(1.05);
+    transform-origin: 50% 50%;
+    filter: drop-shadow(0px 0px 10px #ff0000);
+}
+
+.albumscroll {
+   position: absolute;
+   top: 30px;
+   left: 750px;
+   width: 600px;
+   height: 150px;
+}
+
+.marqueescroll { /* modified marquee code by coldcalzone */
+  width: 600px; 
+  position: relative;
+  display: inline-flex;
+  z-index: 1000;
+  overflow: hidden;
+  height: 150px;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.marqueescroll > div {
+  animation: marquee 180s linear infinite;
+  animation-play-state: running;
+  animation-delay: -100s;
+  width: 50%;
+  min-width: fit-content;
+  text-wrap: nowrap;
+}
+
+.marqueescroll > div.follower {
+  position: absolute;
+  top: 0;
+  animation-delay: 0s;
+}
+
+.marqueescroll > div.play {
+  animation-play-state: running;
+}
+
+.marqueescroll:hover > div.play {
+  animation-play-state: paused;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-flex;
+}
+
+.tooltip:hover {
+    transform: scale(1.05);
+    filter: brightness(1) drop-shadow(0px 0px 20px #1bff4c69);
+    width: fit-content;
+}
+
+.tooltip .tooltiptext {
+   top: 100%;
+   height: 20px;
+   visibility: hidden;
+  word-wrap: normal;
+  font-size: 9px;
+  font-family: 'rosetinted';
+  color: #93e879;
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  z-index: 1000;
+  bottom: 110%;
+  left: 50%;
+  margin-left: -70px;
+  opacity: 0;
+  transition: opacity 0.1s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.cd {
+    position: absolute;
+    left: 400px;
+    top: 120px;
+    rotate: 5deg;
+    pointer-events: none;
+}
+
+.madipng {
+    position: absolute;
+    top: 200px;
+    right: 200px;
+    filter: drop-shadow(0px 0px 20px #000000);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.container {
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(43, 0, 0));
+    margin: auto;
+    width: 888px;
+    height: 888px;
+    border-radius: 15px;
+    border: solid 1px #c8ff00;
+    padding: 10px;
+    display: flex;
+}
+
+.columns {
+    padding: 10px;
+    margin-top: 110px;
+}
+
+#left{
+    flex-basis: 100%;
+    margin-left: 10px;
+    overflow: auto;
+}
+
+#right{
+    flex-basis: 100%;
+    margin-right: 10px;
+    overflow: auto;
+}
+
+.writing {
+    height: 300px;
+    overflow-y: scroll;
+    padding: 10px;
+    border-radius: 15px;
+    border: solid 1px #800605;
+}
+
+.blurframe {
+    position: absolute;
+    filter: brightness(100%);
+}
+
+.righttao {
+    width: 900px;
+    position: absolute;
+    top: 60px;
+    filter: drop-shadow(0px 0px 20px darkred) sepia(0.9) saturate(500%) hue-rotate(10deg) brightness(1.1) contrast(10);
+    opacity: 0.1;
+    pointer-events: none;
+}
+
+.video {
+    position: absolute;
+}
+
+.videoframe {
+    position: absolute;
+    bottom: 10px;
+    right: 500px;
+    pointer-events: none;
+}
+
+.dreamingdeco {
+   position: absolute;
+    bottom: 0px;
+    right: 190px;
+    filter: contrast(200%) drop-shadow(0px 0px 5px rgb(0, 0, 0));
+    pointer-events: none;
+}
+
+.mechanizeddeco {
+   position: absolute;
+    bottom: -100px;
+    right: 570px;
+    filter: contrast(200%) brightness(0) drop-shadow(0px 0px 5px rgb(255, 0, 0));
+    pointer-events: none;
+}
+
+.dotdeco {
+    position: absolute;
+    opacity: 30%;
+    bottom: -200px;
+    right: 200px;
+    filter: brightness(0.5) contrast(200%) drop-shadow(0px 0px 5px orangered);
+    pointer-events: none;
+}
+
+/* 
+▄▄▄▄▄▄▄▄ .▐▄• ▄ ▄▄▄▄▄    • ▌ ▄ ·.  ▄▄▄· ▄▄▄  ▄ •▄ ·▄▄▄▄        ▄▄▌ ▐ ▄▌ ▐ ▄ 
+•██  ▀▄.▀· █▌█▌▪•██      ·██ ▐███▪▐█ ▀█ ▀▄ █·█▌▄▌▪██▪ ██ ▪     ██· █▌▐█•█▌▐█
+ ▐█.▪▐▀▀▪▄ ·██·  ▐█.▪    ▐█ ▌▐▌▐█·▄█▀▀█ ▐▀▀▄ ▐▀▀▄·▐█· ▐█▌ ▄█▀▄ ██▪▐█▐▐▌▐█▐▐▌
+ ▐█▌·▐█▄▄▌▪▐█·█▌ ▐█▌·    ██ ██▌▐█▌▐█ ▪▐▌▐█•█▌▐█.█▌██. ██ ▐█▌.▐▌▐█▌██▐█▌██▐█▌
+ ▀▀▀  ▀▀▀ •▀▀ ▀▀ ▀▀▀     ▀▀  █▪▀▀▀ ▀  ▀ .▀  ▀·▀  ▀▀▀▀▀▀•  ▀█▄▀▪ ▀▀▀▀ ▀▪▀▀ █▪
+*/
+
+.h1 {
+   font-family: 'tadinyo';
+   color: rgb(255, 218, 139);
+   filter: drop-shadow(0px 0px 10px #00000079);
+   font-size: 55px;
+   font-weight: bold;
+   display: inline;
+   -webkit-text-stroke: 1px black;
+}
+
+.h2 {
+   font-family: 'tadinyo';
+   color: rgb(219, 218, 218);
+   text-shadow: 1px 3px #02360e;
+   filter: drop-shadow(0px 0px 4px #ff0000);
+   font-size: 22px;
+   font-weight: normal;
+   line-height: 16px;
+   letter-spacing: -1px;
+}
+
+.p {
+    font-family: 'glitch';
+    color: #4c9758;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: -1px;
+}
+
+b {
+    color: rgb(133, 179, 136);
+}
+
+a {
+    color: rgb(151, 131, 131);
+}
+
+a:hover {
+    color: rgb(107, 21, 0);
+}
+
+::selection {
+   background: #344935;
+   color: black;
+}
+
+.list {
+   font-family: 'glitch';
+    color: #4c9758;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: -1px;
+    list-style: none;
+    margin-left: 10px;
+}
+
+li::before {
+    content: '•';
+    display: inline-block;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-size: 5px 5px;
+    width: 5px;
+    height: 5px;
+}
+
+.quote {
+    font-family: 'rosetinted';
+    font-size: 13px;
+    color: #e879e6;
+    padding: 5px;
+    list-style: none;
+    margin-left: -30px;
+    margin-top: 10px;
+    opacity: 75%;
+}
+
+/*
+.▄▄ ·  ▄▄· ▄▄▄        ▄▄▌  ▄▄▌  ▄▄▄▄·  ▄▄▄· ▄▄▄  
+▐█ ▀. ▐█ ▌▪▀▄ █·▪     ██•  ██•  ▐█ ▀█▪▐█ ▀█ ▀▄ █·
+▄▀▀▀█▄██ ▄▄▐▀▀▄  ▄█▀▄ ██▪  ██▪  ▐█▀▀█▄▄█▀▀█ ▐▀▀▄ 
+▐█▄▪▐█▐███▌▐█•█▌▐█▌.▐▌▐█▌▐▌▐█▌▐▌██▄▪▐█▐█ ▪▐▌▐█•█▌
+ ▀▀▀▀ ·▀▀▀ .▀  ▀ ▀█▄▀▪.▀▀▀ .▀▀▀ ·▀▀▀▀  ▀  ▀ .▀  ▀
+*/
+
+::-webkit-scrollbar {
+    width: 2px;
+}
+::-webkit-scrollbar-thumb {
+    background: #ff121283;
+}
+::-webkit-scrollbar-track {
+    background: #000000;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #ff6702;
+}
